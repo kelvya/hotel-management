@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,22 +8,46 @@
     </head>
     <body>
         <header>
-            <img src="./images/logo.svg" alt="Logo" width="30" />
-            <span>Nosso hotel</span>
+            <img src="./images/logo/logo-transparente.png" alt="Logo" width="50" />
+            <h1>Grand Royal Hotel</h1>
         </header>
         <nav>
+            <a href="./index.html">Login</a> |
             <a href="./pages/home.html">HOME</a> |
-            <a href="./pages/sobre.html">O Hotel</a> |
             <a href="./pages/acomodacoes.html">Acomodações</a> |
             <a href="./pages/reservas.html">Reservas</a> |
             <a href="./pages/contatos.html">Contato</a>
         </nav>
         <main>
             <section>
-                <article>
-                    
-                </article>
-
+                <table width="100%">
+                    <tr>
+                        <td width="50%" height="100px">
+                            <h2>Login</h2>
+                            <form action="./admin/home_admin.html" method="post">
+                                <fieldset>
+                                    <img src="./images/logo/logo-fundo-branco.png" alt="Logo" width="150" />
+                                    <p>Bem-vindo ao <strong>Grand Royal Hotel</strong></p>
+                                    <ul>
+                                        <li>
+                                            <label for="usuario_login">Usuário:</label>
+                                            <input placeholder="Insira seu usuário" type="text" id="usuario_login" name="usuario_login" maxlength="30" size="30" required />
+                                        </li>
+                                        <li>
+                                            <label for="senha_login">Senha:</label>
+                                            <input placeholder="Insira sua senha" type="password" id="senha_login" name="senha_login" size="30" required />
+                                        </li>
+                                        <hr/>
+                                        <input type="submit" value="Enviar"></input>
+                                    </ul>
+                                </fieldset>
+                            </form>
+                        </td>
+                        <td width="50%">
+                            
+                        </td>
+                    </tr>
+                </table>
             </section>
         </main>
         <footer>
