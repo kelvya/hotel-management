@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grand Royal - Reservas</title>
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo/logo-transparente.png" alt="Logo" width="50" />
+      <h1>Grand Royal</h1>
+    </header>
+    <nav>
+      <a href="home_admin.html">Home Admin</a> |
+      <a href="funcionario_admin.html">Funcionários</a> |
+      <a href="hospede_admin.html">Hóspedes</a> |
+      <a href="../pages/home.html">Home Grand Royal</a>
+    </nav>
+    <hr />
+    <main>
+      <section>
+        <article>
+          <h2>Reservas - Área administrativa</h2>
+          <p>
+            Área para visualização e administração de reservas feitas no hotel
+            Grand Royal.
+          </p>
+        </article>
+        <article id="reservas">
+          <table border="1">
+            <tr>
+              <td>
+                <h2>Reserva #1</h2>
+                <p>Nome do Cliente: John Doe</p>
+                <p>Acomodação: Quarto Standard</p>
+                <p>Check in: 10/10/2022</p>
+                <p>Check out: 25/10/2022</p>
+                <label for="servico_quarto">Serviço de Quarto: </label>
+                <input
+                  type="checkbox"
+                  name="servico_quarto"
+                  id="servico_quarto"
+                  disabled
+                />Sim
+                <input
+                  type="checkbox"
+                  name="servico_quarto"
+                  id="servico_quarto"
+                  checked
+                  disabled
+                />Não
+                <p>Valor da Reserva: R$ 1200,00</p>
+                <label for="pagamento">Forma de Pagamento:</label> <br />
+                <input
+                  type="checkbox"
+                  name="avista"
+                  id="pagamento"
+                  checked
+                  disabled
+                />
+                À vista <br />
+                <input type="checkbox" name="cartao" id="pagamento" disabled />
+                Cartão à vista <br />
+                <input
+                  type="checkbox"
+                  name="cartao_parce"
+                  id="pagamento"
+                  disabled
+                />
+                Cartão Parcelado
+              </td>
+              <td>
+                <h2>Reserva #2</h2>
+                <p>Nome do Cliente: Fulano</p>
+                <p>Acomodação: Quarto Luxo</p>
+                <p>Check in: 29/12/2022</p>
+                <p>Check out: 05/01/2023</p>
+                <label for="servico_quarto">Serviço de Quarto: </label>
+                <input
+                  type="checkbox"
+                  name="servico_quarto"
+                  id="servico_quarto"
+                  checked
+                  disabled
+                />Sim
+                <input
+                  type="checkbox"
+                  name="servico_quarto"
+                  id="servico_quarto"
+                  disabled
+                />Não
+                <p>Valor da Reserva: R$ 3500,00</p>
+                <label for="pagamento">Forma de Pagamento:</label> <br />
+                <input type="checkbox" name="avista" id="pagamento" disabled />
+                À vista <br />
+                <input type="checkbox" name="cartao" id="pagamento" disabled />
+                Cartão à vista <br />
+                <input
+                  type="checkbox"
+                  name="cartao_parce"
+                  id="pagamento"
+                  checked
+                  disabled
+                />
+                Cartão Parcelado <br />
+              </td>
+              <td>
+                <h2>Reserva #3</h2>
+                <p>Nome do Cliente: Sicrano</p>
+                <p>Acomodação: Quarto Presidencial</p>
+                <p>Check in: 18/02/2023</p>
+                <p>Check out: 23/01/2023</p>
+                <label for="servico_quarto">Serviço de Quarto: </label>
+                <input
+                  type="checkbox"
+                  name="servico_quarto"
+                  id="servico_quarto"
+                  checked
+                  disabled
+                />Sim
+                <input
+                  type="checkbox"
+                  name="servico_quarto"
+                  id="servico_quarto"
+                  disabled
+                />Não
+                <p>Valor da Reserva: R$ 2200,00</p>
+                <label for="pagamento">Forma de Pagamento:</label> <br />
+                <input type="checkbox" name="avista" id="pagamento" disabled />
+                À vista <br />
+                <input
+                  type="checkbox"
+                  name="cartao"
+                  id="pagamento"
+                  checked
+                  disabled
+                />
+                Cartão à vista <br />
+                <input
+                  type="checkbox"
+                  name="cartao_parce"
+                  id="pagamento"
+                  disabled
+                />
+                Cartão Parcelado <br />
+              </td>
+            </tr>
+          </table>
+        </article>
+        <aside>
+          <h3>Anúncio</h3>
+          <p>Espaço reservado para propagandas.</p>
+        </aside>
+        <article id="cancelamento">
+          <h2>Cancelamento de Reserva</h2>
+          <form action="" method="post">
+            <label for="cancelamento">Escolha uma reserva para cancelar:</label><br/>
+            <input type="radio" name="cancel_reserva" id="cancelamento" required>Reserva #1
+            <input type="radio" name="cancel_reserva" id="cancelamento" required>Reserva #2
+            <input type="radio" name="cancel_reserva" id="cancelamento"  required>Reserva #3<br/>
+            <label for="confirm_cancelamento">Confirme seus dados:</label><br/>
+            Login: <input type="text" required>
+            Senha: <input type="password" required><br/>
+            <input type="submit" id="confirm_cancelamento" value="Confirmar">
+          </form>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <img src="../images/logo/logo-transparente.png" alt="Logo" width="50" />
+      <span>&copy;2022 - Todos os direitos reservados.</span>
+    </footer>
+  </body>
+</html>
