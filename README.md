@@ -7,3 +7,9 @@
  Sistema Web de gerenciamento do Grand Royal Hotel. Projeto em desenvolvimento, realizado por intermédio do [Curso de JavaScript Developer](https://www.texperts.com.br/full-stack-javascript-developer/) da [T.EX - Technology Experts](https://texperts.com.br/)
 
 O sistema contempla a lógica pela visão do usuário e do administrador.
+
+## Tecnologias usadas:
+
+[X] HTML
+
+
