@@ -2,6 +2,15 @@
 
  A Squad Royal Dev está trabalhando em equipe para desenvolver um sistema Web de gerenciamento de hotel, monitorando o fluxo de hóspedes, os serviços prestados nos apartamentos, a entrada e saída dos funcionários e seus rodízios de trabalho, as reservas, o checkin e o checkout. 
 
+ ##  Tabela de conteúdo
+
+  - [Detalhes do projeto](#detalhes-do-projeto)
+  - [Tecnologias usadas:](#tecnologias-usadas)
+  - [Links úteis:](#links-úteis)
+  - [Contribuindo:](#contribuindo)
+  - [Demonstração  do projeto](#demonstração--do-projeto)
+  - [Contribuidores do projeto:](#contribuidores-do-projeto)
+
  ## Detalhes do projeto
 
  <img src="/images/logo/logoBranca-fundoTransparente.png" />
@@ -86,10 +95,6 @@ git checkout -d <coloque aqui o nome da sua branch (O MESMO NOME QUE VOCÊ USOU 
 ```
 
 Assim que forem terminadas as versões de entrega será criada uma branch release e para correções de bug será usada a branch hotfix.
-
-## Tecnologias usadas:
-
-[X] HTML
 
 ## Demonstração  do projeto
 
