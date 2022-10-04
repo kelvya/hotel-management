@@ -21,7 +21,7 @@
     <main>
       <section>
         <article>
-          <h1>Reservas - Área administrativa</h1>
+          <h2>Reservas - Área administrativa</h2>
           <p>
             Área para visualização e administração de reservas feitas no hotel
             Grand Royal.
@@ -105,14 +105,67 @@
                 />
                 Cartão Parcelado <br />
               </td>
+              <td>
+                <h2>Reserva #3</h2>
+                <p>Nome do Cliente: Sicrano</p>
+                <p>Acomodação: Quarto Presidencial</p>
+                <p>Check in: 18/02/2023</p>
+                <p>Check out: 23/01/2023</p>
+                <label for="servico_quarto">Serviço de Quarto: </label>
+                <input
+                  type="checkbox"
+                  name="servico_quarto"
+                  id="servico_quarto"
+                  checked
+                  disabled
+                />Sim
+                <input
+                  type="checkbox"
+                  name="servico_quarto"
+                  id="servico_quarto"
+                  disabled
+                />Não
+                <p>Valor da Reserva: R$ 2200,00</p>
+                <label for="pagamento">Forma de Pagamento:</label> <br />
+                <input type="checkbox" name="avista" id="pagamento" disabled />
+                À vista <br />
+                <input
+                  type="checkbox"
+                  name="cartao"
+                  id="pagamento"
+                  checked
+                  disabled
+                />
+                Cartão à vista <br />
+                <input
+                  type="checkbox"
+                  name="cartao_parce"
+                  id="pagamento"
+                  disabled
+                />
+                Cartão Parcelado <br />
+              </td>
             </tr>
           </table>
         </article>
+        <aside>
+          <h3>Anúncio</h3>
+          <p>Espaço reservado para propagandas.</p>
+        </aside>
+        <article id="cancelamento">
+          <h2>Cancelamento de Reserva</h2>
+          <form action="" method="post">
+            <label for="cancelamento">Escolha uma reserva para cancelar:</label><br/>
+            <input type="radio" name="cancel_reserva" id="cancelamento" required>Reserva #1
+            <input type="radio" name="cancel_reserva" id="cancelamento" required>Reserva #2
+            <input type="radio" name="cancel_reserva" id="cancelamento"  required>Reserva #3<br/>
+            <label for="confirm_cancelamento">Confirme seus dados:</label><br/>
+            Login: <input type="text" required>
+            Senha: <input type="password" required><br/>
+            <input type="submit" id="confirm_cancelamento" value="Confirmar">
+          </form>
+        </article>
       </section>
-      <aside>
-        <h3>Anúncio</h3>
-        <p>Espaço reservado para propagandas.</p>
-      </aside>
     </main>
     <footer>
       <img src="../images/logo/logo-transparente.png" alt="Logo" width="50" />
