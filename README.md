@@ -12,4 +12,10 @@ O sistema contempla a lógica pela visão do usuário e do administrador.
 
 [X] HTML
 
+## Links úteis:
+
+[Drive com imagens](https://1drv.ms/u/s!Ai6BNqi5Q1RGgYYcLlo3sb7-rJDhQg?e=XeALuX)
+
+[Trello do projeto](https://trello.com/invite/b/XUGgaHMg/bc2a21fe162866f5d75bf84fda54c590/projetohotel)
+
 
