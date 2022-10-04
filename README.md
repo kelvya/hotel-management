@@ -13,7 +13,7 @@
 
  ## Detalhes do projeto
 
- <img src="/images/logo/logoBranca-fundoTransparente.png" />
+ <img src="/images/logo/logo-transparente.png" />
 
  Sistema Web de gerenciamento do Grand Royal Hotel. Projeto em desenvolvimento, realizado por intermédio do [Curso de JavaScript Developer](https://www.texperts.com.br/full-stack-javascript-developer/) da [T.EX - Technology Experts](https://texperts.com.br/)
 
