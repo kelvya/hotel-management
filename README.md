@@ -4,6 +4,8 @@
 
  ## Detalhes do projeto
 
+ <img src="/images/logo/logoBranca-fundoTransparente.png" />
+
  Sistema Web de gerenciamento do Grand Royal Hotel. Projeto em desenvolvimento, realizado por intermédio do [Curso de JavaScript Developer](https://www.texperts.com.br/full-stack-javascript-developer/) da [T.EX - Technology Experts](https://texperts.com.br/)
 
 O sistema contempla a lógica pela visão do usuário e do administrador.
@@ -84,5 +86,28 @@ git checkout -d <coloque aqui o nome da sua branch (O MESMO NOME QUE VOCÊ USOU 
 ```
 
 Assim que forem terminadas as versões de entrega será criada uma branch release e para correções de bug será usada a branch hotfix.
+
+## Tecnologias usadas:
+
+[X] HTML
+
+## Demonstração  do projeto
+
+Navegar pelo projeto: [clica aqui](https://kelvya.github.io/hotel-management/)
+
+## Contribuidores do projeto:
+
+| 🪧 Grupo 1 | Squad Xiz  |
+| --- | --- |
+|✨ Ana Cristina Ferreira <br> [Github](https://github.com/AnaCFerreira0803) | <img src="https://avatars.githubusercontent.com/u/112834809?v=4" width=20%>
+|✨ Andrey Mendes <br> [Github](https://github.com/andrey-mendes) | <img src="https://avatars.githubusercontent.com/u/63105057?v=4" width=20%>
+|✨ David Ferreira de jesus <br> [Github](https://github.com/Davidferreirajesus) | <img src="https://avatars.githubusercontent.com/u/95596031?v=4" width=20%>
+|✨ Diego Dias Trindade <br> [Github](https://github.com/D2Trindade) | <img src="https://avatars.githubusercontent.com/u/101903524?v=4" width=20%>
+|✨ Felipe Foresto <br> [Github](https://github.com/felipeforesto) | <img src="https://avatars.githubusercontent.com/u/98473755?v=4" width=20%>
+|✨ Fernando Pires Nogueira <br> [Github](https://github.com/CDGFPN) | <img src="https://avatars.githubusercontent.com/u/74393670?v=4" width=20%>
+|✨ Kelvya Thais <br> [Github](https://github.com/kelvya) | <img src="https://avatars.githubusercontent.com/u/99570969?v=4" width=20%>
+|✨ Keverson <br> [Github - Em construção]( ) | <img src="" width=20%>
+|✨ Wellington Marcelinos <br> [Github](https://github.com/TonCruz) | <img src="https://avatars.githubusercontent.com/u/29213030?v=4" width=20%>
+
 
 
