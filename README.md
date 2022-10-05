@@ -9,7 +9,8 @@
   - [Links úteis:](#links-úteis)
   - [Contribuindo:](#contribuindo)
   - [Demonstração  do projeto](#demonstração--do-projeto)
-  - [Contribuidores do projeto:](#contribuidores-do-projeto)
+  - [Contribuidores do projeto](#contribuidores-do-projeto)
+  - [Licença](#licença)
 
  ## Detalhes do projeto
 
@@ -113,6 +114,9 @@ Navegar pelo projeto: [clica aqui](https://kelvya.github.io/hotel-management/)
 |✨ Kelvya Thais <br> [Github](https://github.com/kelvya) | <img src="https://avatars.githubusercontent.com/u/99570969?v=4" width=20%>
 |✨ Keverson <br> [Github - Em construção]( ) | <img src="" width=20%>
 |✨ Wellington Marcelinos <br> [Github](https://github.com/TonCruz) | <img src="https://avatars.githubusercontent.com/u/29213030?v=4" width=20%>
+
+## Licença:
+[MIT License ](https://choosealicense.com/licenses/mit/)
 
 
 
