@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../src/style.css" />
+        <title>Grand Royal - Login</title>
+    </head>
+    <body class="bodyLogin">
+        <header>
+            <table>
+                <tr>
+                    <td>
+                        <div class="logo">
+                            <img src="../images/logo/logo-transparente.png" alt="Logo" width="50" />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="slogan">
+                            <h1>A sofisticação e o conforto ideal. Vem ser Grand, vem ser Royal!</h1>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
+            
+        </header>
+        <!-- <nav>
+            <a href="../index.html">Home</a> |
+            <a href="../pages/acomodacoes.html">Acomodações</a> |
+            <a href="../pages/reservas.html">Reservas</a> |
+            <a href="../pages/contatos.html">Contato</a>
+        </nav> -->
+        <main>
+            <section>
+                <article class="articleLogin">
+                    <!-- Acesso ao login de usuários -->
+                    <form action="../index.html" method="post">
+                        <fieldset>
+                            <h1>Login</h1>
+                            <ul>
+                                <li>
+                                    <p>Email</p>
+                                    <input placeholder="Insira seu usuário" type="text" id="usuarioLogin" name="usuarioLogin" maxlength="30" size="30" required />
+                                </li>
+                                <li>
+                                    <p>Senha</p>
+                                    <input placeholder="Insira sua senha" type="password" id="senhaLogin" name="senhaLogin" size="30" required />
+                                </li>
+                                <input class="articleLoginButton" type="submit" value="CONFIRMAR"></input>
+                            </ul>
+                        </fieldset>
+                    </form>
+                    <div class="loginForgot">
+                        <a href="">Esqueceu sua senha?</a>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
