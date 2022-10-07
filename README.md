@@ -1,34 +1,56 @@
+<div align="center">
+ <br>
+ <img src="/images/logo/logo-transparente.png" width="400px" />
+ <br>
+</div>
+
 # Projeto hotel-management da Squad Royal Dev
 
- A Squad Royal Dev está trabalhando em equipe para desenvolver um sistema Web de gerenciamento de hotel, monitorando o fluxo de hóspedes, os serviços prestados nos apartamentos, a entrada e saída dos funcionários e seus rodízios de trabalho, as reservas, o checkin e o checkout. 
+ A Squad Royal Dev está trabalhando em equipe para desenvolver um sistema Web de gerenciamento de hotel, monitorando o fluxo de hóspedes, os serviços prestados nos apartamentos, a entrada e saída dos funcionários e seus rodízios de trabalho, as reservas, o checkin e o checkout.
+ <br><br>
 
- ##  Tabela de conteúdo
+ ##  Sumário [Tabela de conteúdo]
 
   - [Detalhes do projeto](#detalhes-do-projeto)
+  - [Paleta de cores e Fontes do projeto](#paleta-de-cores-e-fontes-do-projeto)
   - [Tecnologias usadas:](#tecnologias-usadas)
   - [Links úteis:](#links-úteis)
   - [Contribuindo:](#contribuindo)
   - [Demonstração  do projeto](#demonstração--do-projeto)
-  - [Contribuidores do projeto](#contribuidores-do-projeto)
+  - [Projeto desenvolvido por](#projeto-desenvolvido-por)
+  - [Composição da Squad](#composição-da-squad)
   - [Licença](#licença)
 
+<br>
+
  ## Detalhes do projeto
-
- <img src="/images/logo/logo-transparente.png" />
-
+ 
  Sistema Web de gerenciamento do Grand Royal Hotel. Projeto em desenvolvimento, realizado por intermédio do [Curso de JavaScript Developer](https://www.texperts.com.br/full-stack-javascript-developer/) da [T.EX - Technology Experts](https://texperts.com.br/)
 
 O sistema contempla a lógica pela visão do usuário e do administrador.
+<br><br>
+
+ ## Paleta de cores e Fontes do projeto
+ 
+
+| Modelo | Utilizáveis de projeto |
+| --- | --- |
+| <img src="/images/demonstracoes/Paleta%20Grand%20Royal%20.jpg" width="480px" /> |**I - Paleta de cores:** <br><br> **Azul Escuro:** <br> #213242 <br><br>  **Azul Médio:** <br>#3C5A74 <br><br> **Azul Claro:** <br> #517490 <br><br> **Dourado médio:** <br> #E3A92C <br><br> **Dourado Escuro:** <br> #Cf9903 <br><br> **Bege:** <br> #E1C888 <br><br> **BackGround:** <br>#FCF7EA <br><br> <hr> <br><br> **II - Fontes:** <br><br> **Quando** <br> https://fonts.google.com/specimen/Quando?query=Quando <br><br> **Quicksand:** <br> https://fonts.google.com/specimen/Quicksand?query=quick |
+<br>
 
 ## Tecnologias usadas:
 
-[X] HTML
+[X] HTML <br>
+[X] CSS <br>
+[ ] JavaScript <br>
+<br>
 
 ## Links úteis:
 
 [Drive com imagens](https://1drv.ms/u/s!Ai6BNqi5Q1RGgYYcLlo3sb7-rJDhQg?e=XeALuX)
 
 [Trello do projeto](https://trello.com/invite/b/XUGgaHMg/bc2a21fe162866f5d75bf84fda54c590/projetohotel)
+<br><br>
 
 ## Contribuindo:
 Ao clonar o projeto em sua máquina local será necessário criar uma nova branch para atribuir as suas alterações.
@@ -96,12 +118,22 @@ git checkout -d <coloque aqui o nome da sua branch (O MESMO NOME QUE VOCÊ USOU 
 ```
 
 Assim que forem terminadas as versões de entrega será criada uma branch release e para correções de bug será usada a branch hotfix.
-
+<br><br>
 ## Demonstração  do projeto
 
 Navegar pelo projeto: [clica aqui](https://kelvya.github.io/hotel-management/)
+<br><br>
 
-## Contribuidores do projeto:
+##  Projeto desenvolvido por
+<div align="center">
+ <br>
+ <img src="images/Logo%20Royal%20Devs%20Squad/Logo%20esbo%C3%A7o.jpg" width="400px" />
+ <br>
+</div>
+<br><br>
+
+
+## Composição da Squad
 
 | 🪧 Grupo 1 | Squad Xiz  |
 | --- | --- |
@@ -114,6 +146,7 @@ Navegar pelo projeto: [clica aqui](https://kelvya.github.io/hotel-management/)
 |✨ Kelvya Thais <br> [Github](https://github.com/kelvya) | <img src="https://avatars.githubusercontent.com/u/99570969?v=4" width=20%>
 |✨ Keverson <br> [Github - Em construção]( ) | <img src="" width=20%>
 |✨ Wellington Marcelinos <br> [Github](https://github.com/TonCruz) | <img src="https://avatars.githubusercontent.com/u/29213030?v=4" width=20%>
+<br>
 
 ## Licença:
 [MIT License ](https://choosealicense.com/licenses/mit/)
