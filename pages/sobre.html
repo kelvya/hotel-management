@@ -4,25 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Sobre - Hotel Grand Royal</title>
   </head>
   <body>
     <header id="topo">
       <img src="../images/logo/logo-transparente.png" alt="Logo" width="50" />
       <h1>Grand Royal</h1>
+      <span
+        >A sofisticação e o conforto ideal. Vem ser Grand, vem ser Royal!</span
+      >
     </header>
-    <nav>
-      <a href="../index.html">Login</a> |
-      <a href="../pages/home.html">Home</a> |
-      <a href="../pages/sobre.html">Sobre</a> |
-      <a href="../pages/acomodacoes.html">Acomodações</a> |
-      <a href="../pages/reservas.html">Reservas</a> |
-      <a href="../pages/contatos.html">Contato</a>
-    </nav>
+    <div>
+      <nav>
+        <a href="../index.html">Login</a> |
+        <a href="../pages/home.html">Home</a> |
+        <a href="../pages/sobre.html">Sobre</a> |
+        <a href="../pages/acomodacoes.html">Acomodações</a> |
+        <a href="../pages/reservas.html">Reservas</a> |
+        <a href="../pages/contatos.html">Contato</a>
+      </nav>
+    </div>
     <hr />
     <main>
       <section id="saiba_mais">
-        <h1>O Hotel Grand Royal</h1>
+        <article>
+          <h2>O Hotel Grand Royal</h2>
+          <table>
+            <tr>
+              <td>
+                <img src="../images/reception.png" alt="Recepção" width="450" />
+              </td>
+              <td>
+                <h3>Palácio Grand Royal</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Obcaecati, repudiandae rem! Facere, ducimus voluptatum? Facere
+                  id quos nulla, eligendi dolorem minus nam porro expedita modi
+                  officiis numquam iusto repudiandae praesentium ipsa alias
+                  commodi? Inventore ipsum natus laboriosam id, earum eum
+                  recusandae molestiae, repudiandae repellendus deleniti nisi,
+                  ut enim consequatur provident.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </article>
         <article id="nossa_historia">
           <h2>Nossa História</h2>
           <p>
@@ -61,7 +91,15 @@
         </article>
         <aside>
           <h3>Anúncio</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quo provident consectetur possimus praesentium non distinctio iure mollitia nesciunt accusamus, sunt perferendis repellendus laudantium, sint quidem, aliquid dolorem. Temporibus eligendi possimus esse molestias neque consequuntur eveniet excepturi similique repellat, minima velit rem, at tempore nam et architecto eum tenetur veritatis.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quo
+            provident consectetur possimus praesentium non distinctio iure
+            mollitia nesciunt accusamus, sunt perferendis repellendus
+            laudantium, sint quidem, aliquid dolorem. Temporibus eligendi
+            possimus esse molestias neque consequuntur eveniet excepturi
+            similique repellat, minima velit rem, at tempore nam et architecto
+            eum tenetur veritatis.
+          </p>
         </aside>
         <article>
           <h2 id="conheca_mais">Conheça o Hotel</h2>
@@ -104,9 +142,78 @@
     </main>
     <footer>
       <hr />
-      <img src="../images/logo/logo-transparente.png" alt="Logo" width="50" />
-      <span>&copy;2022 - Todos os direitos reservados.</span> <br />
-      <a href="#topo">Voltar para o topo da página</a>
+      <table width="100%">
+        <tr>
+          <td width="33%">
+            <p>hotelroyal@email.com</p>
+            <p>+55 11 XXXX-XXXX</p>
+            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
+          </td>
+          <td width="33%">
+            <form action="" method="post"></form>
+            <fieldset>
+              <legend>Precisa de Ajuda? Deixe sua mensagem.</legend>
+              <ul>
+                <li>
+                  <label for="nome_mensagem">Nome:</label>
+                  <input
+                    type="text"
+                    name="nome_mensagem"
+                    id="nome_mensagem"
+                    placeholder="Digite seu nome completo"
+                    required
+                  />
+                </li>
+                <li>
+                  <label for="email_mensagem">E-mail:</label>
+                  <input
+                    type="email"
+                    name="email_mensagem"
+                    id="email_mensagem"
+                    placeholder="seu.email@example.com"
+                    required
+                  />
+                </li>
+                <li>
+                  <label for="telefone_mensagem">Telefone:</label>
+                  <input
+                    type="tel"
+                    name="telefone_mensagem"
+                    id="telefone_mensagem"
+                    placeholder="Telefone para contato"
+                    required
+                  />
+                </li>
+                <li>
+                  <button>Enviar</button>
+                </li>
+              </ul>
+            </fieldset>
+          </td>
+          <td width="33%">
+            <p>Rua Trindade, 234, São Paulo, Centro</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <img
+              src="../images/logo/logo-transparente.png"
+              alt="Logo"
+              width="50"
+            />
+            <p>&copy;2022 - Todos os direitos reservados.</p>
+            <br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#topo">Voltar para o topo da página</a>
+          </td>
+        </tr>
+      </table>
     </footer>
   </body>
 </html>
