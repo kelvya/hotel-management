@@ -4,30 +4,79 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../pages/styles.css" />
         <!-- Atualizar título da aba conforme página atual -->
         <title>Grand Royal</title>
     </head>
     <body>
-        <header>
-            <img src="../images/logo/logo-transparente.png" alt="Logo" width="50" />
-            <h1>Grand Royal - Home</h1>
-        </header>
-        <nav>
-            <a href="../index.html">Login</a> |
-            <a href="../pages/home.html">Home</a> |
-            <a href="../pages/acomodacoes.html">Acomodações</a> |
-            <a href="../pages/reservas.html">Reservas</a> |
-            <a href="../pages/contatos.html">Contato</a>
-        </nav>
-        <main>
+
+        <div style="background-color:#213242; position: fixed; width: 100%;">
+            <object width="100%" height="160vh" data="../components/header.html"></object>
+            <hr>
+            <nav>
+                <object width="100%" height="60vh" data="../components/navbar_up.html"></object>
+            </nav>
+        </div>   
+    
+
+        <main style="padding-top: 30vh;">
             <section>
                 <article>
                    
                     <h2>Home</h2>
 
                     <hr />
+                    <br>
 
-                    <h3>A melhor escolha de estadia presente no Brasil</h3>
+                    <h3>Sobre o nosso hotel</h3>
+
+                    <div width="100%" style="justify-content: space-around;">
+                        <div width="50%">
+                            <img src="../images/hotel/imagem-hotel.jpg" alt="Logo" width="50%" />
+                        </div>
+                        <div width="25%">
+                            <span class="texto-longo" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus at ultrices mi tempus imperdiet nulla malesuada. Nulla aliquet porttitor lacus luctus accumsan. Etiam erat velit scelerisque in dictum non consectetur a erat. Sed elementum tempus egestas sed. Interdum consectetur libero id faucibus nisl tincidunt eget nullam. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae. Quisque egestas diam in arcu. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Sed vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Sed libero enim sed faucibus. Pharetra diam sit amet nisl suscipit.
+                        Sit amet nisl purus in mollis nunc. Fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque. Neque sodales ut etiam sit. Amet nisl purus in mollis. Mauris sit amet massa vitae tortor condimentum lacinia. Pretium fusce id velit ut. Quis varius quam quisque id diam vel quam elementum pulvinar. Suscipit tellus mauris a diam maecenas sed enim ut. Laoreet non curabitur gravida arcu ac. Libero nunc consequat interdum varius sit amet mattis. Proin sagittis nisl rhoncus mattis rhoncus. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Duis at consectetur lorem donec massa sapien faucibus et. Nisl nunc mi ipsum faucibus vitae aliquet. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Duis ut diam quam nulla porttitor massa. Magna eget est lorem ipsum.</span>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <br><br>
+
+
+                    <h3>Nossas Acomodações</h3>
+
+                    <ul class="acomodacoes-painel">
+
+                        <li class="acomodacoes" role="presentation">
+                            <a class="imagem-link" href="../pages/acomodacoes.html" data-toggle="tab">
+                                <img src="../images/acomodacoes/Acomodacao1.png" alt="" width="360em" height="260em" style="border-radius: 5%;">
+                                <span>Acomodação 1</span>
+                            </a>
+                        </li>
+
+                        <li class="acomodacoes">
+                            <a class="imagem-link" href="../pages/acomodacoes.html" data-toggle="tab">
+                                <img src="../images/acomodacoes/Acomodacao2.png" alt="" width="360em" height="260em" style="border-radius: 5%;">
+                                <span>Acomodação 2</span>
+                            </a>
+                        </li>
+
+                        <li class="acomodacoes">
+                            <a class="imagem-link" href="../pages/acomodacoes.html" data-toggle="tab">
+                                <img src="../images/acomodacoes/Acomodacao3.png" alt="" width="360em" height="260em" style="border-radius: 5%;">
+                                <span>Acomodação 3</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="nossos-servicos">
+                      <p>Conheça mais sobre nossos serviços</p>  
+                    </div>
+                    
+
+                    <h3>Gastronomia</h3>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aliquam ipsam voluptatem! Iste fuga quae voluptatibus, ipsa incidunt assumenda quo repudiandae aperiam nisi exercitationem quibusdam quos velit, voluptatem soluta id rem numquam provident corporis aliquid non sequi odio quasi tenetur. Est perferendis quis quod delectus, sequi repudiandae? Optio, quidem unde!</p>
                     <div>
@@ -59,9 +108,6 @@
                 <p>Espaço reservado para propagandas.</p>
             </aside>
         </main>
-        <footer>
-            <img src="../images/logo/logo-transparente.png" alt="Logo" width="80" />
-            <span>&copy;2022 - Todos os direitos reservados.</span>
-        </footer>
+        <object width="100%" height="20%" data="../components/footer.html"></object>
     </body>
 </html>
