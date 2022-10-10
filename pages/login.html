@@ -7,54 +7,40 @@
         <link rel="stylesheet" href="../src/style.css" />
         <title>Grand Royal - Login</title>
     </head>
-    <body class="bodyLogin">
+    <body>
         <header>
-            <table>
-                <tr>
-                    <td>
-                        <div class="logo">
-                            <img src="../images/logo/logo-transparente.png" alt="Logo" width="50" />
-                        </div>
-                    </td>
-                    <td>
-                        <div class="slogan">
-                            <h1>A sofisticação e o conforto ideal. Vem ser Grand, vem ser Royal!</h1>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            
-            
+            <div style="background-color:#213242; position: fixed; width: 100%;">
+                <object width="100%" height="160vh" data="../components/header.html"></object>
+                <hr>
+                <!-- <nav>
+                    <object width="100%" height="60vh" data="../components/navbar_up.html"></object>
+                </nav> -->
+            </div>
         </header>
-        <!-- <nav>
-            <a href="../index.html">Home</a> |
-            <a href="../pages/acomodacoes.html">Acomodações</a> |
-            <a href="../pages/reservas.html">Reservas</a> |
-            <a href="../pages/contatos.html">Contato</a>
-        </nav> -->
         <main>
             <section>
                 <article class="articleLogin">
                     <!-- Acesso ao login de usuários -->
-                    <form action="../index.html" method="post">
-                        <fieldset>
-                            <h1>Login</h1>
+                    <form action="./home.html" method="post">
+                        <fieldset class="fieldLogin fieldsetLogin">
+                            <h3 class="mg-form">Login</h3>
+                            <hr/>
                             <ul>
-                                <li>
+                                <li class="mg-form">
                                     <p>Email</p>
                                     <input placeholder="Insira seu usuário" type="text" id="usuarioLogin" name="usuarioLogin" maxlength="30" size="30" required />
                                 </li>
-                                <li>
+                                <li class="mg-form">
                                     <p>Senha</p>
                                     <input placeholder="Insira sua senha" type="password" id="senhaLogin" name="senhaLogin" size="30" required />
                                 </li>
-                                <input class="articleLoginButton" type="submit" value="CONFIRMAR"></input>
+                                <button class="btn btnLogin">CONFIRMAR</button>
                             </ul>
                         </fieldset>
+                        <div class="fieldLogin pd-form">
+                            <a class="colorPrimary" href="">Esqueceu sua senha?</a>
+                        </div>
                     </form>
-                    <div class="loginForgot">
-                        <a href="">Esqueceu sua senha?</a>
-                    </div>
                 </article>
             </section>
         </main>

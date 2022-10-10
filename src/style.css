@@ -1,48 +1,3 @@
-/* LOGIN */
-body.bodyLogin {
-    width: 80%;
-    margin: auto;
-    border: 1px solid #000;
-    /* font-family:  */
-}
-div.logo {
-    width: 6vw;
-    min-width: 3vw;
-    padding: 1vw;
-    margin: 0 0 0 2vw;
-}
-div.logo img {
-    width: 100%;
-}
-div.slogan {
-    width: 100%;
-    text-align: center;
-    padding: 1vw;
-    margin: 0 0 0 2vw;
-    font-size: large;
-}
-article.articleLogin {
-    width: 80%;
-    margin: 5vh auto;
-}
-article.articleLogin h1 {
-    margin-top: 5vh;
-    margin-left: 2vw;
-}
-article.articleLogin ul {
-    list-style: none;
-}
-article.articleLogin ul li input {
-    height: 3vh;;
-}
-input.articleLoginButton {
-    margin: 4vh 0;
-    height: 5vh;;
-}
-div.loginForgot {
-    padding: 2vh 0 15vh 1vw;
-}
-
 /* HOME */
 /* Import da Fonte */
 @import url('https://fonts.googleapis.com/css2?family=Quando');
@@ -117,7 +72,6 @@ p {
 }
 
 /* CLASSES */
-
 .sloganSobre{
     position: relative;
     font-size: larger;
@@ -205,5 +159,62 @@ p {
     }
     .navMenu.active{
         left: 0;
+    }
+}
+
+/* -------------------------------------------------- */
+/* LOGIN */
+/* Componentes Globais */
+input {
+    height: 4vh;
+    width: 80%;
+}
+
+
+/* CLASSES */
+.articleLogin {
+    margin: 5vh auto 0 auto;
+}
+.mg-form {
+    margin: 2vh 0 0 0;
+}
+.pd-form {
+    padding: 2vh 0 0 0;
+}
+.fieldLogin {
+    width: 80%;
+    margin: 0 auto;
+}
+.fieldsetLogin {
+    padding: 0 5vw 5vw 5vw;
+}
+.btn {
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #213242;
+    color: #FCF7EA;
+}
+.btn:hover {
+    background-color: #FCF7EA;
+    color: #213242;
+    cursor: pointer;
+}
+.btnLogin {
+    margin: 5vh 0 0 0;
+}
+.colorPrimary {
+    color: #213242;
+}
+
+@media (max-width:768px){
+    .fieldLogin {
+        margin: 0;
+    }
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+    .pd-form {
+        padding: 0.5vh 0;
     }
 }
