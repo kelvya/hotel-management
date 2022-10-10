@@ -8,37 +8,47 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="../src/style.css">
     <title>Sobre - Hotel Grand Royal</title>
   </head>
   <body>
     <header id="topo">
-      <img src="../images/logo/logo-transparente.png" alt="Logo" width="50" />
-      <h1>Grand Royal</h1>
-      <span
-        >A sofisticação e o conforto ideal. Vem ser Grand, vem ser Royal!</span
-      >
+      <div class="container">
+        <img class="logoSobre" src="../images/logo/logo-transparente.png" alt="Logo" width="50" />
+        <!-- <h1>Grand Royal</h1> -->
+        <span class="sloganSobre">A sofisticação e o conforto ideal. Vem ser Grand, vem ser Royal!</span>
+        <hr>
+      </div>
     </header>
-    <div>
-      <nav>
-        <a href="../index.html">Login</a> |
-        <a href="../pages/home.html">Home</a> |
-        <a href="../pages/sobre.html">Sobre</a> |
-        <a href="../pages/acomodacoes.html">Acomodações</a> |
-        <a href="../pages/reservas.html">Reservas</a> |
-        <a href="../pages/contatos.html">Contato</a>
+    <div class="container02">
+      <nav class="navBar">
+        <ul class="navMenu">
+          <li><a href="../index.html" class="navLink">Login</a></li>
+          <li><a href="../pages/home.html" class="navLink">Home</a></li>
+          <li><a href="../pages/sobre.html" class="navLink">Sobre</a></li>
+          <li><a href="../pages/acomodacoes.html" class="navLink">Acomodações</a></li>
+          <li><a href="../pages/reservas.html" class="navLink">Reservas</a></li>
+          <li><a href="../pages/contatos.html" class="navLink">Contato</a></li>
+        </ul>
+        <div class="hamburguer"> 
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </div>
     <hr />
     <main>
       <section id="saiba_mais">
         <article>
-          <h2>O Hotel Grand Royal</h2>
-          <table>
-            <tr>
-              <td>
+          <h2>Sobre o Nosso Hotel</h2>
+            
                 <img src="../images/reception.png" alt="Recepção" width="450" />
-              </td>
-              <td>
+              
+              
                 <h3>Palácio Grand Royal</h3>
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -49,9 +59,8 @@
                   recusandae molestiae, repudiandae repellendus deleniti nisi,
                   ut enim consequatur provident.
                 </p>
-              </td>
-            </tr>
-          </table>
+              
+            
         </article>
         <article id="nossa_historia">
           <h2>Nossa História</h2>
@@ -215,5 +224,14 @@
         </tr>
       </table>
     </footer>
+    <script>
+      const hamburguer = document.querySelector(".hamburguer");
+      const navMenu = document.querySelector(".navMenu");
+
+      hamburguer.addEventListener("click", () => {
+        hamburguer.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      })
+    </script> 
   </body>
 </html>
