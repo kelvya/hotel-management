@@ -7,7 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grand Royal - Reserva</title>
 </head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
 
+    ul{
+        list-style: none;
+        display: flex;
+    }
+    
+    ul li{
+        padding-right: 0.5rem;
+    }
+
+
+</style>
 <body>
     <header>
         <img src="../images/logo/logo-transparente.png" alt="Logo" width="50" />
@@ -25,33 +40,20 @@
         <section>
            <form id="form" action="" method="post" autocomplete="on">
            <fieldset>
-            <h2>Faça a Sua Reserva</h2>
+            <h2>Minha Reserva</h2>
+            <p>Forneça a data de entrada, saída e quantidade de pessoas.</p>
             <ul>
                 <li>
-                    <label for="checkin">
-                        Data do checkin
-                    </label>
                     <p><input type="date" name="checkin" id="checkin"></p>
                 </li>
                 <li>
-                    <label for="checkout">
-                        Data do checkout
-                    </label>
                     <p><input type="date" name="checkout" id="checkout"></p>
                 </li>
                 <li>
-                    <label for="qtdAdultos">
-                        Quantidade de Adultos
-                    </label>
-                    <p><input type="number" name="qtdAdultos" id="qtdAdultos"></p>
-                </li>
-                <li>
-                    <label for="qtdCriancas">
-                        Quantidade de Crianças
-                    </label>
-                    <p><input type="number" name="qtdCriancas" id="qtdCriancas"></p>
+                    <p><input type="number" name="qtdPessoas" id="qtdPessoas"></p>
                 </li>
             </ul>
+            <p>Escolha o quartoEscolha o quarto</p>
            </fieldset>
 
            </form>
