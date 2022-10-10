@@ -12,6 +12,10 @@
         box-sizing: border-box;
     }
 
+    body{
+        border: 3px solid black;
+    }
+
     ul{
         list-style: none;
         display: flex;
@@ -21,6 +25,37 @@
         padding-right: 0.5rem;
     }
 
+    .roomChoice img{
+        width: 200px;
+    }
+
+    .roomChoice > div{
+        border: 2px solid black;
+        padding: 0.5em;
+        margin-bottom: 0.5em;
+        display: flex;
+    }
+
+    .roomChoice h3{
+        padding: 0;
+        margin: 0;
+    }
+    .roomChoice div p{
+        margin-top: 0;
+    }
+
+    .roomChoiceSection{
+        display: flex;
+    }
+
+    .bookingSummary{
+        margin: 0 2rem;
+        padding: 0 4em;
+        border: 2px solid black;
+    }
+    fieldset{
+        border: none;
+    }
 
 </style>
 <body>
@@ -54,10 +89,28 @@
                 </li>
             </ul>
             <p>Escolha o quartoEscolha o quarto</p>
+            <section class="roomChoiceSection">
+            <article class="roomChoice">
+                <div><img src="../images/acomodacoes/Acomodacao1.png" alt="">
+                    <div>
+                        <h3>Executive</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ab?</p></div>
+                    </div>
+                <div><img src="../images/acomodacoes/Acomodacao2.png" alt=""><div>
+                    <h3>Classic</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ab?</p></div>
+                </div></div>
+                <div><img src="../images/acomodacoes/Acomodacao3.png" alt=""><div>
+                    <h3>Premium</h3>
+                    <p>lorem120</p></div>
+                </div></div>
+            </article>
+            <article class="bookingSummary"><h2>Resumo da reserva</h2></article>
+        </section>
            </fieldset>
 
            </form>
-
+           
         </section>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eum pariatur repellat ad rerum modi consequuntur aspernatur necessitatibus magni dolorem, culpa fugit eligendi facere? Dolor eum necessitatibus officiis quaerat natus iusto, fugit eos. Saepe sint praesentium unde, blanditiis a pariatur mollitia, iusto aut possimus earum commodi. Veniam voluptatem necessitatibus impedit?</p>
         <aside>
