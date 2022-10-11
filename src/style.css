@@ -138,6 +138,38 @@ input {
     transition: all 0.3s ease-in-out;
 }
 
+/* -------------------------------------------------- */
+/* MEDIA RESPONSIVA*/
+/*Competência: Felipe e David */
+
+@media(max-width:1300px) {
+    .main-right {
+        display: none;
+    }
+
+    .main-left {
+        width: 100%;
+        padding-left: 0;
+        height: unset;
+        margin-top: 50px;
+    }
+
+    .wraper {
+        margin: 0 auto;
+        max-width: 443px;
+    }
+}
+
+@media(max-width:650px) {
+
+    .main {
+        border: 0;
+        background-color: unset;
+    }
+}
+
+
+
 @media (max-width:768px){
     .hamburguer{
         display: block;
@@ -213,7 +245,7 @@ input {
 }
 
 #menu a {
-    color: #FFF;
+    color: #E1C888;
     text-decoration: none;
 }
 
@@ -240,7 +272,7 @@ input {
 .slogan {
     font-family: quicksand;
     font-size: larger;
-    color: #FFF;
+    color: #E1C888;
     position: absolute;
     top: 4em; 
     bottom: 0;
@@ -249,6 +281,35 @@ input {
     width: 400%;
     
 
+}
+
+.olaUsuario {
+    font-family: quicksand;
+    color: #E1C888;
+    position: absolute;
+    top: 2em; 
+    bottom: 0;
+    right: 16em;
+
+}
+
+.header-sair {
+    font-family: quicksand;
+    color: #E1C888;
+    position: absolute;
+    top: 2em; 
+    bottom: 0;
+    right: 6em;
+
+}
+
+.header-cadastro {
+    font-family: quicksand;
+    color: #E1C888;
+    position: absolute;
+    top: 8em; 
+    bottom: 0;
+    right: 6em;
 }
 
 .header-background {
@@ -381,13 +442,14 @@ input {
     font-family: Quicksand;
     font-size: larger;
     color: #000;
+    width: 100%;
 
 }
 
 .home-acomodacoes-painel {
     display: flex;
-    justify-content: space-between;
-    width: 80%;
+    justify-content: space-around;
+    width: 100%;
     padding: 5%;
     font-size: 0;
     line-height: 0;
@@ -409,6 +471,39 @@ input {
 
 .home-nossos-servicos {
     border: #000 1px;
+}
+
+.home-sobre {
+    width: 100%;
+    right: 0;
+    left: 0;
+    justify-content: space-around;
+    display: flex;
+
+}
+
+.home-sobre-img {
+    width: 62%;
+}
+
+.home-fit-img {
+    width: 95%;
+    border-radius: 2%;
+}
+
+.home-sobre-txt {
+    width: 40%;
+}
+
+.home-large-img {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-newsletter {
+    width: 50%;
 }
 
 /* -------------------------------------------------- */
