@@ -337,6 +337,7 @@ input {
     margin: 0 auto;
 }
 .fieldsetLogin {
+    border:1px solid #213242;
     padding: 0 5vw 5vw 5vw;
 }
 .btn {
