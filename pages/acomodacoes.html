@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Atualizar título da aba conforme página atual -->
-        <title>Grand Royal</title>
+        <link rel="stylesheet" type="text/css" href="../src/style.css" />
+        <title>Grand Royal - Acomodações</title>
     </head>
     <style>
         p{
@@ -16,19 +16,14 @@
         }
     </style>
     <body>
-        <header>
-            <img src="../images/logo/logo-transparente.png" alt="Logo" width="50" />
-            <h1>Grand Royal</h1>
-        </header>
-        <nav>
-            <a href="../index.html">Login</a> |
-            <a href="../pages/home.html">Home</a> |
-            <a href="../pages/sobre.html">Sobre</a> |
-            <a href="../pages/acomodacoes.html">Acomodações</a> |
-            <a href="../pages/reservas.html">Reservas</a> |
-            <a href="../pages/contatos.html">Contato</a>
-        </nav>
-        <main>
+        <div style="background-color:#213242; position: fixed; width: 100%;">
+            <object width="100%" height="160vh" data="../components/header.html"></object>
+            <hr>
+            <nav>
+                <object width="100%" height="60vh" data="../components/navbar_up.html"></object>
+            </nav>
+        </div>   
+        <main style="padding-top: 30vh;">
             <section>
                 <h2>Nossas acomodações</h2>
                 <article>
@@ -49,14 +44,24 @@
                     <p>ipsum dolor sit amet consectetur adipisicing elit. Numquam aliquam ipsam voluptatem! Iste fuga quae voluptatibus, ipsa incidunt assumenda quo repudiandae aperiam nisi exercitationem quibusdam quos velit, voluptatem soluta id rem numquam provident corporis aliquid non sequi odio quasi tenetur. Est perferendis quis quod delectus, sequi repudiandae? Optio, quidem unde!</p>
                     <img src="../images/acomodacoes/Acomodacao3.png" alt="Foto quarto Standard" title="Quarto Standard - Grand Royal Hotel">
                 </article>
+
+                <div>
+                    <h3>Ofertas exclusivas da nossa rede de hotelaria:</h3>
+                    <p>Espaço reservado para ofertas</p>
+                </div>
+
+                <hr />
+
+                <h3>Final de semana é no Grand Royal Hotel</h3>
+                <p>ipsum dolor sit amet consectetur adipisicing elit. Numquam aliquam ipsam voluptatem! Iste fuga quae voluptatibus, ipsa incidunt assumenda quo repudiandae aperiam nisi exercitationem quibusdam quos velit, voluptatem soluta id rem numquam provident corporis aliquid non sequi odio quasi tenetur. Est perferendis quis quod delectus, sequi repudiandae? Optio, quidem unde!</p>
+                <img src="../images/promocoes/PromoFimDeSemana.jpg" alt="PromocaoFimDeSemana" title="FimDeSemana">
+
+                <hr />
             </section>
             <aside>
                 <p>Espaço reservado para propagandas.</p>
             </aside>
         </main>
-        <footer>
-            <img src="../images/logo/logo-transparente.png" alt="Logo" width="50" />
-            <span>&copy;2022 - Todos os direitos reservados.</span>
-        </footer>
+        <object class="footer-padrao" data="../components/footer.html"></object>
     </body>
 </html>
