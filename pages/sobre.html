@@ -8,16 +8,32 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="../src/style.css">
-    <title>Sobre - Hotel Grand Royal</title>
+    <link rel="stylesheet" href="../src/style.css" />
+    <title>Grand Royal - Sobre</title>
   </head>
   <body>
+
+    <div style="background-color:#213242; position: fixed; width: 100%;">
+      <object width="100%" height="160vh" data="../components/header.html"></object>
+      <hr>
+      <nav>
+          <object width="100%" height="60vh" data="../components/navbar_up.html"></object>
+      </nav>
+  </div>   
+    <!--
     <header id="topo">
       <div class="container">
-        <img class="logoSobre" src="../images/logo/logo-transparente.png" alt="Logo" width="50" />
-        <!-- <h1>Grand Royal</h1> -->
-        <span class="sloganSobre">A sofisticação e o conforto ideal. Vem ser Grand, vem ser Royal!</span>
-        <hr>
+        <img
+          class="logoSobre"
+          src="../images/logo/logo-transparente.png"
+          alt="Logo"
+          width="50"
+        />
+
+        <span class="sloganSobre"
+          >A sofisticação e o conforto ideal. Vem ser Grand, vem ser Royal!
+        </span>
+        <hr />
       </div>
     </header>
     <div class="container02">
@@ -26,11 +42,14 @@
           <li><a href="../index.html" class="navLink">Login</a></li>
           <li><a href="../pages/home.html" class="navLink">Home</a></li>
           <li><a href="../pages/sobre.html" class="navLink">Sobre</a></li>
-          <li><a href="../pages/acomodacoes.html" class="navLink">Acomodações</a></li>
+          <li>
+            <a href="../pages/acomodacoes.html" class="navLink">Acomodações</a>
+          </li>
           <li><a href="../pages/reservas.html" class="navLink">Reservas</a></li>
           <li><a href="../pages/contatos.html" class="navLink">Contato</a></li>
         </ul>
-        <div class="hamburguer"> 
+        
+        <div class="hamburguer">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
@@ -38,29 +57,31 @@
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
+        
+        
       </nav>
     </div>
-    <hr />
-    <main>
+    -->
+
+
+   
+    <main style="padding-top: 30vh;">
       <section id="saiba_mais">
         <article>
           <h2>Sobre o Nosso Hotel</h2>
-            
-                <img src="../images/reception.png" alt="Recepção" width="450" />
-              
-              
-                <h3>Palácio Grand Royal</h3>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Obcaecati, repudiandae rem! Facere, ducimus voluptatum? Facere
-                  id quos nulla, eligendi dolorem minus nam porro expedita modi
-                  officiis numquam iusto repudiandae praesentium ipsa alias
-                  commodi? Inventore ipsum natus laboriosam id, earum eum
-                  recusandae molestiae, repudiandae repellendus deleniti nisi,
-                  ut enim consequatur provident.
-                </p>
-              
-            
+          <hr />
+          <br><br>
+          <img src="../images/reception.png" alt="Recepção" width="450" />
+
+          <h3>Palácio Grand Royal</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+            repudiandae rem! Facere, ducimus voluptatum? Facere id quos nulla,
+            eligendi dolorem minus nam porro expedita modi officiis numquam
+            iusto repudiandae praesentium ipsa alias commodi? Inventore ipsum
+            natus laboriosam id, earum eum recusandae molestiae, repudiandae
+            repellendus deleniti nisi, ut enim consequatur provident.
+          </p>
         </article>
         <article id="nossa_historia">
           <h2>Nossa História</h2>
@@ -149,81 +170,8 @@
         </article>
       </section>
     </main>
-    <footer>
-      <hr />
-      <table width="100%">
-        <tr>
-          <td width="33%">
-            <p>hotelroyal@email.com</p>
-            <p>+55 11 XXXX-XXXX</p>
-            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
-          </td>
-          <td width="33%">
-            <form action="" method="post"></form>
-            <fieldset>
-              <legend>Precisa de Ajuda? Deixe sua mensagem.</legend>
-              <ul>
-                <li>
-                  <label for="nome_mensagem">Nome:</label>
-                  <input
-                    type="text"
-                    name="nome_mensagem"
-                    id="nome_mensagem"
-                    placeholder="Digite seu nome completo"
-                    required
-                  />
-                </li>
-                <li>
-                  <label for="email_mensagem">E-mail:</label>
-                  <input
-                    type="email"
-                    name="email_mensagem"
-                    id="email_mensagem"
-                    placeholder="seu.email@example.com"
-                    required
-                  />
-                </li>
-                <li>
-                  <label for="telefone_mensagem">Telefone:</label>
-                  <input
-                    type="tel"
-                    name="telefone_mensagem"
-                    id="telefone_mensagem"
-                    placeholder="Telefone para contato"
-                    required
-                  />
-                </li>
-                <li>
-                  <button>Enviar</button>
-                </li>
-              </ul>
-            </fieldset>
-          </td>
-          <td width="33%">
-            <p>Rua Trindade, 234, São Paulo, Centro</p>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2">
-            <img
-              src="../images/logo/logo-transparente.png"
-              alt="Logo"
-              width="50"
-            />
-            <p>&copy;2022 - Todos os direitos reservados.</p>
-            <br />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="#topo">Voltar para o topo da página</a>
-          </td>
-        </tr>
-      </table>
-    </footer>
+    <object class="footer-padrao" data="../components/footer.html"></object>
+    <!--
     <script>
       const hamburguer = document.querySelector(".hamburguer");
       const navMenu = document.querySelector(".navMenu");
@@ -231,7 +179,8 @@
       hamburguer.addEventListener("click", () => {
         hamburguer.classList.toggle("active");
         navMenu.classList.toggle("active");
-      })
-    </script> 
+      });
+    </script>
+    -->
   </body>
 </html>

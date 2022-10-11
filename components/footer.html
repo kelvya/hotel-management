@@ -2,12 +2,99 @@
 <html lang="pt-br">
 <head>
      <meta charset="utf-8">
-     <link rel="stylesheet" href="../components/styles.css">
+     <link rel="stylesheet" type="text/css" href="../src/style.css" />
 </head>
 <body>
-    <footer>
-        <img src="../images/logo/logo-transparente.png" alt="Logo" width="80" />
-        <span>&copy;2022 - Todos os direitos reservados.</span>
+    <footer class="footerColor">
+        <hr />
+        <table width="100%">
+            <tr>
+            <div>
+                <td width="50%">
+                <p class="footerText">Rua Trindade, 234, São Paulo, Centro</p>
+                <p class="footerText">hotelroyal@email.com</p>
+                <p class="footerText">+55 11 XXXX-XXXX</p>
+                <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
+                </td>
+            </div>
+            <div>
+                <td width="50%">
+                <form action="" method="post"></form>
+                <fieldset class="footerFieldset">
+                    <legend class="footerText">Precisa de Ajuda? Deixe sua mensagem.</legend>
+                    <ul>
+                    <li class="footerInput">
+                        <label class="footerText" for="nome_mensagem">Nome:</label>
+                        <input
+                        type="text"
+                        name="nome_mensagem"
+                        id="nome_mensagem"
+                        placeholder="Digite seu nome completo"
+                        required
+                        />
+                    </li>
+                    <li class="footerInput">
+                        <label class="footerText" for="email_mensagem">E-mail:</label>
+                        <input
+                        type="email"
+                        name="email_mensagem"
+                        id="email_mensagem"
+                        placeholder="seu.email@example.com"
+                        required
+                        />
+                    </li>
+                    <li class="footerInput">
+                        <label class="footerText" for="telefone_mensagem">Telefone:</label>
+                        <input
+                        type="tel"
+                        name="telefone_mensagem"
+                        id="telefone_mensagem"
+                        placeholder="Telefone para contato"
+                        required
+                        />
+                    </li>
+                    <div>
+                    <li class="footerInput">
+                        <label class="footerText" for="texto_mensagem">Sua Mensagem:</label>
+                        <input type="text" name="texto_mensagem" id="texto_mensagem">
+                    </li>
+                    </div>
+                    <li>
+                        <button class="footerBtn">Enviar</button>
+                    </li>
+                    </ul>
+                </fieldset>
+                </td>
+            </div>
+            <div>
+                <td width="33%">
+                
+                </td>
+            </div>
+            </tr>
+            <div>
+            <tr>
+                <img class="footerImg"
+                src="../images/logo/logo-transparente.png"
+                alt="Logo"
+                width="50"
+            />
+                <td colspan="2">
+                
+                <p class="footer-p">&copy;2022 - Todos os direitos reservados.</p>
+                <br />
+                </td>
+            </tr>
+            </div>
+            <tr>
+            <td>
+                <a class="footer-voltaTopo" href="#topo">Voltar para o topo da página</a>
+            </td>
+            </tr>
+        </table>
     </footer>
 </body>
 </html>
