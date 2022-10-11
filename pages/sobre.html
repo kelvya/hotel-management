@@ -155,14 +155,15 @@
         </article>
       </section>
     </main>
-    <footer>
+    <footer class="footerColor">
       <hr />
       <table width="100%">
         <tr>
           <div>
-            <td width="33%">
-              <p>hotelroyal@email.com</p>
-              <p>+55 11 XXXX-XXXX</p>
+            <td width="50%">
+              <p class="footerText">Rua Trindade, 234, São Paulo, Centro</p>
+              <p class="footerText">hotelroyal@email.com</p>
+              <p class="footerText">+55 11 XXXX-XXXX</p>
               <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
               <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
               <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
@@ -170,13 +171,13 @@
             </td>
           </div>
           <div>
-            <td width="33%">
+            <td width="50%">
               <form action="" method="post"></form>
               <fieldset class="footerFieldset">
-                <legend>Precisa de Ajuda? Deixe sua mensagem.</legend>
+                <legend class="footerText">Precisa de Ajuda? Deixe sua mensagem.</legend>
                 <ul>
                   <li class="footerInput">
-                    <label for="nome_mensagem">Nome:</label>
+                    <label class="footerText" for="nome_mensagem">Nome:</label>
                     <input
                       type="text"
                       name="nome_mensagem"
@@ -186,7 +187,7 @@
                     />
                   </li>
                   <li class="footerInput">
-                    <label for="email_mensagem">E-mail:</label>
+                    <label class="footerText" for="email_mensagem">E-mail:</label>
                     <input
                       type="email"
                       name="email_mensagem"
@@ -196,7 +197,7 @@
                     />
                   </li>
                   <li class="footerInput">
-                    <label for="telefone_mensagem">Telefone:</label>
+                    <label class="footerText" for="telefone_mensagem">Telefone:</label>
                     <input
                       type="tel"
                       name="telefone_mensagem"
@@ -207,12 +208,12 @@
                   </li>
                   <div>
                   <li class="footerInput">
-                    <label for="texto_mensagem">Sua Mensagem:</label>
-                    <textarea name="texto_mensagem" id="texto_mensagem" cols="30" rows="4"></textarea>
+                    <label class="footerText" for="texto_mensagem">Sua Mensagem:</label>
+                    <input type="text" name="texto_mensagem" id="texto_mensagem">
                   </li>
                   </div>
                   <li>
-                    <button class="btn">Enviar</button>
+                    <button class="footerBtn">Enviar</button>
                   </li>
                 </ul>
               </fieldset>
@@ -220,18 +221,19 @@
           </div>
           <div>
             <td width="33%">
-              <p>Rua Trindade, 234, São Paulo, Centro</p>
+              
             </td>
           </div>
         </tr>
         <div>
           <tr>
+            <img class="footerImg"
+            src="../images/logo/logo-transparente.png"
+            alt="Logo"
+            width="50"
+          />
             <td colspan="2">
-              <img
-                src="../images/logo/logo-transparente.png"
-                alt="Logo"
-                width="50"
-              />
+              
               <p>&copy;2022 - Todos os direitos reservados.</p>
               <br />
             </td>
