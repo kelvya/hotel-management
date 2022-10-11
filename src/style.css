@@ -295,6 +295,7 @@ input {
 
 .header-sair {
     font-family: quicksand;
+    font-style: oblique;
     color: #E1C888;
     position: absolute;
     top: 2em; 
