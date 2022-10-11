@@ -3,54 +3,50 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" type="text/css" href="../src/style.css" />      
         <title>Grand Royal - Contato</title>
     </head>
     <body>
-        <header>
-            <img src="../images/logo/logo-transparente.png" alt="Logo" width="50" />
-            <h1>Grand Royal</h1>
-        </header>
+      <div style="background-color:#213242; position: fixed; width: 100%;">
+        <object width="100%" height="160vh" data="../components/header.html"></object>
+        <hr>
         <nav>
-            <a href="../index.html">Login</a> |
-            <a href="../pages/home.html">Home</a> |
-            <a href="../pages/sobre.html">Sobre</a> |
-            <a href="../pages/acomodacoes.html">Acomodações</a> |
-            <a href="../pages/reservas.html">Reservas</a> |
-            <a href="../pages/contatos.html">Contato</a>
+            <object width="100%" height="60vh" data="../components/navbar_up.html"></object>
         </nav>
-        <main>
-            <section>
+    </div>   
+        <main class="contato-responsivo">
+            <section class="contato-estiloForm">
                 <article>
                   <h2>Entre em contato conosco</h2>
 
                   <form action="">
                     <fieldset>
-                      <legend>Preencha todos os dados</legend>
+                      <legend class="contato-legenda">&nbsp Preencha todos os dados &nbsp</legend>
         
                       <ul>
-                        <li>
+                        <li class="contato-li">
                           <label for="nome">Nome:</label><br />
                           <input type="text" name="nome" id="nome" size="30" autofocus />
                         </li>
                       </ul>
         
                       <ul>
-                        <li>
+                        <li class="contato-li">
                           <label for="email">E-mail:</label><br />
                           <input type="text" name="email" id="email" size="30"/>
                         </li>
                       </ul>
         
                       <ul>
-                        <li>
+                        <li class="contato-li">
                           <label for="telefone">Telefone:</label><br />
                           <input type="text" name="telefone" id="telefone" size="30"/>
                         </li>
                       </ul>
         
                       <ul>
-                        <li>
+                        <li class="contato-li">
                           <label for="assuntos">Escolha o assunto que deseja falar:</label><br />
                           <select name="assuntos_opt" id="assuntos_opt">
                             <option value="null_opc">          </option>
@@ -62,15 +58,17 @@
                       </ul>
         
                       <ul>
-                        <li>
+                        <li class="contato-li">
                           <label for="nome">Digite sua mensagem:</label><br />
                           <textarea name="textArea" id="textArea" cols="60" rows="10"></textarea>
                         </li>
                       </ul>
-                
-                      <ul>
-                        <button type="submit">Enviar</button>
-                      </ul>
+                      <div class="contato-div-button">
+                        <ul >
+                          <button class="contato-button" type="submit">Enviar</button>
+                        </ul>
+                      </div>
+                      
                     </fieldset>
                   </form>
 
@@ -80,9 +78,7 @@
                 
             </aside>
         </main>
-        <footer>
-            <img src="../images/logo/logo-transparente.png" alt="Logo" width="50" />
-            <span>&copy;2022 - Todos os direitos reservados.</span>
-        </footer>
+      <object class="footer-padrao" data="../components/footer.html"></object>  
     </body>
+    
 </html>
