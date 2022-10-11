@@ -420,6 +420,158 @@ input {
 /* Competência: Fernando*/
 /* Classes Específicas- Reservas */
 
+ /* ESTILO RESERVA */
+    
+ .myReservation h2 + p{
+    margin-left: 0.5em;
+}
+
+.myReservation ul + p{
+    margin-left: 0.5em;
+}
+
+.bookingInformation {
+    margin-left: 1em;
+    list-style: none;
+    display: flex;
+}
+
+.bookingInformation li {
+    width: 230px;
+    padding-right: 3px;
+}
+
+.bookingInformation li p{
+    width: 240px;
+}
+
+fieldset {
+    border: none;
+}
+
+/* ESCOLHA DE QUARTOS */
+.roomChoice img {
+    width: 200px;
+    max-height: 125px;
+    margin-right: 0.5em;
+}
+
+.roomChoice>div {
+    padding: 0.5em;
+    padding-right: 2em;
+    margin-bottom: 0.5em;
+    max-height: 300px;
+    display: flex;
+}
+
+.roomChoice h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.roomChoice div p {
+    margin-top: 0;
+    font-size: 0.8em;
+    min-width: 247px;
+    text-align: justify;
+}
+
+.roomChoiceSection {
+    display: flex;
+}
+
+.price {
+    padding: 0;
+    padding-top: 0.5em;
+    font-weight: 700;
+}
+
+/* RESUMO DE RESERVA */
+.bookingSummary {
+    display: inline-block;
+    width: 60%;
+    height: 400px;
+    margin: 0 2rem;
+    padding: 0 2em;
+    border: 2px solid black;
+    min-width: 323.45px;
+}
+
+.bookingSummary ul {
+    padding-left: 0.5em;
+    border: 3px solid black;
+    display: block;
+}
+
+.bookingSummary ul li {
+    padding: 0.5em 0;
+}
+
+.bookingSummary span a {
+    color: black;
+    text-decoration: 5px solid underline;
+}
+
+.bookingSummary span {
+    display: inline-block;
+    min-width: 224px;
+}
+
+.bookingSummaryContainer{
+    margin-left: 3em;
+}
+
+
+/* ESTILO BOTÃO RADIO */
+
+.radioRoomChoice {
+    width: 1em;
+    padding: 0;
+    margin-left: 1em;
+    accent-color: black;
+}
+
+.radioRoomChoice+label {
+    font-size: 0.8rem;
+    margin-top: 0.9em;
+    padding-left: 0.5em;
+
+}
+
+.radioContainer {
+    display: flex;
+}
+
+/* ESTILO DO BOTÃO */
+
+.buttonP{
+    margin-top: 0.5em;
+    margin-left: 7.5em;
+}
+
+.bookingSummary button {
+        background-image: linear-gradient(to right, #E1C888 0%, #e3c25f  51%, #e6ae60  100%);
+        padding: 0.3em;
+        margin-top: 2em;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: rgb(89, 87, 87);            
+        border-radius: 20%;
+        display: block;
+      }
+
+      .bookingSummary button:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #000;
+        text-decoration: none;
+      }
+     
+
+.footerPRserva {
+    margin-top: 20px;
+}
 
 
 /* -------------------------------------------------- */
