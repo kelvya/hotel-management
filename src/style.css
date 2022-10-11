@@ -422,7 +422,123 @@ input {
 /* Competência: Kelvya, Ana e Fernando*/
 /* Classes Específicas- Acomodações */
 
+.acomodacoes-saudacaoUsuario {
+    height: 10%;
+    margin: 1% 5% 1%;
+    padding: 2%;
+    text-align: right;
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
 
+.acomodacoes-header {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 20% 70%;
+    align-items: center;
+}
+
+.acomodacoes-logomarca {
+    width: 100%;
+    vertical-align: middle;
+
+}
+
+.acomodacoes-slogan {
+    display: inline;
+    font-size: 1em;
+    font-weight: normal;
+    color: #E1C888;
+}
+
+.acomodacoes-menuNavegacao{
+    width: 100%;
+    height: 10%;
+}
+
+.acomodacoes-menuNavegacao a{
+    color: #E1C888;
+    font-size: 0.7em;
+    border: 1px solid #3C5A74;
+    border-radius: 5%;
+    padding: 1%;
+    margin: 0;
+    background-color: #213242;
+}
+
+.acomodacoes-menuNavegacao a:hover{
+    background-color: #3C5A74;
+    border: 1px solid #3C5A74;
+    border-radius: 5%;
+
+}
+
+#acomodacoes-usuario, #acomodacoes-sair, #acomodacoes-cadastro{
+    padding-right: 3%;
+    color: #E1C888;
+    text-align: right;
+    font-size: 100%;
+}
+
+.acomodacoes-nossasAcomodacoes{
+    font-size: 1.5em;
+    color: #3C5A74;
+}
+
+main {
+    padding: 1% !important;
+    margin: 1% !important;
+}
+.acomodacoes-quartosPresidenciais,
+.acomodacoes-quartosLuxo,
+.acomodacoes-quartosStandart {
+    margin: auto;
+
+}
+
+.acomodacoes-quartosPresidenciais img,
+.acomodacoes-quartosLuxo img,
+.acomodacoes-quartosStandart img {
+    width: 30%;
+    margin: auto;
+    padding: 0.5%;
+    border-radius: 10%;
+    filter: opacity(.5);
+}
+
+.acomodacoes-quartosPresidenciais img:hover, .acomodacoes-quartosLuxo img:hover, .acomodacoes-quartosStandart img:hover{
+    filter: none;
+    transform: translateY(-12%);
+    transition: 0.4s ease-out;
+}
+
+.acomodacoes-produtoEmDestaque{
+    margin: 3% 0 2% 0;
+    padding: 2%;
+    font-size: 23px;
+    color: #3C5A74;
+}
+
+.acomodacoes-containerProdutosEmDestaque {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.acomodacoes-paragrafoProdutosEmDestaque {
+    width: 100%;
+    margin: 0 0 0 2%;
+    padding: 2%;
+    font-size: 16px;
+    justify-content: left;
+    color: #517490;
+}
+
+.acomodacoes-containerProdutosEmDestaque video{
+    width: 100%;
+    padding: 2%;
+    border-radius: 12%;
+
+}
 
 /* -------------------------------------------------- */
 /* RESERVAS */
