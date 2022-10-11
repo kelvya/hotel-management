@@ -138,6 +138,34 @@ input {
     transition: all 0.3s ease-in-out;
 }
 
+@media(max-width:1300px) {
+    .main-right {
+        display: none;
+    }
+
+    .main-left {
+        width: 100%;
+        padding-left: 0;
+        height: unset;
+        margin-top: 50px;
+    }
+
+    .wraper {
+        margin: 0 auto;
+        max-width: 443px;
+    }
+}
+
+@media(max-width:650px) {
+
+    .main {
+        border: 0;
+        background-color: unset;
+    }
+}
+
+
+
 @media (max-width:768px){
     .hamburguer{
         display: block;
@@ -248,6 +276,26 @@ input {
     right: 0;
     width: 400%;
     
+
+}
+
+.olaUsuario {
+    font-family: quicksand;
+    color: #FFF;
+    position: absolute;
+    top: 2em; 
+    bottom: 0;
+    right: 16em;
+
+}
+
+.header-sair {
+    font-family: quicksand;
+    color: #FFF;
+    position: absolute;
+    top: 2em; 
+    bottom: 0;
+    right: 6em;
 
 }
 
