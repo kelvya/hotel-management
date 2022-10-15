@@ -44,17 +44,9 @@ a{
 }
 
 main{
-    padding-top: 30vh;
-    padding: 10em;
+    padding: 30vh 10em 10em 10em;
     bottom: 0;
 }
-
-/*h1 {
-    color: #fff;
-    font-size: 30px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.767);
-    padding-bottom: 5px;
-}*/
 
 h2{
   color: rgb(0, 0, 0);
@@ -139,70 +131,6 @@ input {
 }
 
 /* -------------------------------------------------- */
-/* MEDIA RESPONSIVA*/
-/*Competência: Felipe e David */
-
-@media(max-width:1300px) {
-    .main-right {
-        display: none;
-    }
-
-    .main-left {
-        width: 100%;
-        padding-left: 0;
-        height: unset;
-        margin-top: 50px;
-    }
-
-    .wraper {
-        margin: 0 auto;
-        max-width: 443px;
-    }
-}
-
-@media(max-width:650px) {
-
-    .main {
-        border: 0;
-        background-color: unset;
-    }
-}
-
-
-
-@media (max-width:768px){
-    .hamburguer{
-        display: block;
-    }
-    .hamburguer.active .bar:nth-child(2){
-        opacity: 0;
-    }
-    .hamburguer.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamburguer.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    .navMenu{
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        border-radius: 0 0 20px 20px;
-        background-color: #213242;
-        flex-direction: column;
-        width: 100%;
-        transition: 0.3s;
-    }
-    .navItem{
-        margin: 16px 8;
-    }
-    .navMenu.active{
-        left: 0;
-    }
-}
-
-/* -------------------------------------------------- */
 /* COMPONENTES GLOBAIS (HEADER, FOOTER E NAVBAR*/
 /*Competência: Felipe, Diego, David e Andrey*/
 /* Componentes Globais */
@@ -275,12 +203,8 @@ input {
     color: #E1C888;
     position: absolute;
     top: 4em; 
-    bottom: 0;
-    left: 20em;
-    right: 0;
+    left: 30vw;
     width: 400%;
-    
-
 }
 
 .olaUsuario {
@@ -299,8 +223,7 @@ input {
     color: #E1C888;
     position: absolute;
     top: 2em; 
-    bottom: 0;
-    right: 6em;
+    right: 6vw;
 
 }
 
@@ -309,8 +232,7 @@ input {
     color: #E1C888;
     position: absolute;
     top: 8em; 
-    bottom: 0;
-    right: 6em;
+    right: 6vw;
 }
 
 .header-background {
@@ -335,7 +257,6 @@ input {
 .footerFieldset {
     border: 1px dashed #517490;
     text-align: left;
-
     padding: 0 10px;
 }
 .footerFieldset div li {
@@ -420,19 +341,6 @@ input {
 .colorPrimary {
     color: #213242;
 }
-
-@media (max-width:768px){
-    .fieldLogin {
-        margin: 0;
-    }
-    .btn {
-        padding: 0.5rem 1rem;
-    }
-    .pd-form {
-        padding: 0.5vh 0;
-    }
-}
-
 
 /* -------------------------------------------------- */
 /* HOME */
@@ -679,8 +587,7 @@ fieldset {
 }
 
 .roomChoice>div {
-    padding: 0.5em;
-    padding-right: 2em;
+    padding: 0.5em 2em 0.5em 0.5em;
     margin-bottom: 0.5em;
     max-height: 300px;
     display: flex;
@@ -703,8 +610,7 @@ fieldset {
 }
 
 .price {
-    padding: 0;
-    padding-top: 0.5em;
+    padding: 0.5em 0 0 0;
     font-weight: 700;
 }
 
@@ -841,4 +747,107 @@ fieldset {
 .contato-div-button {
     margin-left: auto;
     margin-right: auto;
+}
+
+/* -------------------------------------------------- */
+/* MEDIA RESPONSIVA*/
+/*Competência: Felipe, David e Andrey */
+
+@media(max-width:1300px) {
+    .main-right {
+        display: none;
+    }
+    .main-left {
+        width: 100%;
+        padding-left: 0;
+        height: unset;
+        margin-top: 50px;
+    }
+    .wraper {
+        margin: 0 auto;
+        max-width: 443px;
+    }
+    .slogan {
+        left: 25vw;
+    }
+}
+
+@media (max-width:768px){
+    .hamburguer{
+        display: block;
+    }
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navMenu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #213242;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+    .logo {
+        position: absolute;
+        top: 1.5em;
+        width: 110px;
+    }
+    .slogan {
+        top:5em;
+        left: 20vw;
+        font-size: medium;
+    }
+    .navItem{
+        margin: 16px 8;
+    }
+    .navMenu.active{
+        left: 0;
+    }
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+    .pd-form {
+        padding: 0.5vh 0;
+    }
+}
+
+@media(max-width:650px) {
+    .main {
+        border: 0;
+        background-color: unset;
+    }
+    .slogan {
+        top:4em;
+        left: 30vw;
+        width: 270px;
+    }
+    .olaUsuario {
+        right: 12.7em;
+    }
+}
+
+/* Smartphones - Retrato */
+@media (max-width: 415px) {
+    .slogan {
+        display: none;
+    }
+    .header-cadastro {
+        display: none;
+    }
+    .olaUsuario {
+        right: 6vw;
+    }
+    .header-sair {
+        top: 4em;
+    }
+
 }
