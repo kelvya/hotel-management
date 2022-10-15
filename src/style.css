@@ -10,14 +10,12 @@
     box-sizing: border-box;
     font-family: 'Quando';
 }
-
 html {
     background-image: linear-gradient(109.6deg, #FCF7EA 11.2%, #E1C888 91.2%);
     background-attachment: fixed;
     height: 100%;
     width: 100%;
 }
-
 body {
     color: black;
     overflow: auto;
@@ -29,7 +27,6 @@ body {
     bottom: 0;
 
 }
-
 header{
     background-color: #213242;
     
@@ -37,34 +34,30 @@ header{
 li{
     list-style: none;
 }
-
 a{
     color: #fff;
     text-decoration: none;
 }
-
 main{
     padding: 30vh 10em 10em 10em;
-    bottom: 0;
-}
+    min-height: 100vh;
+    /* bottom: 0; */
 
+}
 h2{
   color: rgb(0, 0, 0);
     font-size: 25px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.767);
     padding: 30px 0;  
 }
-
 h3{
     padding: 30px 0;
 }
-
 p {
     color: rgb(0, 0, 0);
     padding-bottom: 1em;
     font-size: 20px;
 }
-
 input {
     height: 4vh;
     width: 80%;
@@ -79,11 +72,9 @@ input {
     float: right;
     color: #fff;
 }
-
 .container02{
     background-color: #213242;
 }
-
 .navBar{
     min-height: 70px;
     display: flex;
@@ -91,13 +82,11 @@ input {
     justify-content: space-between;
     padding: 0 34px;
 }
-
 .logoSobre{
     width: 21em;
     padding: 10px;
     font-size: 50%; 
 }
-
 .navMenu{
     font-family:  Quicksand;
     font-size: x-large;
@@ -106,20 +95,16 @@ input {
     align-items: center;
     gap: 70px;
 }
-
 .navLink{
     transition: 0.5s ease;
 }
-
 .navLink:hover{
     color: #E3A92C;
 }
-
 .hamburguer{
     display: none;
     cursor: pointer;
 }
-
 .bar{
     display: block;
     width: 28px;
@@ -135,7 +120,7 @@ input {
 /*Competência: Felipe, Diego, David e Andrey*/
 /* Componentes Globais */
 
-#menu {
+.menu {
     float: left;
     height: 100%;
     margin: none;
@@ -143,12 +128,10 @@ input {
     background: #213242;
     position: fixed;
 }
-
-#menu li:hover {
+.menu li:hover {
     background:#3C5A74;
 }
-
-#menu ul {
+.menu ul {
     text-align: center;
     float: left;
     margin: none;
@@ -158,8 +141,7 @@ input {
     padding: 0px;
     margin:0px;
 }
-
-#menu li {
+.menu li {
     display: inline-block;
     padding: none;
     margin: none;
@@ -168,35 +150,30 @@ input {
     text-align:center;
     vertical-align:middle;
     width:150px;
-    /*
-    border-right:1px solid #FFF;*/
 }
-
-#menu a {
+.menu a {
     color: #E1C888;
     text-decoration: none;
-}
-
-     
-#menu li a, #menu li span {
+}   
+.menu li a, .menu li span {
     display: inline-block;
-    padding: 0em 1.5em;
+    padding: 0em 1.5vw;
     text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
     line-height: 60px;
 }
-
 .menu-superior {
     width: 100%;
     height: 100%;
 }
-
 .menu-inferior {
     width: 100%;
     height: 100%;
 }
-     
+.hb {
+    display: none;
+}     
 .slogan {
     font-family: quicksand;
     font-size: larger;
@@ -206,7 +183,6 @@ input {
     left: 30vw;
     width: 400%;
 }
-
 .olaUsuario {
     font-family: quicksand;
     color: #E1C888;
@@ -216,7 +192,11 @@ input {
     right: 16em;
 
 }
-
+.header-main {
+    background-color:#213242; 
+    position: fixed; 
+    width: 100%;
+}
 .header-sair {
     font-family: quicksand;
     font-style: oblique;
@@ -226,7 +206,6 @@ input {
     right: 6vw;
 
 }
-
 .header-cadastro {
     font-family: quicksand;
     color: #E1C888;
@@ -234,18 +213,15 @@ input {
     top: 8em; 
     right: 6vw;
 }
-
 .header-background {
     background-color: #213242;
     position: fixed;
 }
-
 .footer-padrao {
     width: 100%;
     height: 100%;
     bottom: 0;
 }
-
 .footerInput {
     width: 90%;
     padding: 2%;
@@ -257,7 +233,8 @@ input {
 .footerFieldset {
     border: 1px dashed #517490;
     text-align: left;
-    padding: 0 10px;
+    margin:2em;
+    padding: 0.5em 10px;
 }
 .footerFieldset div li {
     width: 90%;
@@ -271,11 +248,11 @@ input {
     background-color: #213242;
     padding: 2em;
 }
-
 .footer-p {
     color: #E1C888;
 }
 .footerText {
+    font-size: 1.5vw;
     color: #fff;
 }
 .footerBtn {
@@ -291,12 +268,13 @@ input {
     color: #213242;
     cursor: pointer;
 }
-
-
 .footerImg {
     width: 21em;
     padding: 10px;
     font-size: 50%; 
+}
+.footer-4spc {
+    padding-left: 2vw;
 }
 .footer-voltaTopo {
     color: #517490;
@@ -753,7 +731,7 @@ fieldset {
 /* MEDIA RESPONSIVA*/
 /*Competência: Felipe, David e Andrey */
 
-@media(max-width:1300px) {
+@media(max-width:916px) {
     .main-right {
         display: none;
     }
@@ -770,10 +748,19 @@ fieldset {
     .slogan {
         left: 25vw;
     }
+    .footer-p {
+        font-size: 2vw;
+    }
+    .footer-voltaTopo {
+        font-size: 2vw;
+    }
+    ::placeholder {
+    font-size: 1.4vw;
+}
 }
 
 @media (max-width:768px){
-    .hamburguer{
+    /* .hamburguer{
         display: block;
     }
     .hamburguer.active .bar:nth-child(2){
@@ -784,7 +771,7 @@ fieldset {
     }
     .hamburguer.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
-    }
+    } */
     .navMenu{
         position: fixed;
         left: -100%;
@@ -818,6 +805,21 @@ fieldset {
     .pd-form {
         padding: 0.5vh 0;
     }
+    .footertd01 {
+        width: 40%;
+    }
+    .footertd02 {
+        width: 60%;
+    }
+    .footer-p {
+        font-size: 2.5vw;
+    }
+    .footer-voltaTopo {
+        font-size: 2.5vw;
+    }
+    ::placeholder {
+    font-size: 1.5vw;
+}
 }
 
 @media(max-width:650px) {
@@ -832,6 +834,23 @@ fieldset {
     }
     .olaUsuario {
         right: 12.7em;
+    }
+    .menu li a {
+        padding: 0em 1.0vw;
+        font-size: 2.6vw;
+    }
+    .footertd01 {
+        width: 25%;
+    }
+    .footertd02 {
+        width: 75%;
+    }
+    .footerText {
+        font-size: 2vw;
+    }
+    .menu-inferior ul {
+        display: none;
+        height: 0;
     }
 }
 
@@ -849,5 +868,27 @@ fieldset {
     .header-sair {
         top: 4em;
     }
-
+    .menu ul {
+        display: none;
+    }
+    .hb {
+        display: inline-block;
+        position: fixed;
+    }
+    .menu-hb-icon {
+        position: absolute;
+        top: 1em;
+        left: 3vw;
+        color: #E1C888;
+        cursor: pointer;
+    }
+    .footerText {
+        font-size: 2.5vw;
+    }
+    .footerBtn {
+        padding: 0.5rem 1rem;
+    }
+    ::placeholder {
+        font-size: 0;
+    }
 }
