@@ -20,93 +20,86 @@
     </div>
 
     <main style="padding-top: 30vh;">
-        <br><br><br><br><br><br><br><br><br><br><br><br>
+
         <section>
             <form id="form" action="" method="post" autocomplete="on">
                 <fieldset>
                     <div class="myReservation">
-                    <h2>Minha Reserva</h2>
-                    <hr>
-                    <br><br>
-                    <p >Forneça a data de entrada, saída e quantidade de pessoas.</p>
-                    <ul class="bookingInformation">
-                        <li>
-                            <p><input type="date" name="checkin" id="checkin" required></p>
-                        </li>
-                        <li>
-                            <p><input type="date" name="checkout" id="checkout" required></p>
-                        </li>
-                        <li>
-                            <p><input type="number" name="qtdPessoas" id="qtdPessoas" required></p>
-                        </li>
-                    </ul>
-                    <p>Escolha o quartoEscolha o quarto</p>
+                        <h2>Minha Reserva</h2>
+                        <hr>
+                        <p>
+                            Forneça a data de entrada, saída e quantidade de pessoas.
+                        </p>
+                        <span class="inputBox">
+                            <input type="date" name="checkin" id="checkin" required>
+                            <input type="date" name="checkout" id="checkout" required>
+                            <input type="number" name="qtdPessoas" id="qtdPessoas" required>
+                        </span>
+                        <p>Escolha o quartoEscolha o quarto</p>
                     </div>
                     <section class="roomChoiceSection">
                         <article class="roomChoice">
-                            <div><img src="../images/acomodacoes/Acomodacao1.png" alt="">
+                            <div class="roomDiv"><img src="../images/acomodacoes/Acomodacao1.png" alt="">
                                 <div>
                                     <h3>Executive</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad perferendis adipisci distinctio corporis iure, quod at. Sed libero illo voluptas laboriosam nam quis quae possimus, consequuntur minus mollitia corrupti quas excepturi in quo. Ad neque, dolores nihil corrupti deleniti commodi!</p>
+                                    <p class="roomDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nobis aliquam quibusdam aliquid quam perferendis autem eum numquam earum nam corporis mollitia cumque error, id quod laboriosam itaque. Quidem illo inventore accusantium sint maxime nesciunt vero voluptatibus accusamus ut explicabo, nisi mollitia reprehenderit nulla, voluptatum necessitatibus assumenda molestiae nam, id cumque perspiciatis alias cupiditate! Tempora, facere quia. Quaerat, accusantium aliquam corrupti explicabo perferendis quam cupiditate ex odit reiciendis deserunt fugiat!</p>
                                     <p class="price">
                                         R$190
                                     </p>
                                     <div class="radioContainer">
-                                        <input class="radioRoomChoice" type="radio" name="roomChoice" id="executive"
-                                            value="executive">
-                                        <label for="Executive">Selecionar Apartamento Executive</label>
+                                        <label for="executive"> <input class="radioRoomChoice" type="radio"
+                                                name="roomChoice" id="executive" value="executive" required><span>Selecionar
+                                            Apartamento Executive</span></label>
                                     </div>
 
                                 </div>
                             </div>
-                            <div><img src="../images/acomodacoes/Acomodacao2.png" alt="">
+                            <div class="roomDiv"><img src="../images/acomodacoes/Acomodacao2.png" alt="">
                                 <div>
                                     <h3>Classic</h3>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur quo, cum quos quae libero doloremque doloribus illum in unde enim iusto obcaecati error saepe laborum assumenda ut animi maiores sint voluptatum itaque accusamus. Minima tempora in dolorem ratione, quae dolore?</p>
+                                    <p class="roomDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nobis aliquam quibusdam aliquid quam perferendis autem eum numquam earum nam corporis mollitia cumque error, id quod laboriosam itaque. Quidem illo inventore accusantium sint maxime nesciunt vero voluptatibus accusamus ut explicabo, nisi mollitia reprehenderit nulla, voluptatum necessitatibus assumenda molestiae nam, id cumque perspiciatis alias cupiditate! Tempora, facere quia. Quaerat, accusantium aliquam corrupti explicabo perferendis quam cupiditate ex odit reiciendis deserunt fugiat!</p>
                                     <p class="price">
                                         R$190
                                     </p>
 
                                     <div class="radioContainer">
-                                        <input class="radioRoomChoice" type="radio" name="roomChoice" id="classic"
-                                            value="classic">
-                                        <label for="Classic">Selecionar Apartamento Classic</label>
+                                        <label for="classic"> <input class="radioRoomChoice" type="radio"
+                                                name="roomChoice" id="classic" value="classic" required><span>Selecionar
+                                                    Apartamento Classic</span></label>
                                     </div>
 
                                 </div>
                             </div>
                             </div>
-                            <div><img src="../images/acomodacoes/Acomodacao3.png" alt="">
+                            <div class="roomDiv"><img src="../images/acomodacoes/Acomodacao3.png" alt="">
                                 <div>
                                     <h3>Premium</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laboriosam atque exercitationem ducimus tenetur at molestiae assumenda sed fuga vitae, nihil, quisquam laudantium labore repudiandae architecto eos velit veniam distinctio! Labore praesentium ipsa ducimus consequuntur dolores! Reiciendis id repellendus quos.
+                                    <p class="roomDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nobis aliquam quibusdam aliquid quam perferendis autem eum numquam earum nam corporis mollitia cumque error, id quod laboriosam itaque. Quidem illo inventore accusantium sint maxime nesciunt vero voluptatibus accusamus ut explicabo, nisi mollitia reprehenderit nulla, voluptatum necessitatibus assumenda molestiae nam, id cumque perspiciatis alias cupiditate! Tempora, facere quia. Quaerat, accusantium aliquam corrupti explicabo perferendis quam cupiditate ex odit reiciendis deserunt fugiat!
                                     </p>
                                     <p class="price">
                                         R$190
                                     </p>
                                     <div class="radioContainer">
-                                        <input class="radioRoomChoice" type="radio" name="roomChoice" id="premium"
-                                            value="premium" required>
-                                        <label for="Premium">Selecionar Apartamento Premium</label>
+                                        <label for="premium"> <input class="radioRoomChoice" type="radio"
+                                                name="roomChoice" id="premium" value="premium" required><span>Selecionar
+                                            Apartamento Premium</span></label>
                                     </div>
                                 </div>
                             </div>
                             </div>
                         </article>
                         <div class="bookingSummaryContainer">
-                        <article class="bookingSummary">
-                            <h2>Resumo da reserva</h2>
-                            <p class="bookingSummaryData">
-                            <ul>
-                                <li>Apartamento: xxx</li>
-                                <li>Check-in: XXX</li>
-                                <li>Check-out: XXX</li>
-                                <li>Pessoas: XX</li>
-                            </ul>
-                            </p>
-                            <span><a href="#">Adicionar mais SERVIÇOS</a></span>
-                            <p class="buttonP"><button>Continuar</button></p>
-                        </article>
+                            <article class="bookingSummary">
+                                <h2>Resumo da reserva</h2>
+                                <p class="bookingSummaryData">
+                                    <span>Apartamento: xxx</span>
+                                    <span>Check-in: XXX</span>
+                                    <span>Check-out: XXX</span>
+                                    <span>Pessoas: XX</span>
+                                </p>
+                                <span class="addFeatures"><a href="#">Adicionar mais SERVIÇOS</a></span>
+                                <p class="bookingSummaryButton"><button>Continuar</button></p>
+                            </article>
                         </div>
                     </section>
                 </fieldset>
@@ -114,7 +107,8 @@
             </form>
 
         </section>
-        <p class="footerPRserva">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eum pariatur repellat ad rerum modi
+        <p class="footerPRserva">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eum pariatur repellat ad
+            rerum modi
             consequuntur aspernatur necessitatibus magni dolorem, culpa fugit eligendi facere? Dolor eum necessitatibus
             officiis quaerat natus iusto, fugit eos. Saepe sint praesentium unde, blanditiis a pariatur mollitia, iusto
             aut possimus earum commodi. Veniam voluptatem necessitatibus impedit?</p>

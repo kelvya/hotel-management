@@ -530,27 +530,31 @@ main {
 
  /* ESTILO RESERVA */
     
- .myReservation h2 + p{
+ .myReservation h2{
+    margin-top: 9.5em;
     margin-left: 0.5em;
 }
 
-.myReservation ul + p{
-    margin-left: 0.5em;
+.myReservation hr{
+    margin-bottom: 2em;
 }
 
-.bookingInformation {
-    margin-left: 1em;
-    list-style: none;
+.myReservation p:nth-of-type(1), .myReservation p:nth-of-type(2){
+    margin: 1em 0;
+}
+
+.inputBox{
     display: flex;
+    width: 80%;
+    gap: 1em;
 }
 
-.bookingInformation li {
-    width: 230px;
-    padding-right: 3px;
+.myReservationUl li{
+    width: 100%;
 }
 
-.bookingInformation li p{
-    width: 240px;
+.myReservation span ul{
+    margin-left: 0.5em;
 }
 
 fieldset {
@@ -558,16 +562,16 @@ fieldset {
 }
 
 /* ESCOLHA DE QUARTOS */
-.roomChoice img {
+.roomChoice .roomDiv img {
     width: 200px;
     max-height: 125px;
     margin-right: 0.5em;
+    margin-top: 0.5em;
 }
 
-.roomChoice>div {
-    padding: 0.5em 2em 0.5em 0.5em;
+.roomChoice>.roomDiv {
+
     margin-bottom: 0.5em;
-    max-height: 300px;
     display: flex;
 }
 
@@ -576,55 +580,60 @@ fieldset {
     margin: 0;
 }
 
-.roomChoice div p {
-    margin-top: 0;
+.roomChoice .roomDiv p {
+    width: 80%;
+    min-width: 250px;
+    margin-top: 0.5em;
     font-size: 0.8em;
-    min-width: 247px;
     text-align: justify;
+    padding: 0;
 }
 
 .roomChoiceSection {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
-.price {
-    padding: 0.5em 0 0 0;
+.roomChoice .roomDiv .price {
+    margin-top: 1em;
     font-weight: 700;
 }
 
 /* RESUMO DE RESERVA */
+
+.bookingSummaryContainer{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    margin: 0 1em 0 0.5em;
+    height: 70%;
+    max-height: 650px;
+    min-width: 380px;
+}
+
 .bookingSummary {
-    display: inline-block;
-    width: 60%;
+    width: 65%;
     height: 400px;
-    margin: 0 2rem;
-    padding: 0 2em;
-    border: 2px solid black;
+    margin: auto 2em;
     min-width: 323.45px;
 }
 
-.bookingSummary ul {
-    padding-left: 0.5em;
-    border: 3px solid black;
-    display: block;
+.bookingSummary .bookingSummaryData {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1em 0 2em 0.5em;
+    margin-bottom: 0.5em;
 }
 
-.bookingSummary ul li {
-    padding: 0.5em 0;
+.bookingSummaryData span:nth-child(1), .bookingSummaryData span:nth-child(3){
+    padding-bottom: 0.5em;
 }
 
-.bookingSummary span a {
+.addFeatures a{
+    text-decoration: underline;
     color: black;
-    text-decoration: 5px solid underline;
-}
-
-.bookingSummary span {
-    display: inline-block;
-    min-width: 224px;
-}
-
-.bookingSummaryContainer{
-    margin-left: 3em;
 }
 
 
@@ -632,47 +641,41 @@ fieldset {
 
 .radioRoomChoice {
     width: 1em;
-    padding: 0;
-    margin-left: 1em;
-    accent-color: black;
+    margin-right: 0.3em;
+    vertical-align: middle;
 }
 
-.radioRoomChoice+label {
+.radioContainer span{
     font-size: 0.8rem;
-    margin-top: 0.9em;
-    padding-left: 0.5em;
-
 }
 
-.radioContainer {
-    display: flex;
-}
 
 /* ESTILO DO BOTÃO */
 
-.buttonP{
-    margin-top: 0.5em;
-    margin-left: 7.5em;
+.bookingSummaryContainer .bookingSummaryButton{
+    display: flex;
+    margin: 0;
+    justify-content: right;
 }
 
 .bookingSummary button {
-        background-image: linear-gradient(to right, #E1C888 0%, #e3c25f  51%, #e6ae60  100%);
-        padding: 0.3em;
-        margin-top: 2em;
-        text-align: center;
-        text-transform: uppercase;
-        transition: 0.5s;
-        background-size: 200% auto;
-        color: rgb(89, 87, 87);            
-        border-radius: 20%;
-        display: block;
-      }
+    background-image: linear-gradient(to right, #E1C888 0%, #e3c25f  51%, #e6ae60  100%);
+    padding: 0.3em;
+    margin-top: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(89, 87, 87);            
+    border-radius: 20%;
+    display: block;
+}
 
-      .bookingSummary button:hover {
-        background-position: right center; /* change the direction of the change here */
-        color: #000;
-        text-decoration: none;
-      }
+.bookingSummary button:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #000;
+    text-decoration: none;
+}
      
 
 .footerPRserva {
@@ -757,6 +760,56 @@ fieldset {
     ::placeholder {
     font-size: 1.4vw;
 }
+
+    /* RESPONSIVIDADE RESERVAS */
+    .inputBox{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .inputBox input{
+        width: 50%;
+        min-width: 300px;
+    }
+
+    .bookingSummaryContainer{
+        text-align: center;
+        margin: 2em 0;
+        width: 100%;
+    }
+
+    .roomChoiceSection {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .roomDiv div{
+        margin: 0 1em;
+        padding: 0;
+    }
+
+    .roomChoice .roomDiv p {
+        width: 70vw;
+        margin-top: 0.5em;
+        font-size: 0.8em;
+        text-align: justify;
+        padding-right: 3em;
+        max-height: none;
+    }
+
+    .bookingSummaryContainer{
+        justify-content: left;
+        border: none;
+        margin: 0 1em 0 0.5em;
+        height: 100%;
+        max-height: none;
+        min-width: none;
+    }
+
+    .bookingSummary{
+        padding: 0 2em;
+        border: 1px solid black
+    }
 }
 
 @media (max-width:768px){
@@ -820,6 +873,53 @@ fieldset {
     ::placeholder {
     font-size: 1.5vw;
 }
+    /* RESPONSIVIDADE RESERVAS */
+
+    .inputBox{
+        align-items: center;
+    }
+
+    .myReservation p:nth-of-type(1), .myReservation p:nth-of-type(2){
+        text-align: center;
+    }
+
+    .roomChoice>.roomDiv{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+    
+    .roomDiv h3{
+        margin: 0.5em 0;
+    }
+
+    .roomDiv div{
+        text-align: center;
+        margin: 0 1em;
+        margin-bottom: 0.5em;
+        padding: 0;
+    }
+
+    .roomChoice .roomDiv .price{
+        text-align: center;
+    }
+
+    .roomChoice .roomDiv p{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .radioContainer{
+        border-bottom: 1px solid black;
+    }
+
+    .bookingSummaryContainer{
+        margin-top: 1em;
+        justify-content: center
+    }
+
 }
 
 @media(max-width:650px) {
