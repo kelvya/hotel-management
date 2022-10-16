@@ -551,7 +551,6 @@ fieldset {
 }
 
 .roomChoice>.roomDiv {
-
     margin-bottom: 0.5em;
     display: flex;
 }
@@ -562,7 +561,6 @@ fieldset {
 
 .roomChoice .roomDiv p {
     width: 80%;
-    min-width: 250px;
     margin-top: 0.5em;
     font-size: 0.8em;
     text-align: justify;
@@ -657,6 +655,8 @@ fieldset {
 
 .footerPRserva {
     margin-top: 20px;
+    padding-right: 0 1em;
+    width: 100%;
 }
 
 
@@ -771,6 +771,7 @@ fieldset {
     .roomChoiceSection {
         display: grid;
         grid-template-columns: 1fr;
+        width: 100%;
     }
 
     .roomDiv div{
@@ -779,12 +780,11 @@ fieldset {
     }
 
     .roomChoice .roomDiv p {
-        width: 70vw;
+        width: 100%;
         margin-top: 0.5em;
         font-size: 0.8em;
         text-align: justify;
         padding-right: 3em;
-        max-height: none;
     }
 
     .bookingSummaryContainer{
@@ -799,6 +799,11 @@ fieldset {
     .bookingSummary{
         padding: 0 2em;
         border: 1px solid black
+    }
+
+    .bookingSummaryContainer{
+        margin-top: 1em;
+        justify-content: center;
     }
 }
 
@@ -873,22 +878,29 @@ fieldset {
         text-align: center;
     }
 
+    .roomChoice{
+        justify-items: center;
+    }
+
     .roomChoice>.roomDiv{
         flex-direction: column;
         margin: 0;
         padding: 0;
         align-items: center;
     }
-    
+
+    .roomDiv{
+        width: 100%;
+    }
     .roomDiv h3{
         margin: 0.5em 0;
     }
 
     .roomDiv div{
         text-align: center;
-        margin: 0 1em;
+        margin: 0;
         margin-bottom: 0.5em;
-        padding: 0;
+        padding: 1em;
     }
 
     .roomChoice .roomDiv .price{
@@ -907,7 +919,8 @@ fieldset {
 
     .bookingSummaryContainer{
         margin-top: 1em;
-        justify-content: center
+        justify-content: center;
+        width: 100%;
     }
 
 }
@@ -1009,4 +1022,10 @@ fieldset {
     ::placeholder {
         font-size: 0;
     }
+
+    /* RESPONSIVIDADE RESERVAS */
+    .bookingSummaryContainer{
+        margin: 0;
+        min-width: 100px;
+    }   
 }
