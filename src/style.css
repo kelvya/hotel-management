@@ -918,9 +918,11 @@ fieldset {
     }
 
     .bookingSummaryContainer{
+        margin: 0;
         margin-top: 1em;
         justify-content: center;
         width: 100%;
+        min-width: 100px;
     }
 
 }
@@ -1024,8 +1026,4 @@ fieldset {
     }
 
     /* RESPONSIVIDADE RESERVAS */
-    .bookingSummaryContainer{
-        margin: 0;
-        min-width: 100px;
-    }   
 }
