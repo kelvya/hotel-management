@@ -199,6 +199,7 @@ input {
     background-color:#213242; 
     position: fixed; 
     width: 100%;
+    z-index: 1900;
 }
 .header-sair {
     font-family: quicksand;
