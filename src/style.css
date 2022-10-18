@@ -114,6 +114,9 @@ input {
     background-color: #fff;
     transition: all 0.3s ease-in-out;
 }
+.section-pd {
+    padding-top: 230px;
+}
 
 /* -------------------------------------------------- */
 /* COMPONENTES GLOBAIS (HEADER, FOOTER E NAVBAR*/
@@ -363,6 +366,7 @@ input {
     justify-content: space-around;
     display: grid;
     grid-template-columns: 60% 40%;
+    padding-bottom: 3em;
 }
 .home-sobre-img {
     width: 100%;
@@ -380,6 +384,7 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 3em;
 }
 .homeNewsletter {
     padding: 2em 0;
@@ -398,7 +403,26 @@ input {
 /* SOBRE */
 /* Competência: Felipe, Diego e David*/
 /* Classes Específicas- Sobre */
-
+.sobre-img-large {
+    width: 90%;
+}
+.sobre-img-medium {
+    width: 40%;
+    margin: 0 1rem;
+}
+.sobre-p {
+    font-size: 1.2vw;;
+}
+.sobre-divImg, .sobre-divImg2  {
+    padding: 1.5em 0 1.5em 0;
+    display:flex; 
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    
+}
+.sobre-divImg2 {
+    margin: 0 1rem;
+}
 
 
 /* -------------------------------------------------- */
@@ -671,7 +695,6 @@ fieldset {
     align-items: center;
 }
 .contato-estiloForm {
-    padding-top: 6em;
     align-items: center;
 }
 .contato-li {
@@ -857,6 +880,9 @@ fieldset {
     .navMenu.active{
         left: 0;
     }
+    .sobre-p {
+        font-size: 1.6vw;;
+    }
     .btn {
         padding: 0.5rem 1rem;
     }
@@ -976,6 +1002,12 @@ fieldset {
     .button-newsletter {
         width: 45%;
     }
+    .sobre-p {
+        font-size: 2vw;;
+    }
+    .sobre-divImg2 img {
+        width: 90%;
+    }
     .footertd01 {
         width: 25%;
     }
@@ -1024,6 +1056,9 @@ fieldset {
     }
     .button-newsletter {
         width: 60%;
+    }
+    .sobre-p {
+        font-size: 2.5vw;;
     }
     .footerText {
         font-size: 2.5vw;
