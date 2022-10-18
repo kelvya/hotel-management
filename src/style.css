@@ -656,7 +656,7 @@ fieldset {
     padding: 30px 0;  
 }
 .contato-layout{
-    width: 650px;
+    width: 88%;
     justify-content: space-evenly;
     border: 1px solid black;
     margin: 0 1em 0 0.5em;
@@ -787,6 +787,23 @@ fieldset {
         margin-top: 1em;
         justify-content: center;
     }
+
+
+/* RESPONSIVIDADE CONTATOS */
+    .contato-responsivo {
+        width: 100%;
+        align-items: center;
+    }
+
+    .contato-layout{
+        width: 100%;
+        margin: 0 1em 0 0.5em;
+        height: 70%;
+        max-height: 650px;
+        min-width: 380px;
+    
+    }
+
 }
 
 @media (max-width:768px){
@@ -1032,5 +1049,46 @@ fieldset {
         font-size: 0;
     }
 
-    /* RESPONSIVIDADE RESERVAS */
+    /* RESPONSIVIDADE CONTATO */
+@media (max-width: 415px) {
+
+
+    .contato-legenda {
+        color: #213242;
+        font-size: 18px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.767);
+        padding: 10px 0;  
+    }
+    .contato-layout{
+        width: 350px;
+        justify-content: space-evenly;
+        border: 1px solid black;
+        margin: 0 1em 0 0.5em;
+        height: 70%;
+        max-height: 650px;
+        min-width: 380px;
+
+    }
+
+
+}
+
+@media (max-width: 916px) {
+
+
+    .contato-legenda {
+        color: #213242;
+        font-size: 14px;
+        padding: 0;  
+    }
+    .contato-layout{
+        width: 550px;
+        justify-content: space-evenly;
+        border: 1px solid black;
+        margin: 0 1em 0 0.5em;
+        height: 70%;
+        max-height: 650px;
+        min-width: 380px;
+
+    }
 }
