@@ -1,130 +1,129 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="../src/style.css" />
-        <title>Grand Royal - Contato</title>
-    </head>
-    <body>
-        <div class="header-main">
-            <object
-                width="100%"
-                height="160vh"
-                data="../components/header.html"
-            ></object>
-            <hr />
-            <nav>
-                <object
-                    width="100%"
-                    height="60vh"
-                    data="../components/navbar_up.html"
-                ></object>
-            </nav>
-        </div>
-        <main class="contato-responsivo">
-            <section class="contato-estiloForm section-pd">
-                <article>
-                    <h2>Entre em contato conosco</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grand Royal - Contato</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/logo/logo--azul-escuro.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Quando&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiro+Devanagari+Hindi:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Quando&family=Quicksand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiro+Devanagari+Hindi:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/css/style.css" />
+  </head>
+  <body>
+    <div class="header-main">
+      <object
+        width="100%"
+        height="160vh"
+        data="../components/header.html"
+      ></object>
+      <hr />
+      <nav>
+        <object
+          width="100%"
+          height="60vh"
+          data="../components/navbar_up.html"
+        ></object>
+      </nav>
+    </div>
+    <main class="contato-responsivo">
+      <section class="contato-estiloForm section-pd">
+        <article>
+          <h2>Entre em contato conosco</h2>
 
-                    <form action="">
-                        <fieldset class="fieldLogin fieldsetLogin">
-                            <legend class="contato-legenda">
-                                &nbsp Preencha todos os dados &nbsp
-                            </legend>
+          <form action="">
+            <fieldset class="fieldLogin fieldsetLogin">
+              <legend class="contato-legenda">
+                &nbsp Preencha todos os dados &nbsp
+              </legend>
 
-                            <ul>
-                                <li class="contato-li">
-                                    <label for="nome">Nome:</label><br />
-                                    <input
-                                        type="text"
-                                        name="nome"
-                                        id="nome"
-                                        size="30"
-                                        autofocus
-                                    />
-                                </li>
-                            </ul>
+              <ul>
+                <li class="contato-li">
+                  <label for="nome">Nome:</label><br />
+                  <input
+                    type="text"
+                    name="nome"
+                    id="nome"
+                    size="30"
+                    autofocus
+                  />
+                </li>
+              </ul>
 
-                            <ul>
-                                <li class="contato-li">
-                                    <label for="email">E-mail:</label><br />
-                                    <input
-                                        type="text"
-                                        name="email"
-                                        id="email"
-                                        size="30"
-                                    />
-                                </li>
-                            </ul>
+              <ul>
+                <li class="contato-li">
+                  <label for="email">E-mail:</label><br />
+                  <input type="text" name="email" id="email" size="30" />
+                </li>
+              </ul>
 
-                            <ul>
-                                <li class="contato-li">
-                                    <label for="telefone">Telefone:</label
-                                    ><br />
-                                    <input
-                                        type="text"
-                                        name="telefone"
-                                        id="telefone"
-                                        size="30"
-                                    />
-                                </li>
-                            </ul>
+              <ul>
+                <li class="contato-li">
+                  <label for="telefone">Telefone:</label><br />
+                  <input type="text" name="telefone" id="telefone" size="30" />
+                </li>
+              </ul>
 
-                            <ul>
-                                <li class="contato-li">
-                                    <label for="assuntos"
-                                        >Escolha o assunto que deseja
-                                        falar:</label
-                                    ><br />
-                                    <select
-                                        name="assuntos_opt"
-                                        id="assuntos_opt"
-                                    >
-                                        <option value="null_opc"></option>
-                                        <option value="cancelamento">
-                                            Cancelamento de Reserva
-                                        </option>
-                                        <option value="financeiro">
-                                            Departamento Financeiro
-                                        </option>
-                                        <option value="ouvidoria">
-                                            Ouvidoria
-                                        </option>
-                                    </select>
-                                </li>
-                            </ul>
+              <ul>
+                <li class="contato-li">
+                  <label for="assuntos"
+                    >Escolha o assunto que deseja falar:</label
+                  ><br />
+                  <select name="assuntos_opt" id="assuntos_opt">
+                    <option value="null_opc"></option>
+                    <option value="cancelamento">
+                      Cancelamento de Reserva
+                    </option>
+                    <option value="financeiro">Departamento Financeiro</option>
+                    <option value="ouvidoria">Ouvidoria</option>
+                  </select>
+                </li>
+              </ul>
 
-                            <ul>
-                                <li class="contato-li">
-                                    <label for="nome"
-                                        >Digite sua mensagem:</label
-                                    ><br />
-                                    <textarea
-                                        name="textArea"
-                                        id="textArea"
-                                        class="contato-textArea"
-                                        cols="60"
-                                        rows="10"
-                                    ></textarea>
-                                </li>
-                            </ul>
-                            <ul class="contato-div-button">
-                                <button
-                                    class="contato-button"
-                                    type="submit"
-                                >
-                                    Enviar
-                                </button>
-                            </ul>
-                        </fieldset>
-                    </form>
-                </article>
-            </section>
-            <aside></aside>
-        </main>
-        <object class="footer-padrao" data="../components/footer.html"></object>
-    </body>
+              <ul>
+                <li class="contato-li">
+                  <label for="nome">Digite sua mensagem:</label><br />
+                  <textarea
+                    name="textArea"
+                    id="textArea"
+                    class="contato-textArea"
+                    cols="60"
+                    rows="10"
+                  ></textarea>
+                </li>
+              </ul>
+              <ul class="contato-div-button">
+                <button class="contato-button" type="submit">Enviar</button>
+              </ul>
+            </fieldset>
+          </form>
+        </article>
+      </section>
+      <aside></aside>
+    </main>
+    <object class="footer-padrao" data="../components/footer.html"></object>
+  </body>
 </html>

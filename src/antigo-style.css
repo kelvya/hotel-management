@@ -1,0 +1,470 @@
+/* Import da Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Quando');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+/* Componentes Globais */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Quando';
+}
+
+html {
+    background-image: linear-gradient(109.6deg, #FCF7EA 11.2%, #E1C888 91.2%);
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    color: black;
+    overflow: auto;
+    padding: 0em;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+}
+
+header{
+    background-color: #213242;
+    
+}
+li{
+    list-style: none;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+main{
+    padding-top: 30vh;
+    padding: 10em;
+    bottom: 0;
+}
+
+/*h1 {
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.767);
+    padding-bottom: 5px;
+}*/
+
+h2{
+  color: rgb(0, 0, 0);
+    font-size: 25px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.767);
+    padding: 30px 0;  
+}
+
+h3{
+    padding: 30px 0;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    padding-bottom: 1em;
+    font-size: 20px;
+}
+
+input {
+    height: 4vh;
+    width: 80%;
+}
+
+
+/* Classes globais */
+.sloganSobre{
+    position: relative;
+    font-size: larger;
+    padding: 4.5rem ;
+    float: right;
+    color: #fff;
+}
+
+.container02{
+    background-color: #213242;
+}
+
+.navBar{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+}
+
+.logoSobre{
+    width: 21em;
+    padding: 10px;
+    font-size: 50%; 
+}
+
+.navMenu{
+    font-family:  Quicksand;
+    font-size: x-large;
+    display: flex;
+    color: #999;
+    align-items: center;
+    gap: 70px;
+}
+
+.navLink{
+    transition: 0.5s ease;
+}
+
+.navLink:hover{
+    color: #E3A92C;
+}
+
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width:768px){
+    .hamburguer{
+        display: block;
+    }
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navMenu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #213242;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+    .navItem{
+        margin: 16px 8;
+    }
+    .navMenu.active{
+        left: 0;
+    }
+}
+
+/* -------------------------------------------------- */
+/* COMPONENTES GLOBAIS (HEADER, FOOTER E NAVBAR*/
+/*Competência: Felipe, Diego, David e Andrey*/
+/* Componentes Globais */
+
+#menu {
+    float: left;
+    height: 100%;
+    margin: none;
+    width:100%;
+    background: #213242;
+    position: fixed;
+}
+
+#menu li:hover {
+    background:#3C5A74;
+}
+
+#menu ul {
+    text-align: center;
+    float: left;
+    margin: none;
+    list-style:none;
+    list-style-type: none;
+    background:#213242;
+    padding: 0px;
+    margin:0px;
+}
+
+#menu li {
+    display: inline-block;
+    padding: none;
+    margin: none;
+    height:47px;
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+    width:150px;
+    /*
+    border-right:1px solid #FFF;*/
+}
+
+#menu a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+     
+#menu li a, #menu li span {
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+     
+     
+.slogan {
+    font-family: quicksand;
+    font-size: larger;
+    color: #FFF;
+    position: absolute;
+    top: 4em; 
+    bottom: 0;
+    left: 20em;
+    right: 0;
+    width: 400%;
+    
+
+}
+
+.header-background {
+    background-color: #213242;
+    position: fixed;
+}
+
+.footer-padrao {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+}
+
+.footerInput {
+    width: 90%;
+    padding: 2%;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: none;
+    /*box-shadow: 1px 1px 2px #Cf9903, -1px -1px 2px #Cf9903;*/
+}
+.footerFieldset {
+    border: 1px dashed #517490;
+    text-align: left;
+
+    padding: 0 10px;
+}
+.footerFieldset div li {
+    width: 90%;
+    padding: 2%;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 1px 1px 2px #Cf9903, -1px -1px 2px #Cf9903;
+}
+.footerColor {
+    background-color: #213242;
+    padding: 2em;
+}
+
+.footer-p {
+    color: #E1C888;
+}
+.footerText {
+    color: #fff;
+}
+.footerBtn {
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #517490;
+    color: #FCF7EA;
+    margin: 5vh 0 0 0;
+}
+.footerBtn:hover {
+    background-color: #E3A92C;
+    color: #213242;
+    cursor: pointer;
+}
+
+
+.footerImg {
+    width: 21em;
+    padding: 10px;
+    font-size: 50%; 
+}
+.footer-voltaTopo {
+    color: #517490;
+}
+
+/* -------------------------------------------------- */
+/* LOGIN */
+/*Competência: Andrey e Wellington*/
+/* Classes Específicas- Login */
+.articleLogin {
+    margin: 5vh auto 0 auto;
+}
+.mg-form {
+    margin: 2vh 0 0 0;
+}
+.pd-form {
+    padding: 2vh 0 0 0;
+}
+.fieldLogin {
+    width: 80%;
+    margin: 0 auto;
+}
+.fieldsetLogin {
+    padding: 0 5vw 5vw 5vw;
+}
+.btn {
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #213242;
+    color: #FCF7EA;
+}
+.btn:hover {
+    background-color: #FCF7EA;
+    color: #213242;
+    cursor: pointer;
+}
+.btnLogin {
+    margin: 5vh 0 0 0;
+}
+.colorPrimary {
+    color: #213242;
+}
+
+@media (max-width:768px){
+    .fieldLogin {
+        margin: 0;
+    }
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+    .pd-form {
+        padding: 0.5vh 0;
+    }
+}
+
+
+/* -------------------------------------------------- */
+/* HOME */
+/* Competência: Felipe, Diego e David*/
+/* Classes Específicas- Home */
+
+.home-texto-longo {
+    font-family: Quicksand;
+    font-size: larger;
+    color: #000;
+
+}
+
+.home-acomodacoes-painel {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 5%;
+    font-size: 0;
+    line-height: 0;
+    word-spacing: 0;
+    border: 0;
+    align-self: center;
+    align-items: center;
+}
+
+.home-acomodacoes {
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+}
+
+.home-imagem-link {
+    padding-left: 20em;
+}
+
+.home-nossos-servicos {
+    border: #000 1px;
+}
+
+/* -------------------------------------------------- */
+/* SOBRE */
+/* Competência: Felipe, Diego e David*/
+/* Classes Específicas- Sobre */
+
+
+
+/* -------------------------------------------------- */
+/* ACOMODAÇÕES*/
+/* Competência: Kelvya, Ana e Fernando*/
+/* Classes Específicas- Acomodações */
+
+
+
+/* -------------------------------------------------- */
+/* RESERVAS */
+/* Competência: Fernando*/
+/* Classes Específicas- Reservas */
+
+
+
+/* -------------------------------------------------- */
+/* CONTATO */
+/* Competência: Wellington e Felipe*/
+/* Classes Específicas- Home */
+
+.contato-responsivo {
+    height: 140%;
+    width: 100%;
+    align-items: center;
+}
+
+.contato-estiloForm {
+    padding-top: 6em;
+    align-items: center;
+}
+
+.contato-li {
+    padding: 0.5em 0em 1em 2em;
+}
+
+.contato-legenda {
+    color: #213242;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.767);
+    padding: 30px 0;  
+}
+
+.contato-button {
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #213242;
+    color: #FCF7EA;
+    margin: 5vh 0 0 0;
+}
+
+.contato-button:hover {
+    background-color: #E3A92C;
+    color: #213242;
+    cursor: pointer;
+}
+
+.contato-div-button {
+    margin-left: auto;
+    margin-right: auto;
+}
