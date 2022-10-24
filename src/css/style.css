@@ -1,0 +1,208 @@
+@charset "UTF-8";
+#card1 {
+  background-image: url(/images/acomodacoes/acomodacoes-presidencial-1.png);
+  background-size: cover;
+}
+#card1 h2::before {
+  content: "Quarto 1 Presidencial";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.7);
+  color: #e1c888;
+  font: "Quicksand";
+  padding: 1rem 0.5rem;
+}
+
+#card2 {
+  background-image: url(/images/acomodacoes/acomodacoes-presidencial-2.png);
+  background-size: cover;
+}
+#card2 h2::before {
+  content: "Quarto 2 Presidencial";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.7);
+  color: #e1c888;
+  font: "Quicksand";
+  padding: 1rem 0.5rem;
+}
+
+#card3 {
+  background-image: url(/images/acomodacoes/acomodacoes-presidencial-3.png);
+  background-size: cover;
+}
+#card3 h2::before {
+  content: "Quarto 3 Presidencial";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.7);
+  color: #e1c888;
+  font: "Quicksand";
+  padding: 1rem 0.5rem;
+}
+
+#card4 {
+  background-image: url(/images/acomodacoes/acomodacoes-luxo-1.png);
+  background-size: cover;
+}
+#card4 h2::before {
+  content: "Quarto 1 Luxo";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.7);
+  color: #e1c888;
+  font: "Quicksand";
+  padding: 1rem 0.5rem;
+}
+
+#card5 {
+  background-image: url(/images/acomodacoes/acomodacoes-luxo-2.png);
+  background-size: cover;
+}
+#card5 h2::before {
+  content: "Quarto 2 Luxo";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.7);
+  color: #e1c888;
+  font: "Quicksand";
+  padding: 1rem 0.5rem;
+}
+
+#card6 {
+  background-image: url(/images/acomodacoes/acomodacoes-luxo-3.png);
+  background-size: cover;
+}
+#card6 h2::before {
+  content: "Quarto 3 Luxo";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.7);
+  color: #e1c888;
+  font: "Quicksand";
+  padding: 1rem 0.5rem;
+}
+
+#card7 {
+  background-image: url(/images/acomodacoes/acomodacoes-standard-1.png);
+  background-size: cover;
+}
+#card7 h2::before {
+  content: "Quarto 1 Standard";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.7);
+  color: #e1c888;
+  font: "Quicksand";
+  padding: 1rem 0.5rem;
+}
+
+#card8 {
+  background-image: url(/images/acomodacoes/acomodacoes-standard-2.png);
+  background-size: cover;
+}
+#card8 h2::before {
+  content: "Quarto 2 Standard";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.7);
+  color: #e1c888;
+  font: "Quicksand";
+  padding: 1rem 0.5rem;
+}
+
+#card9 {
+  background-image: url(/images/acomodacoes/acomodacoes-standard-3.png);
+  background-size: cover;
+}
+#card9 h2::before {
+  content: "Quarto 3 Standard";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.7);
+  color: #e1c888;
+  font: "Quicksand";
+  padding: 1rem 0.5rem;
+}
+
+.header--container {
+  background-image: url(../../images/background/background-1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #e1c888;
+  text-shadow: 2px 2px 1px rgba(1, 1, 8, 0.6);
+}
+
+.header--container2 {
+  width: 70%;
+}
+.header--container2-container {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.header--container2-item {
+  padding: 1rem;
+}
+.header--container2-link {
+  color: #e1c888;
+}
+
+.alinhamento {
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.header--logo {
+  background: url(../../images/logo/logo--bege.png) no-repeat transparent;
+  background-size: 100%;
+  width: 100px;
+  height: 100px;
+  padding: 0 0 0 0;
+  margin: 20px;
+  font: "Quicksand";
+  letter-spacing: 0;
+}
+
+.global-bg-azul {
+  background-color: #213242;
+}
+
+.color--bege {
+  color: #e1c888 !important;
+}
+
+.nav-link {
+  color: #e1c888;
+}
+.nav-link:hover {
+  color: #cf9903;
+}
+
+/*---------------
+* ACOMODAÇÕES
+*---------------
+*/
+.acomodacoes {
+  min-width: 1170px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.acomodacoes--card {
+  width: 31%;
+  margin-right: 0.6rem;
+  margin-bottom: 1rem;
+  height: 400px;
+  border: 1px solid #213242;
+  border-radius: 30px;
+  box-shadow: 8px 8px 10px #213242;
+}
+
+@media (max-width: 1170px) {
+  .acomodacoes,
+.acomodacoes--card {
+    flex-flow: column;
+    min-width: 100%;
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
