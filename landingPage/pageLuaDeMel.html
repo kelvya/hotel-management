@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Promção Lua de Mel</title>
+  <title>Promoção - Lua de Mel</title>
   <!-- LINKS -->
 
   <link rel="icon" type="image/x-icon" href="../images/logo/logo--azul-escuro.png" />
@@ -30,6 +30,7 @@
     rel="stylesheet" />
 
   <link rel="stylesheet" href="../src/css/style.css" />
+  <link rel="stylesheet" href="../src/css/lpStyle.css" />
 </head>
 
 <body>
@@ -69,23 +70,23 @@
             </button> -->
     </header>
     <nav class="navbar navbar-expand-sm global-bg-azul">
-      <a class="navbar-brand ps-3 color--bege" href="#">
+      <a class="navbar-brand ps-3 color--bege" href="../pages/home.html">
         Grand Hoyal Hotel</a>
 
       <div class="collapse " id="navbarToggleExternalContent">
         <div class=" p-4">
           <ul class="navbar-nav ">
             <li class="nav-item ">
-              <a class="nav-link color--bege" href="#">Home</a>
+              <a class="nav-link color--bege" href="../pages/home.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link color--bege" href="#">Sobre</a>
+              <a class="nav-link color--bege" href="../pages/sobre.html">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link color--bege" href="#">Reservas</a>
+              <a class="nav-link color--bege" href="../pages/reservas.html">Reservas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link color--bege" href="#">Contato</a>
+              <a class="nav-link color--bege" href="../pages/contatos.html">Contato</a>
             </li>
           </ul>
         </div>
@@ -102,16 +103,16 @@
       <div class="collapse navbar-collapse" id="colNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="../pages/home.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre</a>
+            <a class="nav-link" href="../pages/sobre.html">Sobre</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Reservas</a>
+            <a class="nav-link" href="../pages/reservas.html">Reservas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
+            <a class="nav-link" href="../pages/contatos.html">Contato</a>
           </li>
         </ul>
       </div>
@@ -119,46 +120,45 @@
   </header>
 
   <main>
-    <section>
-      
+    <section id="oferta" class="secoes">
       <article>
-        
-        <h1>Seção 01 - A Oferta com Vídeo de Exemplo</h1>
-        
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aliquam ipsam voluptatem! Iste fuga quae
-          voluptatibus, ipsa incidunt assumenda quo repudiandae aperiam nisi exercitationem quibusdam quos velit,
-          voluptatem soluta id rem numquam provident corporis aliquid non sequi odio quasi tenetur. Est perferendis quis
-          quod delectus, sequi repudiandae? Optio, quidem unde!</p>
-        
+        <div class="oferta">
+          <div class="oferta__descricao">
+            <h1 class="oferta__descricao__titulo">Programe sua lua de mel</h1>
+            <p class="oferta__descricao__texto">O Grand Royal Hotel é o lugar perfeito para sua lua de mel!</p>
+            <p class="oferta__descricao__texto"> Se o que vocês desejam é uma viagem sofisticada, romance, lindas paisagens com serviços incríveis e experiências desenhadas a mão, aqui é o lugar certo.</p>
+            <p class="oferta__descricao__texto">Descubra todas as experiências que você e o seu amor podem viver em um hotel de luxo.</p>
+            <div class="oferta__descricao__botao">
+              <button class="btn">
+                <a href="#beneficios">Saiba mais</a>
+              </button>
+            </div>
+            <p class="oferta__descricao__texto oferta__descricao__slogan">Presencie momentos de realeza que não poderá expressar em palavras</p>
+          </div>
+          <div class="oferta__video">
+            <video autoplay muted>
+              <source src="../images/acomodacoes/video-produtos-em-destaque.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
       </article>    
     </section>
 
-    <section>
-     
+    <section id="beneficios" class="secoes">
       <article>
-        
         <h1>Seção 02 - Os 5 benefícios</h1>
-        
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aliquam ipsam voluptatem! Iste fuga quae
           voluptatibus, ipsa incidunt assumenda quo repudiandae aperiam nisi exercitationem quibusdam quos velit,
           voluptatem soluta id rem numquam provident corporis aliquid non sequi odio quasi tenetur. Est perferendis quis
           quod delectus, sequi repudiandae? Optio, quidem unde!</p>
-        
       </article>    
     </section>
 
-
-    <section class="social-media">
-      
+    <section class="social-media secoes">
       <div class="social-media-box">
-
         <h2>Nossas Redes Sociais</h2>
-
-
       </div>
-
     </section>
-
   </main>
   <footer>
 
