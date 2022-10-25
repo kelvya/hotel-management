@@ -1,0 +1,94 @@
+@use "variaveis" as v;
+@use "mixins" as mx;
+
+.header--container {
+  background-image: mx.bg-background(v.$bg--img-background1);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: v.$cor-bege;
+  text-shadow: 2px 2px 1px rgba(1, 1, 8, 0.6);
+}
+
+.header--container2 {
+  width: 70%;
+
+  &-container {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &-item {
+    padding: v.$p1;
+
+  }
+
+  &-link {
+    color: v.$cor-bege;
+  }
+}
+
+.alinhamento {
+    justify-content: flex-start;
+    text-align: start;
+}
+
+.header--logo {
+  background: v.$img--logo--bege no-repeat transparent;
+  background-size: 100%;
+  width: 100px;
+  height: 100px;
+  padding: 0 0 0 0;
+  margin: 20px;
+  font: "Quicksand";
+  letter-spacing: 0;
+}
+
+.global-bg-azul {
+  background-color: v.$cor-azul-escuro;
+}
+
+.color--bege {
+  color: v.$cor-bege !important;
+}
+
+
+
+.nav-link {
+  color: v.$cor-bege;
+
+  &:hover {
+    color: v.$cor-dourado-escuro;
+  }
+}
+
+/*---------------
+* ACOMODAÇÕES
+*---------------
+*/
+.acomodacoes {
+  @include mx.box;
+  @include mx.flex-center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  &--card {
+    width: 31%;
+    margin-right: 0.6rem;
+    margin-bottom: v.$m1;
+    height: 400px;
+    border: 1px solid v.$cor-azul-escuro;
+    border-radius: 30px;
+    box-shadow: 8px 8px 10px v.$cor-azul-escuro;
+  }
+}
+
+@media (max-width: 1170px) {
+  .acomodacoes,
+  .acomodacoes--card {
+    flex-flow: column;
+    min-width: 100%;
+    padding: 0;
+  }
+}
