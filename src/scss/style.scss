@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: v.$cor-bege;
-  text-shadow: 2px 2px 1px rgba(1, 1, 8, 0.6);
+  text-shadow: 1px 1px 1px rgba(1, 1, 8, 0.6);
 }
 
 .header--container2 {
@@ -21,7 +21,6 @@
 
   &-item {
     padding: v.$p1;
-
   }
 
   &-link {
@@ -30,8 +29,8 @@
 }
 
 .alinhamento {
-    justify-content: flex-start;
-    text-align: start;
+  justify-content: flex-start;
+  text-align: start;
 }
 
 .header--logo {
@@ -53,8 +52,6 @@
   color: v.$cor-bege !important;
 }
 
-
-
 .nav-link {
   color: v.$cor-bege;
 
@@ -67,28 +64,52 @@
 * ACOMODAÇÕES
 *---------------
 */
+
+.h2-primario{
+  @include mx.h2-primario;
+}
+
+.h2-secundario{
+  @include mx.h2-secundario;
+}
+
+.h3-primario{
+  @include mx.h3-primario;
+}
+
+.h3-secundario{
+  @include mx.h3-secundario;
+}
+
 .acomodacoes {
   @include mx.box;
   @include mx.flex-center;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
 
   &--card {
-    width: 31%;
+    width: 30%;
     margin-right: 0.6rem;
     margin-bottom: v.$m1;
     height: 400px;
     border: 1px solid v.$cor-azul-escuro;
     border-radius: 30px;
     box-shadow: 8px 8px 10px v.$cor-azul-escuro;
+
+    &:hover{
+      transform: translateY(12%);
+      transition: 0.4s ease-out;
+    }
   }
 }
+
+
 
 @media (max-width: 1170px) {
   .acomodacoes,
   .acomodacoes--card {
     flex-flow: column;
     min-width: 100%;
-    padding: 0;
   }
 }
