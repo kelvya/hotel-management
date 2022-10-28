@@ -65,19 +65,19 @@
 *---------------
 */
 
-.h2-primario{
+.h2-primario {
   @include mx.h2-primario;
 }
 
-.h2-secundario{
+.h2-secundario {
   @include mx.h2-secundario;
 }
 
-.h3-primario{
+.h3-primario {
   @include mx.h3-primario;
 }
 
-.h3-secundario{
+.h3-secundario {
   @include mx.h3-secundario;
 }
 
@@ -97,19 +97,58 @@
     border-radius: 30px;
     box-shadow: 8px 8px 10px v.$cor-azul-escuro;
 
-    &:hover{
+    &:hover {
       transform: translateY(12%);
       transition: 0.4s ease-out;
     }
   }
 }
 
-
-
 @media (max-width: 1170px) {
   .acomodacoes,
   .acomodacoes--card {
     flex-flow: column;
     min-width: 100%;
+  }
+}
+
+/*HOME*/
+
+.home--sobre {
+  @include mx.box;
+
+  &-flex{
+    @include mx.flex-center;
+  }
+
+  &-fit-img {
+    width: 30vw;
+    margin: v.$mx1;
+    padding-left: v.$p1;
+  }
+  &-txt{
+    padding: v.$px1;
+  }
+}
+
+@media (max-width: 1170px){
+  .home--sobre{
+    min-width: 768px;
+    width: 95%;
+    &-flex{
+      flex-flow: column;
+    }
+    &-img{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    &-fit-img{
+      width: 50%;
+    }
+    &-txt{
+      padding: 0 0.5rem;
+      padding-top: v.$p1;
+    }
   }
 }

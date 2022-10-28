@@ -251,5 +251,47 @@
     min-width: 100%;
   }
 }
+/*HOME*/
+.home--sobre {
+  min-width: 1170px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 90%;
+  position: relative;
+}
+.home--sobre-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+.home--sobre-fit-img {
+  width: 30vw;
+  margin: 0 0.5rem;
+  padding-left: 1rem;
+}
+.home--sobre-txt {
+  padding: 0 1.5rem;
+}
+
+@media (max-width: 1170px) {
+  .home--sobre {
+    min-width: 768px;
+    width: 95%;
+  }
+  .home--sobre-flex {
+    flex-flow: column;
+  }
+  .home--sobre-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .home--sobre-fit-img {
+    width: 50%;
+  }
+  .home--sobre-txt {
+    padding: 0 0.5rem;
+    padding-top: 1rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
