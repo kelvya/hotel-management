@@ -34,6 +34,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../src/css/style.css" />
+    <script src="/src/js/functions.js" async></script>
   </head>
   <body>
     <!-- <header>
@@ -164,7 +165,7 @@
       <section>
         <article class="articleLogin">
           <!-- Acesso ao login de usuários -->
-          <form action="./home.html" method="post">
+          <form action="/pages/home.html" method="post" id="login_formulario" >
             <fieldset class="fieldLogin fieldsetLogin">
               <h3 class="mg-form">Login</h3>
               <hr />
@@ -176,7 +177,6 @@
                     type="text"
                     id="usuarioLogin"
                     name="usuarioLogin"
-                    required
                   />
                 </li>
                 <li class="mg-form">
@@ -186,7 +186,6 @@
                     type="password"
                     id="senhaLogin"
                     name="senhaLogin"
-                    required
                   />
                 </li>
                 <button class="btn btnLogin">CONFIRMAR</button>
