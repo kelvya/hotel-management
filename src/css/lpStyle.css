@@ -9,6 +9,7 @@
   color: #e1c888;
   font: "Quicksand";
   padding: 1rem 0.5rem;
+  margin-top: 19rem;
 }
 
 #card2 {
@@ -22,6 +23,7 @@
   color: #e1c888;
   font: "Quicksand";
   padding: 1rem 0.5rem;
+  margin-top: 19rem;
 }
 
 #card3 {
@@ -35,6 +37,7 @@
   color: #e1c888;
   font: "Quicksand";
   padding: 1rem 0.5rem;
+  margin-top: 19rem;
 }
 
 #card4 {
@@ -48,6 +51,7 @@
   color: #e1c888;
   font: "Quicksand";
   padding: 1rem 0.5rem;
+  margin-top: 19rem;
 }
 
 #card5 {
@@ -61,6 +65,7 @@
   color: #e1c888;
   font: "Quicksand";
   padding: 1rem 0.5rem;
+  margin-top: 19rem;
 }
 
 #card6 {
@@ -74,6 +79,7 @@
   color: #e1c888;
   font: "Quicksand";
   padding: 1rem 0.5rem;
+  margin-top: 19rem;
 }
 
 #card7 {
@@ -87,6 +93,7 @@
   color: #e1c888;
   font: "Quicksand";
   padding: 1rem 0.5rem;
+  margin-top: 19rem;
 }
 
 #card8 {
@@ -100,6 +107,7 @@
   color: #e1c888;
   font: "Quicksand";
   padding: 1rem 0.5rem;
+  margin-top: 19rem;
 }
 
 #card9 {
@@ -113,6 +121,22 @@
   color: #e1c888;
   font: "Quicksand";
   padding: 1rem 0.5rem;
+  margin-top: 19rem;
+}
+
+#sm_card1 {
+  background-image: url(/images/redes_sociais/SPA.png);
+  background-size: cover;
+}
+
+#sm_card2 {
+  background-image: url(/images/redes_sociais/chefes_de_cozinha.png);
+  background-size: cover;
+}
+
+#sm_card3 {
+  background-image: url(/images/redes_sociais/ensaio_fotos.png);
+  background-size: cover;
 }
 
 html {
@@ -223,6 +247,41 @@ html {
   .oferta__video {
     width: 100%;
   }
+}
+.social-media {
+  min-width: 1170px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.social-media__card {
+  width: 28%;
+  display: grid;
+  margin-right: 0.6rem;
+  margin-bottom: 0 0.5rem;
+  box-shadow: 6px 6px 6px 6px;
+  height: 320px;
+  border: 0.6px solid rgb(165, 161, 161);
+}
+
+.social-media__titulo {
+  font: "Quicksand";
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+h2 {
+  font-size: quiscksand;
+  padding-right: 2px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=lpStyle.css.map */

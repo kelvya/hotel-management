@@ -1,0 +1,17 @@
+@use "../variaveis" as v;
+
+//Redes Sociais//
+
+$imgsredesociais: (" Day Spa": "SPA.png",
+"Jantar a 12 mãos": "chefes_de_cozinha.png",
+"Ensaio de fotos": "ensaio_fotos.png" );
+$n:0;
+@each $titulo,$url in $imgsredesociais{
+  $n:$n+1;
+
+  #sm_card#{$n}{
+    background-image: url(/images/redes_sociais/#{$url});
+    background-size:cover;
+  }
+}
+

@@ -1,5 +1,6 @@
 @use "../variaveis" as v;
 @use "../mixins" as mx;
+@use "mixins_lp" as mxlp;
 
 html {
     scroll-behavior: smooth;
@@ -79,8 +80,8 @@ html {
             background: linear-gradient(to right, v.$cor-azul-escuro 20%, v.$cor-dourado-medio 40%, v.$cor-bege 60%, v.$cor-azul-escuro 80%);
             background-size: 200% auto;
             color: #000;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
             animation: animacaoSlogan 6s linear infinite;
         }
     }
@@ -126,4 +127,32 @@ html {
             width: 100%;
         }
     }
+}
+
+.social-media {
+    @include mx.box;
+    @include mx.flex-center;
+    flex-wrap: wrap;
+}
+.social-media__card{
+    width:28%;
+    display:grid;
+    margin-right: 0.6rem;
+    margin-bottom:v.$mx1;
+    box-shadow:6px 6px 6px 6px;
+    height: 320px;
+    border: 0.6px solid rgb(165, 161, 161);
+}
+.social-media__titulo{
+    font: v.$fonte-quiscksand;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+}
+h2{
+    font-size: quiscksand;
+    padding-right: 2px;
+    text-align: center;
 }
