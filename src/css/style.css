@@ -154,6 +154,10 @@
   text-align: start;
 }
 
+.esconder {
+  display: none;
+}
+
 .header--logo {
   background: url(../../images/logo/logo--bege.png) no-repeat transparent;
   background-size: 100%;
