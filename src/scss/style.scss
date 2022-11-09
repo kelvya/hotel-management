@@ -135,6 +135,25 @@
   }
 }
 
+.home--gastronomia {
+  display: block;
+
+  &-texto{
+    float: left;
+    
+}
+
+  &-img{
+    margin-left: 20px;
+    margin-right: none;
+    float: right;
+    width: 600px;
+    height: 500px;
+    
+    
+  }
+}
+
 @media (max-width: 1170px){
   .home--sobre{
     min-width: 768px;

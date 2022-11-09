@@ -276,6 +276,20 @@
   padding: 0 1.5rem;
 }
 
+.home--gastronomia {
+  display: block;
+}
+.home--gastronomia-texto {
+  float: left;
+}
+.home--gastronomia-img {
+  margin-left: 20px;
+  margin-right: none;
+  float: right;
+  width: 600px;
+  height: 500px;
+}
+
 @media (max-width: 1170px) {
   .home--sobre {
     min-width: 768px;
