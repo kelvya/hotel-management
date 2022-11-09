@@ -1,6 +1,9 @@
 @use "variaveis" as v;
 @use "mixins" as mx;
 
+.border0{
+  border: 5px solid red;
+}
 .header--container {
   background-image: mx.bg-background(v.$bg--img-background1);
   background-size: 100%;
@@ -117,6 +120,12 @@
 }
 
 /*HOME*/
+.home--banner {
+  background-image: mx.bg-background(v.$bg--img-background4);
+  background-size: 100%;
+  height: 30rem;
+  background-repeat: no-repeat;
+}
 
 .home--sobre {
   @include mx.box;
