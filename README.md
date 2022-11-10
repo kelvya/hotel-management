@@ -114,7 +114,7 @@ Isso indica que o trabalho na branch foi concluído e impede você ou outras pes
 No terminal do Vs Code insira o comando:
 
 ```
-git checkout -d <coloque aqui o nome da sua branch (O MESMO NOME QUE VOCÊ USOU PARA CRIAR A SUA BRANCH)>
+git branch -d <coloque aqui o nome da sua branch (O MESMO NOME QUE VOCÊ USOU PARA CRIAR A SUA BRANCH)>
 ```
 
 Assim que forem terminadas as versões de entrega será criada uma branch release e para correções de bug será usada a branch hotfix.
