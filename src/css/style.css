@@ -173,6 +173,21 @@
   letter-spacing: 0;
 }
 
+.home--large-img {
+  padding-left: 0.5rem;
+}
+
+.home--large-img span {
+  font-size: 2rem;
+}
+
+.home--fit-img {
+  width: 400px;
+  height: 300px;
+  border: 1px solid #213242;
+  border-radius: 30px;
+}
+
 .global-bg-azul {
   background-color: #213242;
 }
@@ -285,6 +300,9 @@
 }
 .home--sobre-txt {
   padding: 0 1.5rem;
+}
+.home--sobre-texto-longo {
+  font-size: 1.6rem;
 }
 
 .home--gastronomia {

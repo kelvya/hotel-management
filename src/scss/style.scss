@@ -51,6 +51,21 @@
   letter-spacing: 0;
 }
 
+.home--large-img{
+  padding-left: 0.5rem;
+}
+
+.home--large-img span{
+  font-size: 2rem;
+}
+
+.home--fit-img{
+  width: 400px;
+  height: 300px;
+  border: 1px solid v.$cor-azul-escuro;
+  border-radius: 30px;
+}
+
 .global-bg-azul {
   background-color: v.$cor-azul-escuro;
 }
@@ -141,6 +156,9 @@
   }
   &-txt{
     padding: v.$px1;
+  }
+  &-texto-longo{
+    font-size: 1.6rem;
   }
 }
 
