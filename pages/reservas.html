@@ -142,12 +142,12 @@
                         <p class="p-primario">
                             Forneça a data de entrada, saída e quantidade de pessoas.
                         </p>
-                        <span class="">
+                        <span class="margin-left">
                             <input class="input-padrao" type="date" name="checkin" id="checkin" required>
                             <input class="input-padrao" type="date" name="checkout" id="checkout" required>
                             <input class="input-padrao" type="number" name="qtdPessoas" id="qtdPessoas" min="1" required>
                         </span>
-                        <p>Escolha o quartoEscolha o quarto</p>
+                        <p class="p-primario">Escolha o quarto</p>
                     </div>
                     <section class="display-grid">
                         <article class=" ">
@@ -198,18 +198,25 @@
                             </div>
                             </div>
                         </article>
-                        <div class="bookingSummaryContainer">
+                        <div class="borda-padrao resumo-reserva">
                             <article class="bookingSummary" id="bookingSummary">
-                                <h2>Resumo da reserva</h2>
-                                <p class="bookingSummaryData">
-                                    <span>Apartamento: </span>
-                                    <span>Check-in: </span>
-                                    <span>Check-out: </span>
-                                    <span>Pessoas: </span>
-                                    <span>Valor total: </span>
+                                <h3 class="h3-primario">Resumo da reserva</h3>
+                                <div class="box-padrao">
+                                <p class="">
+                                    <div class="margin-padrao">Apartamento: <span class="">Presidencial</span></div>
+                                    <div class="margin-padrao">Check-in: <span class="esconder">XXX</span></div>
+                                    <div class="margin-padrao">Check-out: <span class="esconder">XXX</span></div>
+                                    <div class="margin-padrao">Pessoas: <span class="esconder">XXX</span></div>
+                                    <div class="margin-padrao esconder">Valor total: <span class="esconder">XXX</span></div>
                                 </p>
-                                <span class="addFeatures"><a href="#">Adicionar mais SERVIÇOS</a></span>
-                                <p class="bookingSummaryButton"><button>Continuar</button></p>
+                                </div>
+                                <div>
+                                    <p><a class="link-padrao h3-primario" href="#"><i class="fa fa-plus fa-2x" aria-hidden="true"></i> MAIS SERVIÇOS</a></p>
+                                    
+                                </div>
+                                <div class="centralizar">
+                                <button class="btn-texto btn-padrao text-light" type="submit">CONTINUAR</button>
+                                </div>
                             </article>
                         </div>
                     </section>

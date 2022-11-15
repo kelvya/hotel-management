@@ -42,6 +42,7 @@
 
 .centralizar{
   text-align: center;
+  align-items: center;
 }
 
 .p-top{
@@ -53,6 +54,24 @@
   width: 90%;
 }
 
+.btn-padrao{
+  background-color: v.$cor-azul-escuro;
+  border: none;
+  box-shadow: 3px 1px 8px white inset;
+  border-radius: 20px;
+  width: 30%;
+  height: 3rem;
+  margin: 1rem 1rem;
+  
+}
+
+.btn-texto{
+  color: white;
+  font: v.$fonte-quiscksand;
+  text-align: center;
+  font-size: 1vw;
+}
+
 .borda-padrao{
   margin: 3rem;
   border-radius: 15px;
@@ -62,6 +81,14 @@
     box-shadow: 1px 4px 10px v.$cor-azul-escuro;
   }
   
+}
+
+.box-padrao{
+  background-color: rgba(225, 200, 136, 0.7);
+  width: 52%;
+  padding: 3%;
+  margin-left: 1.8rem;
+  text-align: start;
 }
 
 .display-grid{
@@ -76,6 +103,22 @@
 
 .input-padrao{
   @include mx.input-padrao;
+}
+
+.margin-padrao{
+  padding: 0.5rem;
+}
+
+.margin-left{
+  margin: v.$mx1;
+}
+
+.link-padrao{
+  @include mx.p-primario;
+  &:hover{
+    color: v.$cor-dourado-escuro;
+  }
+  text-decoration: none;
 }
 
 
@@ -120,6 +163,19 @@
   &:hover {
     color: v.$cor-dourado-escuro;
   }
+}
+
+/*---------------
+* RESERVAS
+*---------------
+*/
+
+.resumo-reserva{
+  height: 30vw;
+  padding: 15vh 5vh 15vh 5vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 /*---------------
@@ -238,5 +294,26 @@
       padding: 0 0.5rem;
       padding-top: v.$p1;
     }
+  }
+}
+
+@media (max-width: 1170px){
+  .display-grid{
+    display: inline-block;
+    
+  }
+  
+  .resumo-reserva{
+    display: inline-block;
+    width: 80%;
+    height: 150vw;
+  }
+
+  .btn-padrao{
+    width: 80%;
+  }
+
+  .btn-texto{
+    font-size: larger;
   }
 }
