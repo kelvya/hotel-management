@@ -40,6 +40,46 @@
   display: none;
 }
 
+.centralizar{
+  text-align: center;
+}
+
+.p-top{
+  padding: 1rem 0 0 0;
+}
+
+.imagem-padrao{
+  margin: 1.5rem;
+  width: 90%;
+}
+
+.borda-padrao{
+  margin: 3rem;
+  border-radius: 15px;
+  box-shadow: 1px 3px 5px v.$cor-azul-escuro;
+  padding: v.$p1;
+  &:hover{
+    box-shadow: 1px 4px 10px v.$cor-azul-escuro;
+  }
+  
+}
+
+.display-grid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.flex-wrap{
+  display: block;
+  flex-wrap: wrap;
+}
+
+.input-padrao{
+  @include mx.input-padrao;
+}
+
+
+
 .header--logo {
   background: v.$img--logo--bege no-repeat transparent;
   background-size: 100%;
@@ -91,6 +131,9 @@
   @include mx.h2-primario;
 }
 
+.p-primario {
+  @include mx.p-primario;
+}
 .h2-secundario {
   @include mx.h2-secundario;
 }
@@ -111,13 +154,7 @@
   padding: 0.5rem 1rem 0.5rem 0.5rem;
 
   &--card {
-    width: 30%;
-    margin-right: 0.6rem;
-    margin-bottom: v.$m1;
-    height: 400px;
-    border: 1px solid v.$cor-azul-escuro;
-    border-radius: 30px;
-    box-shadow: 8px 8px 10px v.$cor-azul-escuro;
+   @include mx.card-padrao;
 
     &:hover {
       transform: translateY(12%);

@@ -15,12 +15,18 @@
 }
 
 @mixin h2-primario {
-  padding: v.$p1;
+  padding: v.$px1;
   text-align: start;
   color: v.$cor-azul-escuro;
-  text-shadow: 2px 2px 1px rgba(50, 71, 30, 0.4);
   font: v.$fonte-quiscksand;
  
+}
+
+@mixin p-primario {
+  padding: v.$padding-lados;
+  text-align: start;
+  color: v.$cor-azul-escuro;
+  font: v.$fonte-quiscksand; 
 }
 
 @mixin h2-secundario {
@@ -36,7 +42,6 @@
   padding: v.$p1;
   text-align: start;
   color: v.$cor-azul-escuro;
-  text-shadow: 2px 2px 1px rgba(50, 71, 30, 0.4);
   font: v.$fonte-quiscksand;
 }
 
@@ -47,6 +52,27 @@
   text-shadow: 2px 2px 1px rgba(50, 71, 30, 0.4);
   font: v.$fonte-quiscksand;
   color: v.$cor-dourado-escuro;
+}
+
+@mixin input-padrao {
+  border: v.$cor-azul-escuro solid 1px;
+  margin: 1rem;
+  width: 20%;
+  height: 2.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px v.$cor-azul-escuro;  
+}
+
+@mixin card-padrao {
+  width: 30%;
+  margin-right: 0.6rem;
+  margin-bottom: v.$m1;
+  height: 400px;
+  border: 1px solid v.$cor-azul-escuro;
+  border-radius: 30px;
+  box-shadow: 8px 8px 10px v.$cor-azul-escuro;
+  
 }
 
 // @mixin header--logo {
