@@ -22,24 +22,30 @@
  
 }
 
+@mixin h2-secundario {
+  padding: v.$p1;
+  text-align: start;
+  color: v.$cor-dourado-escuro;
+  font: v.$fonte-quiscksand;
+}
+
 @mixin p-primario {
-  padding: v.$padding-lados;
+  padding: v.$px1;
   text-align: start;
   color: v.$cor-azul-escuro;
   font: v.$fonte-quiscksand; 
 }
 
-@mixin h2-secundario {
-  padding: v.$p1;
+@mixin p-secundario {
+  padding: v.$px1;
   text-align: start;
   color: v.$cor-dourado-escuro;
-  text-shadow: 2px 2px 1px rgba(50, 71, 30, 0.4);
-  font: v.$fonte-quiscksand;
-  color: v.$cor-dourado-escuro;
+  font: v.$fonte-quiscksand; 
 }
 
+
 @mixin h3-primario {
-  padding: v.$p1;
+  padding: v.$px1;
   text-align: start;
   color: v.$cor-azul-escuro;
   font: v.$fonte-quiscksand;
@@ -49,13 +55,12 @@
   padding: v.$p1;
   text-align: start;
   color: v.$cor-dourado-escuro;
-  text-shadow: 2px 2px 1px rgba(50, 71, 30, 0.4);
   font: v.$fonte-quiscksand;
   color: v.$cor-dourado-escuro;
 }
 
 @mixin input-padrao {
-  border: v.$cor-azul-escuro solid 1px;
+  border: white solid 1px;
   margin: 1rem;
   width: 20%;
   height: 2.5rem;
@@ -68,8 +73,8 @@
   width: 30%;
   margin-right: 0.6rem;
   margin-bottom: v.$m1;
-  height: 400px;
-  border: 1px solid v.$cor-azul-escuro;
+  height: 50%;
+  border: 1px solid white;
   border-radius: 30px;
   box-shadow: 8px 8px 10px v.$cor-azul-escuro;
   
@@ -116,15 +121,17 @@ $n: 0;
   #card#{$n} {
     background-image: url(/images/acomodacoes/#{$url});
     background-size: cover;
+    background-position: center;
 
     & h2::before {
       content: "#{$titulo}";
       display: block;
-      background-color: rgba(33, 50, 66, 0.7);
+      background-color: rgba(33, 50, 66, 0.4);
       color: v.$cor-bege;
       font: v.$fonte-quiscksand;
-      padding: 1rem 0.5rem;
-      margin-top: 19rem;
+      text-align: center;
+      padding-top: 0;
+      margin-top: 20rem;
     }
   }
 }
