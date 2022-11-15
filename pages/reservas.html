@@ -137,65 +137,62 @@
         <section>
             <form id="form" action="" method="post" autocomplete="on">
                 <fieldset>
-                    <div class="myReservation">
-                        <h2>Minha Reserva</h2>
-                        <hr>
-                        <p>
+                    <div class="myReservation p-top">
+                        <h2 class="h2-primario ">Minha Reserva</h2>
+                        <p class="p-primario">
                             Forneça a data de entrada, saída e quantidade de pessoas.
                         </p>
-                        <span class="inputBox">
-                            <input type="date" name="checkin" id="checkin" required>
-                            <input type="date" name="checkout" id="checkout" required>
-                            <input type="number" name="qtdPessoas" id="qtdPessoas" required value="1" min="1">
+                        <span class="">
+                            <input class="input-padrao" type="date" name="checkin" id="checkin" required>
+                            <input class="input-padrao" type="date" name="checkout" id="checkout" required>
+                            <input class="input-padrao" type="number" name="qtdPessoas" id="qtdPessoas" min="1" required>
                         </span>
                         <p>Escolha o quartoEscolha o quarto</p>
                     </div>
-                    <section class="roomChoiceSection">
-                        <article class="roomChoice">
-                            <div class="roomDiv"><img src="../images/acomodacoes/acomodacoes-presidencial-1.png" alt="">
-                                <div>
-                                    <h3>Presidencial</h3>
-                                    <p class="roomDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nobis aliquam quibusdam aliquid quam perferendis autem eum numquam earum nam corporis mollitia cumque error, id quod laboriosam itaque. Quidem illo inventore accusantium sint maxime nesciunt vero voluptatibus accusamus ut explicabo, nisi mollitia reprehenderit nulla, voluptatum necessitatibus assumenda molestiae nam, id cumque perspiciatis alias cupiditate! Tempora, facere quia. Quaerat, accusantium aliquam corrupti explicabo perferendis quam cupiditate ex odit reiciendis deserunt fugiat!</p>
-                                    <p class="price">
-                                        R$190 por pessoa
-                                    </p>
-                                    <div class="radioContainer">
+                    <section class="display-grid">
+                        <article class=" ">
+                            <div class="display-grid borda-padrao">
+                                <img class="imagem-padrao" src="../images/acomodacoes/acomodacoes-presidencial-1.png" alt="">
+                                <div calss=" ">
+                                    <h3 class="h3-primario" >Presidencial</h3>
+                                    <p class="p-primario">Presidencial ipsum dolor sit amet consectetur adipisicing elit. Sit nobis aliquam quibusdam aliquid quam perferendis autem eum numquam earum nam corporis mollitia cumque error, id quod laboriosam presidencial.</p>
+                                    <p class="p-primario">R$190,00</p>
+                                    <div class="p-primario">
                                         <label for="executive"> <input class="radioRoomChoice" type="radio"
-                                                name="roomChoice" id="executive" value="executive"><span>Selecionar
-                                            Apartamento Executive</span></label>
+                                                name="roomChoice" id="executive" value="executive" required><span> Selecionar o quarto Presidencial</span></label>
                                     </div>
 
                                 </div>
                             </div>
-                            <div class="roomDiv"><img src="../images/acomodacoes/acomodacoes-luxo-1.png" alt="">
+                            <div class="display-grid borda-padrao">
+                                <img class="imagem-padrao" src="../images/acomodacoes/acomodacoes-luxo-1.png" alt="">
                                 <div>
-                                    <h3>Luxo</h3>
-                                    <p class="roomDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nobis aliquam quibusdam aliquid quam perferendis autem eum numquam earum nam corporis mollitia cumque error, id quod laboriosam itaque. Quidem illo inventore accusantium sint maxime nesciunt vero voluptatibus accusamus ut explicabo, nisi mollitia reprehenderit nulla, voluptatum necessitatibus assumenda molestiae nam, id cumque perspiciatis alias cupiditate! Tempora, facere quia. Quaerat, accusantium aliquam corrupti explicabo perferendis quam cupiditate ex odit reiciendis deserunt fugiat!</p>
-                                    <p class="price">
-                                        R$250 por pessoa
+                                    <h3 class="h3-primario" >Luxo</h3>
+                                    <p class="p-primario">Luxo ipsum dolor sit amet consectetur adipisicing elit. Sit nobis aliquam quibusdam aliquid quam perferendis autem eum numquam earum nam corporis mollitia cumque error, id quod laboriosam luxo.</p>
+                                    <p class="p-primario">
+                                        R$250,00
                                     </p>
 
-                                    <div class="radioContainer">
+                                    <div class="p-primario">
                                         <label for="classic"> <input class="radioRoomChoice" type="radio"
-                                                name="roomChoice" id="classic" value="classic"><span>Selecionar
-                                                    Apartamento Classic</span></label>
+                                                name="roomChoice" id="classic" value="classic" required><span> Selecionar o quarto Luxo</span></label>
                                     </div>
 
                                 </div>
                             </div>
                             </div>
-                            <div class="roomDiv"><img src="../images/acomodacoes/acomodacoes-standard-1.png" alt="">
+                            <div class="display-grid borda-padrao">
+                                <img class="imagem-padrao" src="../images/acomodacoes/acomodacoes-standard-1.png" alt="">
                                 <div>
-                                    <h3>Standard</h3>
-                                    <p class="roomDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nobis aliquam quibusdam aliquid quam perferendis autem eum numquam earum nam corporis mollitia cumque error, id quod laboriosam itaque. Quidem illo inventore accusantium sint maxime nesciunt vero voluptatibus accusamus ut explicabo, nisi mollitia reprehenderit nulla, voluptatum necessitatibus assumenda molestiae nam, id cumque perspiciatis alias cupiditate! Tempora, facere quia. Quaerat, accusantium aliquam corrupti explicabo perferendis quam cupiditate ex odit reiciendis deserunt fugiat!
+                                    <h3 class="h3-primario">Standard</h3>
+                                    <p class="p-primario">Standard ipsum dolor sit amet consectetur adipisicing elit. Sit nobis aliquam quibusdam aliquid quam perferendis autem eum numquam earum nam corporis mollitia cumque error, id quod laboriosam standard.
                                     </p>
-                                    <p class="price">
-                                        R$400 por pessoa
+                                    <p class="p-primario">
+                                        R$400,00
                                     </p>
-                                    <div class="radioContainer">
+                                    <div class="p-primario">
                                         <label for="premium"> <input class="radioRoomChoice" type="radio"
-                                                name="roomChoice" id="premium" value="premium"><span>Selecionar
-                                            Apartamento Premium</span></label>
+                                                name="roomChoice" id="premium" value="premium" required><span> Selecionar o quarto Standard</span></label>
                                     </div>
                                 </div>
                             </div>
@@ -221,12 +218,13 @@
             </form>
 
         </section>
+        <hr/>
         <p class="footerPRserva">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eum pariatur repellat ad
             rerum modi
             consequuntur aspernatur necessitatibus magni dolorem, culpa fugit eligendi facere? Dolor eum necessitatibus
             officiis quaerat natus iusto, fugit eos. Saepe sint praesentium unde, blanditiis a pariatur mollitia, iusto
             aut possimus earum commodi. Veniam voluptatem necessitatibus impedit?</p>
-        <aside>
+        <aside class="hide">
             <p>Espaço reservado para propagandas.</p>
         </aside>
     </main>

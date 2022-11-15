@@ -162,6 +162,49 @@
   display: none;
 }
 
+.centralizar {
+  text-align: center;
+}
+
+.p-top {
+  padding: 1rem 0 0 0;
+}
+
+.imagem-padrao {
+  margin: 1.5rem;
+  width: 90%;
+}
+
+.borda-padrao {
+  margin: 3rem;
+  border-radius: 15px;
+  box-shadow: 1px 3px 5px #213242;
+  padding: 1rem;
+}
+.borda-padrao:hover {
+  box-shadow: 1px 4px 10px #213242;
+}
+
+.display-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.flex-wrap {
+  display: block;
+  flex-wrap: wrap;
+}
+
+.input-padrao {
+  border: #213242 solid 1px;
+  margin: 1rem;
+  width: 20%;
+  height: 2.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px #213242;
+}
+
 .header--logo {
   background: url(../../images/logo/logo--bege.png) no-repeat transparent;
   background-size: 100%;
@@ -208,10 +251,16 @@
 *---------------
 */
 .h2-primario {
-  padding: 1rem;
+  padding: 0 1.5rem;
   text-align: start;
   color: #213242;
-  text-shadow: 2px 2px 1px rgba(50, 71, 30, 0.4);
+  font: "Quicksand";
+}
+
+.p-primario {
+  padding: 0 1rem 0 1rem;
+  text-align: start;
+  color: #213242;
   font: "Quicksand";
 }
 
@@ -228,7 +277,6 @@
   padding: 1rem;
   text-align: start;
   color: #213242;
-  text-shadow: 2px 2px 1px rgba(50, 71, 30, 0.4);
   font: "Quicksand";
 }
 
