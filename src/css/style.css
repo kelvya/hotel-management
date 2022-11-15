@@ -314,7 +314,7 @@
 *---------------
 */
 .resumo-reserva {
-  height: 30vw;
+  height: 35rem;
   padding: 15vh 5vh 15vh 5vh;
   position: -webkit-sticky;
   position: sticky;
@@ -468,7 +468,7 @@
   .resumo-reserva {
     display: inline-block;
     width: 80%;
-    height: 150vw;
+    height: 35rem;
   }
   .btn-padrao {
     width: 80%;
