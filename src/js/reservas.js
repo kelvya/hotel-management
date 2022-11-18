@@ -119,7 +119,7 @@ $("input[name='roomChoice']").click(function() {
             case "classic":
                 localStorage.setItem("quarto", quartos[1]['nome'])
                 document.querySelector("#bookingApt").innerText = `Classic`
-                ddocument.querySelector("#bookingValor_modal").innerText = `R$ ${(quartos[1]["valor"] * qtdAtual).toFixed(2)}`
+                document.querySelector("#bookingValor_modal").innerText = `R$ ${(quartos[1]["valor"] * qtdAtual).toFixed(2)}`
                 break
             case "premium":
                 localStorage.setItem("quarto", quartos[2]["nome"])
