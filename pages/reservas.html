@@ -26,6 +26,7 @@
     />
     <link rel="stylesheet" href="/src/css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/src/js/reservas.js" async></script>
 </head>
 
@@ -152,22 +153,22 @@
                     <section class="display-grid">
                         <article class=" ">
                             <div class="display-grid borda-padrao">
-                                <img class="imagem-padrao" src="../images/acomodacoes/acomodacoes-presidencial-1.png" alt="">
-                                <div calss=" ">
-                                    <h3 class="h3-primario" >Presidencial</h3>
-                                    <p class="p-primario">Presidencial ipsum dolor sit amet consectetur adipisicing elit. Sit nobis aliquam quibusdam aliquid quam perferendis autem eum numquam earum nam corporis mollitia cumque error, id quod laboriosam presidencial.</p>
+                                <img class="imagem-padrao" src="/images/acomodacoes/acomodacoes-presidencial-1.png" alt="">
+                                <div class=" ">
+                                    <h3 class="h3-primario" >Executive</h3>
+                                    <p class="p-primario">Executive ipsum dolor sit amet consectetur adipisicing elit. Sit nobis aliquam quibusdam aliquid quam perferendis autem eum numquam earum nam corporis mollitia cumque error, id quod laboriosam presidencial.</p>
                                     <p class="p-primario">R$190,00</p>
                                     <div class="p-primario">
                                         <label for="executive"> <input class="radioRoomChoice" type="radio"
-                                                name="roomChoice" id="executive" value="executive" required><span> Selecionar o quarto Presidencial</span></label>
+                                                name="roomChoice" id="executive" value="executive" ><span> Selecionar o quarto Presidencial</span></label>
                                     </div>
 
                                 </div>
                             </div>
                             <div class="display-grid borda-padrao">
-                                <img class="imagem-padrao" src="../images/acomodacoes/acomodacoes-luxo-1.png" alt="">
+                                <img class="imagem-padrao" src="/images/acomodacoes/acomodacoes-luxo-1.png" alt="">
                                 <div>
-                                    <h3 class="h3-primario" >Luxo</h3>
+                                    <h3 class="h3-primario" >Classic</h3>
                                     <p class="p-primario">Luxo ipsum dolor sit amet consectetur adipisicing elit. Sit nobis aliquam quibusdam aliquid quam perferendis autem eum numquam earum nam corporis mollitia cumque error, id quod laboriosam luxo.</p>
                                     <p class="p-primario">
                                         R$250,00
@@ -175,16 +176,16 @@
 
                                     <div class="p-primario">
                                         <label for="classic"> <input class="radioRoomChoice" type="radio"
-                                                name="roomChoice" id="classic" value="classic" required><span> Selecionar o quarto Luxo</span></label>
+                                                name="roomChoice" id="classic" value="classic" ><span> Selecionar o quarto Luxo</span></label>
                                     </div>
 
                                 </div>
                             </div>
                             </div>
                             <div class="display-grid borda-padrao">
-                                <img class="imagem-padrao" src="../images/acomodacoes/acomodacoes-standard-1.png" alt="">
+                                <img class="imagem-padrao" src="/images/acomodacoes/acomodacoes-standard-1.png" alt="">
                                 <div>
-                                    <h3 class="h3-primario">Standard</h3>
+                                    <h3 class="h3-primario">Premium</h3>
                                     <p class="p-primario">Standard ipsum dolor sit amet consectetur adipisicing elit. Sit nobis aliquam quibusdam aliquid quam perferendis autem eum numquam earum nam corporis mollitia cumque error, id quod laboriosam standard.
                                     </p>
                                     <p class="p-primario">
@@ -192,7 +193,7 @@
                                     </p>
                                     <div class="p-primario">
                                         <label for="premium"> <input class="radioRoomChoice" type="radio"
-                                                name="roomChoice" id="premium" value="premium" required><span> Selecionar o quarto Standard</span></label>
+                                                name="roomChoice" id="premium" value="premium" ><span> Selecionar o quarto Standard</span></label>
                                     </div>
                                 </div>
                             </div>
@@ -215,7 +216,7 @@
                                     
                                 </div>
                                 <div class="centralizar">
-                                <button class="btn-texto btn-padrao text-light" type="submit">CONTINUAR</button>
+                                <button class="btn-texto btn-padrao text-light" type="submit" id="continuar">CONTINUAR</button>
                                 </div>
                             </article>
                         </div>
@@ -236,6 +237,50 @@
         </aside>
     </main>
     <!-- <object class="footer-padrao" data="../components/footer.html"></object> -->
+
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Carrinho</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <!-- CONTEUDO -->
+                    <div class="">
+                        <p class="">
+                            
+                            <div class="borda-padrao">
+                                <h3 class="h3-primario" id="bookingApt_modal"></h3>
+                                <img class="imagem-padrao" id="bookingImg_modal" src="" alt="">
+
+                                <div id="modal-quarto">
+                                <h4 class="h3-primario">Descrição:</h4>
+                                <p class="p-primario"></p> 
+                                <p class="p-primario"></p>
+                            </div>
+                            </div>
+                            
+
+                            <div class="margin-padrao">Check-in: <span class="" id="bookingCheckIn_modal"></span></div>
+                            <div class="margin-padrao">Check-out: <span class="" id="bookingCheckOut_modal"></span></div>
+                            <div class="margin-padrao">Pessoas: <span class="" id="bookingQtd_modal"></span></div>
+                            <div class="margin-padrao">
+                                <ul id="bookingServices_modal"></ul>
+                            </div>
+                            <hr/>
+                            <div class="margin-padrao">Valor total: <span class="" id="bookingValor_modal"></span></div>
+                        </p>
+                    </div>
+                <!-- CONTEUDO -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="container-fluid global-bg-azul m-0 p-1">
         <div class="row">
