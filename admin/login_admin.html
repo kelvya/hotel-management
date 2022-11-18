@@ -147,35 +147,37 @@
         <section>
             <article class="articleLogin">
                 <!-- Acesso ao login de usuários -->
-                <form action="/pages/home.html" method="post" id="admin_formulario" >
+                <form class="p-top borda-primaria" action="/pages/home.html" method="post" id="admin_formulario" >
                     <fieldset class="fieldLogin fieldsetLogin">
-                    <h3 class="mg-form">Login</h3>
-                    <hr />
+                    <h2 class="h2-primario">Login</h2>
                     <ul>
-                        <li class="mg-form">
-                        <p>Email</p>
-                        <input
+                        <li class=" p-top list-style mg-form">
+                        <div class="p-secundario">Email</div>
+                        <input class="input-padrao"
                             placeholder="Insira seu usuário"
                             type="text"
                             id="adminEmail"
                             name="adminEmail"
                         />
                         </li>
-                        <li class="mg-form">
-                        <p>Senha</p>
-                        <input
+                        <li class="list-style mg-form">
+                        <div class="p-secundario">Senha</div>
+                        <input class="input-padrao"
                             placeholder="Insira sua senha"
                             type="password"
                             id="adminSenha"
                             name="adminSenha"
                         />
                         </li>
-                        <button class="btn btnLogin">CONFIRMAR</button>
+                        <div class="margem-padrao">
+                          <button class="btn-primario">CONFIRMAR</button>
+                        </div>
+                        <a class="link-pequeno margem-padrao" href="">Esqueceu sua senha?</a>
                     </ul>
                     </fieldset>
-                    <div class="fieldLogin pd-form">
-                    <a class="colorPrimary" href="">Esqueceu sua senha?</a>
-                    </div>
+                    
+                    
+                    
                 </form>
             </article>
         </section>

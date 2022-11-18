@@ -4,6 +4,10 @@
 .border0{
   border: 5px solid red;
 }
+
+.list-style{
+  list-style: none;
+}
 .header--container {
   background-image: mx.bg-background(v.$bg--img-background1);
   background-size: 100%;
@@ -54,6 +58,20 @@
   width: 90%;
 }
 
+.margem-padrao{
+  margin: 1rem 1rem;
+}
+
+.link-pequeno{
+  font: v.$fonte-quiscksand;
+  color: v.$cor-azul-escuro;
+  text-decoration: none;
+}
+
+.btn-primario{
+  @include mx.btn-primario;
+}
+
 .btn-padrao{
   background-color: v.$cor-azul-escuro;
   border: none;
@@ -74,13 +92,14 @@
 
 .borda-padrao{
   margin: 3rem;
-  border-radius: 15px;
-  box-shadow: 1px 3px 5px v.$cor-azul-escuro;
   padding: v.$p1;
-  &:hover{
-    box-shadow: 1px 4px 10px v.$cor-azul-escuro;
-  }
-  
+  @include mx.borda-padrao;
+}
+
+.borda-primaria{
+  margin: 5vw 30vw;
+  @include mx.borda-padrao;
+
 }
 
 .box-padrao{
@@ -190,6 +209,11 @@
 .p-primario {
   @include mx.p-primario;
 }
+
+.p-secundario {
+  @include mx.p-secundario;
+}
+
 .h2-secundario {
   @include mx.h2-secundario;
 }
@@ -311,6 +335,10 @@
 
   .btn-padrao{
     width: 80%;
+  }
+
+  .btn-beje{
+    @include mx.btn-primario;
   }
 
   .btn-texto{
