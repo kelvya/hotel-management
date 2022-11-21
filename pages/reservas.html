@@ -212,7 +212,7 @@
                             </p>
                             </div>
                             <div>
-                                <p><a class="link-padrao h3-primario" href="#"><i class="fa fa-plus fa-2x" aria-hidden="true"></i> MAIS SERVIÇOS</a></p>
+                                <p><a class="link-padrao h3-primario" id="maisServicos" href="#"><i class="fa fa-plus fa-2x" aria-hidden="true"></i> MAIS SERVIÇOS</a></p>
                                 
                             </div>
                             <div class="centralizar">
@@ -268,6 +268,52 @@
                             </div>
                             <hr/>
                             <div class="margin-padrao">Valor total: <span class="" id="bookingValor_modal"></span></div>
+                        </p>
+                    </div>
+                <!-- CONTEUDO -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODAL MAIS SERVIÇOS -->
+    <div class="modal" id="modalMaisServicos" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Serviços adicionais</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <!-- CONTEUDO -->
+                    <div class="">
+                        <p class="">
+                            
+                            <div class="borda-padrao">
+                                <h3 class="h3-primario" id="bookingApt_modal"></h3>
+                                <img class="imagem-padrao" id="bookingImg_modal" src="" alt="">
+
+                                <div id="modal-servicos">
+                                <ul class="list-group">
+                                    <li class="list-group-item border-0">Acesso à academia - R$100 <input type="checkbox" class="inputServico" name="servicos" id="academia"></li>
+                                    <li class="list-group-item border-0">Early check-in/Late Check-in - R$50 <input type="checkbox" class="inputServico" name="servicos" id="e/lCheckin"></li>
+                                    <li class="list-group-item border-0">Café da manhã - R$190 <input type="checkbox" class="inputServico" name="servicos" id="cafeDaManha"></li>
+                                    <li class="list-group-item border-0">Serviço de lavanderia - R$100 <input type="checkbox" class="inputServico" name="servicos" id="lavanderia"></li>
+                                    <li class="list-group-item border-0">Serviços de spa -  R$250  <input type="checkbox" class="inputServico" name="servicos" id="spa"></li>
+                                </ul>
+                            </div>
+                            </div>
+                        
+                            <div class="margin-padrao">
+                                <ul id="bookingServices_modal"></ul>
+                            </div>
+                            <hr/>
+                            <div class="margin-padrao">Valor total: <span class="valorTotal" id="valorTotal">R$ 0</span></div>
                         </p>
                     </div>
                 <!-- CONTEUDO -->
