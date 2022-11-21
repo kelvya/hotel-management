@@ -160,7 +160,7 @@ $("#continuar").click(function () {
     localStorage.getItem("checkout") &&
     localStorage.getItem("qtdPessoas")
   ) {
-    $(".modal").modal("show");
+    $("#modalContinuar").modal("show")
 
     document.querySelector("#bookingApt_modal").innerText =
       localStorage.getItem("quarto")[0].toUpperCase() +
