@@ -2,7 +2,8 @@
 #card1 {
   background-image: url(/images/acomodacoes/acomodacoes-presidencial-1.png);
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 #card1 h2::before {
   content: "Quarto 1 Presidencial";
@@ -12,13 +13,14 @@
   font: "Quicksand";
   text-align: center;
   padding-top: 0;
-  margin-top: 20rem;
+  margin-top: 5vh;
 }
 
 #card2 {
   background-image: url(/images/acomodacoes/acomodacoes-presidencial-2.png);
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 #card2 h2::before {
   content: "Quarto 2 Presidencial";
@@ -28,13 +30,14 @@
   font: "Quicksand";
   text-align: center;
   padding-top: 0;
-  margin-top: 20rem;
+  margin-top: 5vh;
 }
 
 #card3 {
   background-image: url(/images/acomodacoes/acomodacoes-presidencial-3.png);
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 #card3 h2::before {
   content: "Quarto 3 Presidencial";
@@ -44,13 +47,14 @@
   font: "Quicksand";
   text-align: center;
   padding-top: 0;
-  margin-top: 20rem;
+  margin-top: 5vh;
 }
 
 #card4 {
   background-image: url(/images/acomodacoes/acomodacoes-luxo-1.png);
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 #card4 h2::before {
   content: "Quarto 1 Luxo";
@@ -60,13 +64,14 @@
   font: "Quicksand";
   text-align: center;
   padding-top: 0;
-  margin-top: 20rem;
+  margin-top: 5vh;
 }
 
 #card5 {
   background-image: url(/images/acomodacoes/acomodacoes-luxo-2.png);
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 #card5 h2::before {
   content: "Quarto 2 Luxo";
@@ -76,13 +81,14 @@
   font: "Quicksand";
   text-align: center;
   padding-top: 0;
-  margin-top: 20rem;
+  margin-top: 5vh;
 }
 
 #card6 {
   background-image: url(/images/acomodacoes/acomodacoes-luxo-3.png);
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 #card6 h2::before {
   content: "Quarto 3 Luxo";
@@ -92,13 +98,14 @@
   font: "Quicksand";
   text-align: center;
   padding-top: 0;
-  margin-top: 20rem;
+  margin-top: 5vh;
 }
 
 #card7 {
   background-image: url(/images/acomodacoes/acomodacoes-standard-1.png);
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 #card7 h2::before {
   content: "Quarto 1 Standard";
@@ -108,13 +115,14 @@
   font: "Quicksand";
   text-align: center;
   padding-top: 0;
-  margin-top: 20rem;
+  margin-top: 5vh;
 }
 
 #card8 {
   background-image: url(/images/acomodacoes/acomodacoes-standard-2.png);
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 #card8 h2::before {
   content: "Quarto 2 Standard";
@@ -124,13 +132,14 @@
   font: "Quicksand";
   text-align: center;
   padding-top: 0;
-  margin-top: 20rem;
+  margin-top: 5vh;
 }
 
 #card9 {
   background-image: url(/images/acomodacoes/acomodacoes-standard-3.png);
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 #card9 h2::before {
   content: "Quarto 3 Standard";
@@ -140,7 +149,7 @@
   font: "Quicksand";
   text-align: center;
   padding-top: 0;
-  margin-top: 20rem;
+  margin-top: 5vh;
 }
 
 /*----------------------------------
@@ -153,6 +162,14 @@
 
 .esconder {
   display: none;
+}
+
+.margin0, .acomodacoes--card-titulo {
+  margin: 0;
+}
+
+.padding0 {
+  padding: 0;
 }
 
 .alinhamento {
@@ -355,6 +372,8 @@
 */
 .global-bg-azul {
   background-color: #213242;
+  background-size: 100%;
+  margin: 0;
 }
 
 .color--bege {
@@ -364,9 +383,12 @@
 .header--container {
   background-image: url(../../images/background/background-1.png);
   background-size: 100%;
+  margin: 0;
   background-repeat: no-repeat;
+  background-position: center top;
   background-attachment: fixed;
   color: #e1c888;
+  font: "Quicksand";
   text-shadow: 1px 1px 1px rgba(1, 1, 8, 0.6);
 }
 
@@ -477,10 +499,13 @@
   border: 1px solid white;
   border-radius: 30px;
   box-shadow: 8px 8px 10px #213242;
-  height: 60vh;
+  height: 50vh;
 }
 .acomodacoes--card:hover {
   box-shadow: 8px 8px 10px #3c5a74;
+}
+.acomodacoes--card-titulo {
+  position: top;
 }
 
 @media (max-width: 1170px) {
