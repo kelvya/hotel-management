@@ -1,0 +1,373 @@
+@use "variaveis" as v;
+@use "mixins" as mx;
+
+/*----------------------------------
+* CLASSES COMUNS EM TODAS AS PÁGINAS
+*-----------------------------------
+*/
+
+.list-style{
+  list-style: none;
+}
+
+.esconder{
+  display: none;
+}
+
+.margin0{
+  margin: 0;
+}
+
+.padding0{
+  padding: 0;
+}
+
+.alinhamento {
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.display-grid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.flex-wrap{
+  display: block;
+  flex-wrap: wrap;
+}
+
+.centralizar{
+  text-align: center;
+  align-items: center;
+}
+
+.p-top{
+  padding: 1rem 0 0 0;
+}
+
+.link-padrao{
+  @include mx.p-primario;
+  &:hover{
+    color: v.$cor-dourado-escuro;
+  }
+  text-decoration: none;
+}
+
+.link-pequeno{
+  font: v.$fonte-quiscksand;
+  color: v.$cor-azul-escuro;
+  text-decoration: none;
+}
+
+.btn-primario{
+  @include mx.btn-primario;
+}
+
+.btn-secundario{
+  border: #213242 solid 1px;
+  margin: 1rem;
+  width: 22vw;
+  height: 2.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px v.$cor-azul-escuro;
+  background-color: v.$cor-azul-escuro
+}
+
+.btn-terceario{
+  @include mx.input-padrao;
+}
+
+.btn-padrao{
+  background-color: v.$cor-azul-escuro;
+  border: none;
+  box-shadow: 3px 1px 8px white inset;
+  border-radius: 20px;
+  width: 50%;
+  height: 3rem;
+  margin: 1rem 1rem;
+  
+}
+
+.btn-texto{
+  color: white;
+  font: v.$fonte-quiscksand;
+  text-align: center;
+  font-size: 1vw;
+}
+
+.margem-padrao{
+  margin: 1rem 1rem;
+}
+
+.margin-left{
+  margin: v.$mx1;
+}
+
+.margin-padrao{
+  padding: 0.5rem;
+}
+
+.imagem-padrao{
+  margin: 1.5rem;
+  width: 90%;
+}
+
+.borda-padrao{
+  margin: 3rem; 
+  padding: v.$p1;
+  @include mx.borda-padrao;
+}
+
+.borda-primaria{
+  margin: 5vw 30vw;
+  @include mx.borda-padrao;
+
+}
+
+.box-padrao{
+  background-color: rgba(225, 200, 136, 0.7);
+  width: 80%;
+  padding: 3%;
+  margin-left: 1.8rem;
+  text-align: start;
+}
+
+.input-padrao{
+  @include mx.input-padrao;
+}
+
+.input-basico{
+  @include mx.input-basico;
+  width: 70vw;
+  height: 2.5rem;
+}
+
+.h2-primario {
+  @include mx.h2-primario;
+}
+
+.h2-secundario {
+  @include mx.h2-secundario;
+}
+
+.h3-primario {
+  @include mx.h3-primario;
+}
+
+.h3-secundario {
+  @include mx.h3-secundario;
+}
+
+.p-primario {
+  @include mx.p-primario;
+}
+
+.p-secundario {
+  @include mx.p-secundario;
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------------
+* HEADER E FOOTER - TODAS AS PÁGINAS
+*-----------------------------------
+*/
+
+.global-bg-azul {
+  background-color: v.$cor-azul-escuro;
+  background-size: 100%;
+  margin: 0;
+}
+
+.color--bege {
+  color: v.$cor-bege !important;
+}
+
+.header--container {
+  background-image: mx.bg-background(v.$bg--img-background1);
+  background-size: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  color: v.$cor-bege;
+  font: v.$fonte-quiscksand;
+  text-shadow: 1px 1px 1px rgba(1, 1, 8, 0.6);
+}
+
+.header--container2 {
+  width: 70%;
+
+  &-container {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &-item {
+    padding: v.$p1;
+  }
+
+  &-link {
+    color: v.$cor-bege;
+  }
+}
+
+.header--logo {
+  background: v.$img--logo--bege no-repeat transparent;
+  background-size: 100%;
+  width: 100px;
+  height: 100px;
+  padding: 0 0 0 0;
+  margin: 20px;
+  font: "Quicksand";
+  letter-spacing: 0;
+}
+
+.nav-link {
+  color: v.$cor-bege;
+
+  &:hover {
+    color: v.$cor-dourado-escuro;
+  }
+}
+
+
+
+/*---------------
+* RESERVAS
+*---------------
+*/
+
+.resumo-reserva-conteudo{
+  // border: solid red 2px;
+  margin-top: 3vw;
+}
+
+.resumo-reserva{
+  height: 35rem;
+  // padding: 15vh 5vh 15vh 5vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.borda-resumo-reserva{
+  margin: 10vh 5vh;
+  padding: v.$p1;
+  @include mx.borda-padrao;
+}
+
+.box-reservas{
+  background-color: rgba(225, 200, 136, 0.7);
+  width: 100%;
+  padding: 3%;
+  text-align: start;
+  margin-top: 2rem;
+}
+
+.btn-resumo-reservas{
+  background-color: v.$cor-azul-escuro;
+  border: none;
+  box-shadow: 3px 1px 8px white inset;
+  border-radius: 20px;
+  width: 100%;
+  height: 3rem;
+}
+
+.h3-resumo-reservas{
+  @include mx.h3-primario;
+  text-align: center
+}
+
+/*---------------
+* ACOMODAÇÕES
+*---------------
+*/
+
+.acomodacoes {
+  @include mx.box;
+  @include mx.flex-center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+
+  &--card {
+   @include mx.card-padrao;
+   height: 50vh;
+
+    &:hover {
+      box-shadow: 8px 8px 10px v.$cor-azul-medio;
+    }
+
+    &-titulo{
+      @extend .margin0;
+      position: top;
+    }
+  }
+}
+
+@media (max-width: 1170px) {
+  .acomodacoes,
+  .acomodacoes--card {
+    flex-flow: column;
+    min-width: 90%;
+    
+  }
+}
+
+/*--------
+*  CONTATO
+*---------
+*/
+
+
+
+
+
+
+/*--------
+*     HOME
+*---------
+*/
+
+.home--banner {
+  background-image: mx.bg-background(v.$bg--img-background4);
+  background-size: 100%;
+  height: 30vw;
+  background-repeat: no-repeat;
+}
+
+
+@media (max-width: 1170px){
+  .display-grid{
+    display: inline-block;
+    
+  }
+  
+  .resumo-reserva{
+    display: inline-block;
+    width: 80%;
+    height: 35rem;
+  }
+
+  .btn-padrao{
+    width: 80%;
+  }
+
+  .btn-beje{
+    @include mx.btn-primario;
+  }
+
+  .btn-texto{
+    font-size: larger;
+  }
+}

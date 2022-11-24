@@ -1,84 +1,334 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <link rel="stylesheet" type="text/css" href="../src/style.css" />      
-        <title>Grand Royal - Contato</title>
-    </head>
-    <body>
-      <div style="background-color:#213242; position: fixed; width: 100%;">
-        <object width="100%" height="160vh" data="../components/header.html"></object>
-        <hr>
-        <nav>
-            <object width="100%" height="60vh" data="../components/navbar_up.html"></object>
-        </nav>
-    </div>   
-        <main class="contato-responsivo">
-            <section class="contato-estiloForm">
-                <article>
-                  <h2>Entre em contato conosco</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grand Royal - Contato</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/logo/logo--azul-escuro.png"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Quando&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiro+Devanagari+Hindi:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Quando&family=Quicksand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiro+Devanagari+Hindi:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/css/style.css" />
+  </head>
+  <body>
+    <!-- <div class="header-main">
+      <object
+        width="100%"
+        height="160vh"
+        data="../components/header.html"
+      ></object>
+      <hr />
+      <nav>
+        <object
+          width="100%"
+          height="60vh"
+          data="../components/navbar_up.html"
+        ></object>
+      </nav>
+    </div> -->
 
-                  <form action="">
-                    <fieldset>
-                      <legend class="contato-legenda">&nbsp Preencha todos os dados &nbsp</legend>
-        
-                      <ul>
-                        <li class="contato-li">
-                          <label for="nome">Nome:</label><br />
-                          <input type="text" name="nome" id="nome" size="30" autofocus />
-                        </li>
-                      </ul>
-        
-                      <ul>
-                        <li class="contato-li">
-                          <label for="email">E-mail:</label><br />
-                          <input type="text" name="email" id="email" size="30"/>
-                        </li>
-                      </ul>
-        
-                      <ul>
-                        <li class="contato-li">
-                          <label for="telefone">Telefone:</label><br />
-                          <input type="text" name="telefone" id="telefone" size="30"/>
-                        </li>
-                      </ul>
-        
-                      <ul>
-                        <li class="contato-li">
-                          <label for="assuntos">Escolha o assunto que deseja falar:</label><br />
-                          <select name="assuntos_opt" id="assuntos_opt">
-                            <option value="null_opc">          </option>
-                            <option value="cancelamento">Cancelamento de Reserva </option>
-                            <option value="financeiro">Departamento Financeiro </option>
-                            <option value="ouvidoria">Ouvidoria </option>
-                          </select>                                
-                        </li>
-                      </ul>
-        
-                      <ul>
-                        <li class="contato-li">
-                          <label for="nome">Digite sua mensagem:</label><br />
-                          <textarea name="textArea" id="textArea" cols="60" rows="10"></textarea>
-                        </li>
-                      </ul>
-                      <div class="contato-div-button">
-                        <ul >
-                          <button class="contato-button" type="submit">Enviar</button>
-                        </ul>
-                      </div>
-                      
-                    </fieldset>
-                  </form>
+    <header
+      class="header--container container-fluid text-end m-0 p-1"
+    >
+      <!-- <div class="container">
+                <button class="btn btn-secondary text-bg-secondary col p-1" >Olá usuário</button>
+                <button class="btn btn-secondary text-bg-secondary  col p-1 ">sair</button>
+            </div> -->
 
-                </article>
-            </section>
-            <aside>
-                
-            </aside>
-        </main>
-      <object class="footer-padrao" data="../components/footer.html"></object>  
-    </body>
-    
+      <div class="d-flex align-items-center">
+          <a class="header--logo" href="/pages/home.html" title="Grand Hoyal Hotel"
+          ></a>
+        <div class="header--container2">
+          <ul class="header--container2-container">
+                    <li class="header--container2-item">
+                        <a href="#" class="header--container2-link text-bege">
+                            <i class="fa-brands fa-whatsapp fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="header--container2-item">
+                        <a href="#" class="header--container2-link text-bege">
+                            <i class="fa-brands fa-instagram fa-2x" ></i>
+                        </a>
+                    </li>
+                    <li class="header--container2-item">
+                        <a href="#" class="header--container2-link text-bege">
+                            <i class="fa-brands fa-facebook-f fa-2x"></i>
+                        </a>
+                    </li>
+          </ul>
+          <p class="header--container2-container alinhamento m-1 p-1">
+          A sofisticação e o conforto ideal.<br />
+          Vem ser Grand, vem ser Royal!
+        </p>
+        </div>
+      </div>
+
+      <!-- <button class="btn btn-secondary col p-1">
+                Cadastre-se
+            </button> -->
+    </header>
+    <nav class="navbar navbar-expand-sm global-bg-azul">
+        <a class="navbar-brand ps-3 color--bege" href="/pages/home.html">
+        Grand Hoyal Hotel</a
+      >
+
+      <div class="collapse " id="navbarToggleExternalContent">
+        <div class=" p-4">
+          <ul class="navbar-nav ">
+            <li class="nav-item ">
+              <a class="nav-link color--bege" href="/pages/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color--bege" href="/pages/sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color--bege" href="/pages/acomodacoes.html">Acomodações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color--bege" href="/pages/reservas.html">Reservas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color--bege" href="/pages/contatos.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar navbar-dark ">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler color--bege"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-bars " aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="colNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/acomodacoes.html">Acomodações</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/reservas.html">Reservas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/contatos.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="contato-responsivo ">
+      <section class="contato-estiloForm section-pd p-top">
+        <article>
+          <h2 class="h2-primario">Entre em contato conosco</h2>
+
+          <form class="h3-primario " action="">
+            <fieldset class="fieldLogin fieldsetLogin">
+              <legend class="contato-legenda ">
+                &nbsp Preencha todos os dados &nbsp
+              </legend>
+
+              <ul class="list-style">
+                <li class="contato-li">
+                  <label for="nome">Nome:</label><br />
+                  <input class="input-basico"
+                    type="text"
+                    name="nome"
+                    id="nome"
+                    size="30"
+                    autofocus
+                  />
+                </li>
+              </ul>
+
+              <ul class="list-style">
+                <li class="contato-li">
+                  <label for="email">E-mail:</label><br />
+                  <input class="input-basico" 
+                  type="text" 
+                  name="email" 
+                  id="email" 
+                  size="30" />
+                </li>
+              </ul>
+
+              <ul class="list-style">
+                <li class="contato-li">
+                  <label for="telefone">Telefone:</label><br />
+                  <input class="input-basico" 
+                  type="text" 
+                  name="telefone" 
+                  id="telefone" 
+                  size="30" />
+                </li>
+              </ul>
+
+              <ul class="list-style">
+                <li class="contato-li">
+                  <label for="assuntos"
+                    >Escolha o assunto que deseja falar:</label
+                  ><br />
+                  <select name="assuntos_opt" id="assuntos_opt">
+                    <option value="null_opc"></option>
+                    <option value="cancelamento">
+                      Cancelamento de Reserva
+                    </option>
+                    <option value="financeiro">Departamento Financeiro</option>
+                    <option value="ouvidoria">Ouvidoria</option>
+                  </select>
+                </li>
+              </ul>
+
+              <ul class="list-style">
+                <li class="contato-li">
+                  <label for="nome">Digite sua mensagem:</label><br />
+                  <textarea
+                    name="textArea form-control"
+                    id="textArea"
+                    class="contato-textArea "
+                    cols="40"
+                    rows="10"
+                  ></textarea>
+                </li>
+              </ul class="list-style">
+              <ul class="contato-div-button">
+                <button class="contato-button btn-terceario" type="submit">Enviar</button>
+              </ul>
+            </fieldset>
+          </form>
+        </article>
+      </section>
+      <aside class="hide"></aside>
+    </main>
+    <!-- <object class="footer-padrao" data="../components/footer.html"></object> -->
+
+    <footer class="container-fluid global-bg-azul m-0 p-1">
+        <div class="row">
+            <div class="row">
+                <div class="col-sm-2 ps-5 d-flex text-sm-center p-2">
+                    <img src="/images/logo/logo--bege.png" width="75px" alt="Logomarca - Grand Royal Hotel" />
+                </div>
+                <div class="col">
+                    <div class="col-sm-10 text-sm-center p-1">
+                        <nav class="global-bg-azul navbar navbar-expand-sm">
+                            <a class="navbar-brand color--bege ps-3" href="/pages/home.html"> Grand Hoyal Hotel</a>
+
+                            <div class="collapse" id="navbarToggleExternalContent">
+                                <div class=" p-4">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/pages/home.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/pages/sobre.html">Sobre</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/pages/acomodacoes.html">Acomodações</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/pages/reservas.html">Reservas</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/pages/contatos.html">Contato</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navbar">
+                                <div class="container-fluid">
+                                    <button class="navbar-toggler color--bege" type="button" data-mdb-toggle="collapse"
+                                        data-mdb-target="#navbarToggleExternalContent"
+                                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        <i class="fa fa-bars" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="collapse navbar-collapse" id="colNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link color--bege" href="/pages/home.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link color--bege" href="/pages/sobre.html">Sobre</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link color--bege" href="/pages/acomodacoes.html">Acomodações</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link color--bege" href="/pages/reservas.html">Reservas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link color--bege" href="/pages/contatos.html">Contato</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="row-sm-10 p-1 text-end">
+                        <span class="color--bege">Grand Hoyal Hotel&copy;2022 - Todos os direitos reservados.</span>
+                    </div>
+                </div>
+
+                <div class=" row">
+                    <div class="col-sm-6 p-5 color--bege">
+                        <div class="row">
+                            <i class=" col-sm-2 fa fa-phone fa-1x" aria-hidden="true"></i>
+                            <p class=" col-sm-10 color--bege">+55 (11) 9999-9999</p>
+                        </div>
+                        <div class="row">
+                            <i class=" col-sm-2 fa fa-envelope fa-1x" aria-hidden="true"></i>
+                            <p class=" col-sm-10 color--bege">contato@granghoyalhotel.com</p>
+                        </div>
+                        <div class="row">
+                            <i class=" col-sm-2 fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                            <p class=" col-sm-10 color--bege">Rua Algum Lugar, n° 0 - Centro <br /> São Paulo - Brasil
+                            </p>
+                        </div>
+                        <div class="col">
+                            <a><i class="fa-brands fa-whatsapp fa-3x"></i></a>
+                            <a><i class="fa-brands fa-instagram fa-3x"></i></a>
+                            <a><i class="fa-brands fa-facebook fa-3x"></i></a>
+                            <a><i class="fa-brands fa-linkedin-in fa-3x"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 row color--bege p-5">
+                        <a><i class="text-center col-sm-12 fa fa-map fa-5x" aria-hidden="true"></i></a>
+                        <p class="text-center color--bege">Veja no maps</p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+  </body>
 </html>

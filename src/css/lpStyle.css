@@ -1,0 +1,287 @@
+#card1 {
+  background-image: url(/images/acomodacoes/acomodacoes-presidencial-1.png);
+  background-size: cover;
+}
+#card1 h2::before {
+  content: "Quarto 1 Presidencial";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.7);
+  color: #e1c888;
+  font: "Quicksand";
+  padding: 1rem 0.5rem;
+  margin-top: 19rem;
+}
+
+#card2 {
+  background-image: url(/images/acomodacoes/acomodacoes-presidencial-2.png);
+  background-size: cover;
+}
+#card2 h2::before {
+  content: "Quarto 2 Presidencial";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.7);
+  color: #e1c888;
+  font: "Quicksand";
+  padding: 1rem 0.5rem;
+  margin-top: 19rem;
+}
+
+#card3 {
+  background-image: url(/images/acomodacoes/acomodacoes-presidencial-3.png);
+  background-size: cover;
+}
+#card3 h2::before {
+  content: "Quarto 3 Presidencial";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.7);
+  color: #e1c888;
+  font: "Quicksand";
+  padding: 1rem 0.5rem;
+  margin-top: 19rem;
+}
+
+#card4 {
+  background-image: url(/images/acomodacoes/acomodacoes-luxo-1.png);
+  background-size: cover;
+}
+#card4 h2::before {
+  content: "Quarto 1 Luxo";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.7);
+  color: #e1c888;
+  font: "Quicksand";
+  padding: 1rem 0.5rem;
+  margin-top: 19rem;
+}
+
+#card5 {
+  background-image: url(/images/acomodacoes/acomodacoes-luxo-2.png);
+  background-size: cover;
+}
+#card5 h2::before {
+  content: "Quarto 2 Luxo";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.7);
+  color: #e1c888;
+  font: "Quicksand";
+  padding: 1rem 0.5rem;
+  margin-top: 19rem;
+}
+
+#card6 {
+  background-image: url(/images/acomodacoes/acomodacoes-luxo-3.png);
+  background-size: cover;
+}
+#card6 h2::before {
+  content: "Quarto 3 Luxo";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.7);
+  color: #e1c888;
+  font: "Quicksand";
+  padding: 1rem 0.5rem;
+  margin-top: 19rem;
+}
+
+#card7 {
+  background-image: url(/images/acomodacoes/acomodacoes-standard-1.png);
+  background-size: cover;
+}
+#card7 h2::before {
+  content: "Quarto 1 Standard";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.7);
+  color: #e1c888;
+  font: "Quicksand";
+  padding: 1rem 0.5rem;
+  margin-top: 19rem;
+}
+
+#card8 {
+  background-image: url(/images/acomodacoes/acomodacoes-standard-2.png);
+  background-size: cover;
+}
+#card8 h2::before {
+  content: "Quarto 2 Standard";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.7);
+  color: #e1c888;
+  font: "Quicksand";
+  padding: 1rem 0.5rem;
+  margin-top: 19rem;
+}
+
+#card9 {
+  background-image: url(/images/acomodacoes/acomodacoes-standard-3.png);
+  background-size: cover;
+}
+#card9 h2::before {
+  content: "Quarto 3 Standard";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.7);
+  color: #e1c888;
+  font: "Quicksand";
+  padding: 1rem 0.5rem;
+  margin-top: 19rem;
+}
+
+#sm_card1 {
+  background-image: url(/images/redes_sociais/SPA.png);
+  background-size: cover;
+}
+
+#sm_card2 {
+  background-image: url(/images/redes_sociais/chefes_de_cozinha.png);
+  background-size: cover;
+}
+
+#sm_card3 {
+  background-image: url(/images/redes_sociais/ensaio_fotos.png);
+  background-size: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.secoes {
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 1rem 0;
+  background: #213242;
+}
+.btn a {
+  text-decoration: none;
+  display: block;
+  padding: 1rem 1.5rem;
+  color: #e1c888;
+}
+.btn a:hover {
+  color: #213242;
+}
+.btn:hover, .btn :hover a {
+  background: #e1c888;
+}
+
+.oferta {
+  line-height: 2rem;
+  align-items: flex-start;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.oferta__descricao {
+  margin: 0 50px 4em 0;
+  width: calc(70% - 50px);
+  box-sizing: border-box;
+}
+.oferta__descricao__titulo {
+  font: "Quando";
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.oferta__descricao__texto {
+  font: "Quicksand";
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.oferta__descricao__botao {
+  display: inline-block;
+}
+.oferta__descricao__slogan {
+  position: absolute;
+  bottom: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: linear-gradient(to right, #213242 20%, #e3a92c 40%, #e1c888 60%, #213242 80%);
+  background-size: 200% auto;
+  color: #000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animacaoSlogan 6s linear infinite;
+}
+.oferta__video {
+  width: 30%;
+  height: auto;
+  display: inline;
+}
+.oferta__video video {
+  border-radius: 12px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@keyframes animacaoSlogan {
+  to {
+    background-position: 200% center;
+  }
+}
+@media (max-width: 1170px) {
+  .oferta {
+    flex-direction: column;
+    min-width: 100%;
+  }
+  .oferta__descricao {
+    width: 100%;
+  }
+  .oferta__descricao__botao {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .oferta__descricao__slogan {
+    position: relative;
+    text-align: right;
+  }
+  .oferta__video {
+    width: 100%;
+  }
+}
+.social-media {
+  min-width: 1170px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.social-media__card {
+  width: 28%;
+  display: grid;
+  margin-right: 0.6rem;
+  margin-bottom: 0 0.5rem;
+  box-shadow: 6px 6px 6px 6px;
+  height: 320px;
+  border: 0.6px solid rgb(165, 161, 161);
+}
+
+.social-media__titulo {
+  font: "Quicksand";
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+h2 {
+  font-size: quiscksand;
+  padding-right: 2px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=lpStyle.css.map */

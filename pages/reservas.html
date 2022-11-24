@@ -5,62 +5,416 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../src/style.css" />
     <title>Grand Royal - Reservas</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo/logo--azul-escuro.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Quando&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiro+Devanagari+Hindi:ital@1&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Quando&family=Quicksand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiro+Devanagari+Hindi:ital@1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" async></script>
+    <script src="/src/js/reservas.js" async></script>
 </head>
 
 <body>
-    
-    <div style="background-color:#213242; position: fixed; width: 100%;">
-        <object width="100%" height="160vh" data="../components/header.html"></object>
-        <hr>
-        <nav>
-            <object width="100%" height="60vh" data="../components/navbar_up.html"></object>
-        </nav>
-    </div> 
 
-    <main style="padding-top: 30vh;">
-        <section>
-           <form id="form" action="" method="post" autocomplete="on">
-           <fieldset>
-            <h2>Faça a Sua Reserva</h2>
-            <ul>
-                <li>
-                    <label for="checkin">
-                        Data do checkin
-                    </label>
-                    <p><input type="date" name="checkin" id="checkin"></p>
+    <header class="header--container container-fluid text-end m-0 p-1">
+        <!-- <div class="container">
+                <button class="btn btn-secondary text-bg-secondary col p-1" >Olá usuário</button>
+                <button class="btn btn-secondary text-bg-secondary  col p-1 ">sair</button>
+            </div> -->
+
+        <div class="d-flex align-items-center">
+            <a class="header--logo" href="/pages/home.html" title="Grand Hoyal Hotel"></a>
+            <div class="header--container2">
+                <ul class="header--container2-container">
+                    <li class="header--container2-item">
+                        <a href="#" class="header--container2-link text-bege">
+                            <i class="fa-brands fa-whatsapp fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="header--container2-item">
+                        <a href="#" class="header--container2-link text-bege">
+                            <i class="fa-brands fa-instagram fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="header--container2-item">
+                        <a href="#" class="header--container2-link text-bege">
+                            <i class="fa-brands fa-facebook-f fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="header--container2-container alinhamento m-1 p-1">
+                    A sofisticação e o conforto ideal.<br />
+                    Vem ser Grand, vem ser Royal!
+                </p>
+            </div>
+        </div>
+
+        <!-- <button class="btn btn-secondary col p-1">
+                Cadastre-se
+            </button> -->
+    </header>
+    <nav class="navbar navbar-expand-sm global-bg-azul">
+        <a class="navbar-brand ps-3 color--bege" href="/pages/home.html">
+            Grand Hoyal Hotel</a>
+
+        <div class="collapse " id="navbarToggleExternalContent">
+            <div class=" p-4">
+                <ul class="navbar-nav ">
+                    <li class="nav-item ">
+                        <a class="nav-link color--bege" href="/pages/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color--bege" href="/pages/sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color--bege" href="/pages/acomodacoes.html">Acomodações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color--bege" href="/pages/reservas.html">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color--bege" href="/pages/contatos.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar navbar-dark ">
+            <div class="container-fluid">
+                <button class="navbar-toggler color--bege" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars " aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="colNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/home.html">Home</a>
                 </li>
-                <li>
-                    <label for="checkout">
-                        Data do checkout
-                    </label>
-                    <p><input type="date" name="checkout" id="checkout"></p>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/sobre.html">Sobre</a>
                 </li>
-                <li>
-                    <label for="qtdAdultos">
-                        Quantidade de Adultos
-                    </label>
-                    <p><input type="number" name="qtdAdultos" id="qtdAdultos"></p>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/acomodacoes.html">Acomodações</a>
                 </li>
-                <li>
-                    <label for="qtdCriancas">
-                        Quantidade de Crianças
-                    </label>
-                    <p><input type="number" name="qtdCriancas" id="qtdCriancas"></p>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/reservas.html">Reservas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/contatos.html">Contato</a>
                 </li>
             </ul>
-           </fieldset>
+        </div>
+    </nav>
 
-           </form>
+    <main>
+        <section>
+
+            <fieldset>
+                <div class="myReservation p-top">
+                    <h2 class="h2-primario ">Minha Reserva</h2>
+                    <p class="p-primario">
+                        Forneça a data de entrada, saída e quantidade de pessoas.
+                    </p>
+                    <span class="margin-left">
+                        <input class="input-padrao" type="date" name="checkin" id="checkin" required>
+                        <input class="input-padrao" type="date" name="checkout" id="checkout" required>
+                        <input class="input-padrao" type="number" name="qtdPessoas" id="qtdPessoas" min="1" required>
+                    </span>
+                    <p class="p-primario">Escolha o quarto</p>
+                </div>
+                <section class="display-grid">
+                    <article class=" ">
+                        <div class="display-grid borda-padrao">
+                            <img class="imagem-padrao" src="/images/acomodacoes/acomodacoes-presidencial-1.png" alt="">
+                            <div class=" ">
+                                <h3 class="h3-primario">Executive</h3>
+                                <p class="p-primario">Executive ipsum dolor sit amet consectetur adipisicing elit. Sit
+                                    nobis aliquam quibusdam aliquid quam perferendis autem eum numquam earum nam
+                                    corporis mollitia cumque error, id quod laboriosam presidencial.</p>
+                                <p class="p-primario">R$190,00</p>
+                                <div class="p-primario">
+                                    <label for="executive"> <input class="radioRoomChoice" type="radio"
+                                            name="roomChoice" id="executive" value="executive" required><span>
+                                            Selecionar o quarto Presidencial</span></label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="display-grid borda-padrao">
+                            <img class="imagem-padrao" src="/images/acomodacoes/acomodacoes-luxo-1.png" alt="">
+                            <div>
+                                <h3 class="h3-primario">Classic</h3>
+                                <p class="p-primario">Luxo ipsum dolor sit amet consectetur adipisicing elit. Sit nobis
+                                    aliquam quibusdam aliquid quam perferendis autem eum numquam earum nam corporis
+                                    mollitia cumque error, id quod laboriosam luxo.</p>
+                                <p class="p-primario">
+                                    R$250,00
+                                </p>
+
+                                <div class="p-primario">
+                                    <label for="classic"> <input class="radioRoomChoice" type="radio" name="roomChoice"
+                                            id="classic" value="classic" required><span> Selecionar o quarto
+                                            Luxo</span></label>
+                                </div>
+
+                            </div>
+                        </div>
+                        </div>
+                        <div class="display-grid borda-padrao">
+                            <img class="imagem-padrao" src="/images/acomodacoes/acomodacoes-standard-1.png" alt="">
+                            <div>
+                                <h3 class="h3-primario">Premium</h3>
+                                <p class="p-primario">Standard ipsum dolor sit amet consectetur adipisicing elit. Sit
+                                    nobis aliquam quibusdam aliquid quam perferendis autem eum numquam earum nam
+                                    corporis mollitia cumque error, id quod laboriosam standard.
+                                </p>
+                                <p class="p-primario">
+                                    R$400,00
+                                </p>
+                                <div class="p-primario">
+                                    <label for="premium"> <input class="radioRoomChoice" type="radio" name="roomChoice"
+                                            id="premium" value="premium" required><span> Selecionar o quarto
+                                            Standard</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </article>
+                    <div class=" borda-resumo-reserva resumo-reserva">
+                        <article class="resumo-reserva-conteudo" id="bookingSummary">
+                            <h3 class="h3-resumo-reservas">Resumo da reserva</h3>
+                            <div class="box-reservas">
+                                <p class="">
+                                <div class="margin-padrao">Apartamento: <span class="" id="bookingApt"></span></div>
+                                <div class="margin-padrao">Check-in: <span class="" id="bookingCheckIn"></span></div>
+                                <div class="margin-padrao">Check-out: <span class="" id="bookingCheckOut"></span></div>
+                                <div class="margin-padrao">Pessoas: <span class="" id="bookingQtd"></span></div>
+                                <div class="margin-padrao esconder">Valor total: <span class=""
+                                        id="bookingValor"></span></div>
+                                </p>
+                            </div>
+                            <div>
+                                <p><a class="link-padrao h3-primario" id="maisServicos" href="#."><i
+                                            class="fa fa-plus fa-2x" aria-hidden="true"></i> MAIS SERVIÇOS</a></p>
+
+                            </div>
+                            <div class="centralizar">
+                                <button class="btn-texto btn-resumo-reservas text-light" type="submit"
+                                    id="continuar">CONTINUAR</button>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </fieldset>
 
         </section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eum pariatur repellat ad rerum modi consequuntur aspernatur necessitatibus magni dolorem, culpa fugit eligendi facere? Dolor eum necessitatibus officiis quaerat natus iusto, fugit eos. Saepe sint praesentium unde, blanditiis a pariatur mollitia, iusto aut possimus earum commodi. Veniam voluptatem necessitatibus impedit?</p>
-        <aside>
+        
+        <aside class="esconder">
             <p>Espaço reservado para propagandas.</p>
         </aside>
     </main>
-    <object class="footer-padrao" data="../components/footer.html"></object>
+    <!-- <object class="footer-padrao" data="../components/footer.html"></object> -->
+
+    <div class="modal" id="modalContinuar" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Carrinho</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- CONTEUDO -->
+                    <div class="">
+                        <p class="">
+
+                        <div class="borda-padrao">
+                            <h3 class="h3-primario" id="bookingApt_modal"></h3>
+                            <img class="imagem-padrao" id="bookingImg_modal" src="" alt="">
+
+                            <div id="modal-quarto">
+                                <h4 class="h3-primario">Descrição:</h4>
+                                <p class="p-primario"></p>
+                                <p class="p-primario"></p>
+                            </div>
+                        </div>
+
+
+                        <div class="margin-padrao">Check-in: <span class="" id="bookingCheckIn_modal"></span></div>
+                        <div class="margin-padrao">Check-out: <span class="" id="bookingCheckOut_modal"></span></div>
+                        <div class="margin-padrao">Pessoas: <span class="" id="bookingQtd_modal"></span></div>
+                        <div class="margin-padrao">Serviços Adicionais: <span class="" id="bookingAdd_modal"></span>
+                            <details>
+                                <summary>Detalhes</summary>
+                                <div id="resumoServicosAdicionais"></div>
+                            </details>   
+                        </div>
+                        <hr />
+                        <div class="margin-padrao">Valor total: <span class="" id="bookingValor_modal"></span></div>                     
+                        </p>
+                    </div>
+                    <!-- CONTEUDO -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODAL MAIS SERVIÇOS -->
+    <div class="modal" id="modalMaisServicos" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Serviços adicionais</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- CONTEUDO -->
+                    <div class="">
+                        <p class="">
+
+                        <div class="borda-padrao">
+                            <h3 class="h3-primario" id="bookingApt_modal"></h3>
+                            <img class="imagem-padrao" id="bookingImg_modal" src="" alt="">
+
+                            <div id="modal-servicos">
+                            </div>
+                        </div>
+
+                        <div class="margin-padrao">
+                            <ul id="bookingServices_modal"></ul>
+                        </div>
+                        <hr />
+                        <div class="margin-padrao">Valor total: <span class="valorTotal" id="valorTotal">R$ 0</span>
+                        </div>
+                        </p>
+                    </div>
+                    <!-- CONTEUDO -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid global-bg-azul m-0 p-1">
+        <div class="row">
+            <div class="row">
+                <div class="col-sm-2 ps-5 d-flex text-sm-center p-2">
+                    <img src="../images/logo/logo--bege.png" width="75px" alt="Logomarca - Grand Royal Hotel" />
+                </div>
+                <div class="col">
+                    <div class="col-sm-10 text-sm-center p-1">
+                        <nav class="global-bg-azul navbar navbar-expand-sm">
+                            <a class="navbar-brand color--bege ps-3" href="/pages/home.html"> Grand Hoyal Hotel</a>
+
+                            <div class="collapse" id="navbarToggleExternalContent">
+                                <div class=" p-4">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/pages/home.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/pages/sobre.html">Sobre</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/pages/acomodacoes.html">Acomodações</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/pages/reservas.html">Reservas</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/pages/contatos.html">Contato</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navbar">
+                                <div class="container-fluid">
+                                    <button class="navbar-toggler color--bege" type="button" data-mdb-toggle="collapse"
+                                        data-mdb-target="#navbarToggleExternalContent"
+                                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        <i class="fa fa-bars" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="collapse navbar-collapse" id="colNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link color--bege" href="/pages/home.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link color--bege" href="/pages/sobre.html">Sobre</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link color--bege" href="/pages/acomodacoes.html">Acomodações</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link color--bege" href="/pages/reservas.html">Reservas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link color--bege" href="/pages/contatos.html">Contato</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="row-sm-10 p-1 text-end">
+                        <span class="color--bege">Grand Hoyal Hotel&copy;2022 - Todos os direitos reservados.</span>
+                    </div>
+                </div>
+
+                <div class=" row">
+                    <div class="col-sm-6 p-5 color--bege">
+                        <div class="row">
+                            <i class=" col-sm-2 fa fa-phone fa-1x" aria-hidden="true"></i>
+                            <p class=" col-sm-10 color--bege">+55 (11) 9999-9999</p>
+                        </div>
+                        <div class="row">
+                            <i class=" col-sm-2 fa fa-envelope fa-1x" aria-hidden="true"></i>
+                            <p class=" col-sm-10 color--bege">contato@granghoyalhotel.com</p>
+                        </div>
+                        <div class="row">
+                            <i class=" col-sm-2 fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                            <p class=" col-sm-10 color--bege">Rua Algum Lugar, n° 0 - Centro <br /> São Paulo - Brasil
+                            </p>
+                        </div>
+                        <div class="col">
+                            <a><i class="fa-brands fa-whatsapp fa-3x"></i></a>
+                            <a><i class="fa-brands fa-instagram fa-3x"></i></a>
+                            <a><i class="fa-brands fa-facebook fa-3x"></i></a>
+                            <a><i class="fa-brands fa-linkedin-in fa-3x"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 row color--bege p-5">
+                        <a><i class="text-center col-sm-12 fa fa-map fa-5x" aria-hidden="true"></i></a>
+                        <p class="text-center color--bege">Veja no maps</p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
 </body>
 
 </html>

@@ -1,0 +1,558 @@
+@charset "UTF-8";
+#card1 {
+  background-image: url(/images/acomodacoes/acomodacoes-presidencial-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#card1 h2::before {
+  content: "Quarto 1 Presidencial";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.4);
+  color: #e1c888;
+  font: "Quicksand";
+  text-align: center;
+  padding-top: 0;
+  margin-top: 5vh;
+}
+
+#card2 {
+  background-image: url(/images/acomodacoes/acomodacoes-presidencial-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#card2 h2::before {
+  content: "Quarto 2 Presidencial";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.4);
+  color: #e1c888;
+  font: "Quicksand";
+  text-align: center;
+  padding-top: 0;
+  margin-top: 5vh;
+}
+
+#card3 {
+  background-image: url(/images/acomodacoes/acomodacoes-presidencial-3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#card3 h2::before {
+  content: "Quarto 3 Presidencial";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.4);
+  color: #e1c888;
+  font: "Quicksand";
+  text-align: center;
+  padding-top: 0;
+  margin-top: 5vh;
+}
+
+#card4 {
+  background-image: url(/images/acomodacoes/acomodacoes-luxo-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#card4 h2::before {
+  content: "Quarto 1 Luxo";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.4);
+  color: #e1c888;
+  font: "Quicksand";
+  text-align: center;
+  padding-top: 0;
+  margin-top: 5vh;
+}
+
+#card5 {
+  background-image: url(/images/acomodacoes/acomodacoes-luxo-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#card5 h2::before {
+  content: "Quarto 2 Luxo";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.4);
+  color: #e1c888;
+  font: "Quicksand";
+  text-align: center;
+  padding-top: 0;
+  margin-top: 5vh;
+}
+
+#card6 {
+  background-image: url(/images/acomodacoes/acomodacoes-luxo-3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#card6 h2::before {
+  content: "Quarto 3 Luxo";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.4);
+  color: #e1c888;
+  font: "Quicksand";
+  text-align: center;
+  padding-top: 0;
+  margin-top: 5vh;
+}
+
+#card7 {
+  background-image: url(/images/acomodacoes/acomodacoes-standard-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#card7 h2::before {
+  content: "Quarto 1 Standard";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.4);
+  color: #e1c888;
+  font: "Quicksand";
+  text-align: center;
+  padding-top: 0;
+  margin-top: 5vh;
+}
+
+#card8 {
+  background-image: url(/images/acomodacoes/acomodacoes-standard-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#card8 h2::before {
+  content: "Quarto 2 Standard";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.4);
+  color: #e1c888;
+  font: "Quicksand";
+  text-align: center;
+  padding-top: 0;
+  margin-top: 5vh;
+}
+
+#card9 {
+  background-image: url(/images/acomodacoes/acomodacoes-standard-3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#card9 h2::before {
+  content: "Quarto 3 Standard";
+  display: block;
+  background-color: rgba(33, 50, 66, 0.4);
+  color: #e1c888;
+  font: "Quicksand";
+  text-align: center;
+  padding-top: 0;
+  margin-top: 5vh;
+}
+
+/*----------------------------------
+* CLASSES COMUNS EM TODAS AS PÁGINAS
+*-----------------------------------
+*/
+.list-style {
+  list-style: none;
+}
+
+.esconder {
+  display: none;
+}
+
+.margin0, .acomodacoes--card-titulo {
+  margin: 0;
+}
+
+.padding0 {
+  padding: 0;
+}
+
+.alinhamento {
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.display-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.flex-wrap {
+  display: block;
+  flex-wrap: wrap;
+}
+
+.centralizar {
+  text-align: center;
+  align-items: center;
+}
+
+.p-top {
+  padding: 1rem 0 0 0;
+}
+
+.link-padrao {
+  padding: 0 1.5rem;
+  text-align: start;
+  color: #213242;
+  font: "Quicksand";
+  text-decoration: none;
+}
+.link-padrao:hover {
+  color: #cf9903;
+}
+
+.link-pequeno {
+  font: "Quicksand";
+  color: #213242;
+  text-decoration: none;
+}
+
+.btn-primario {
+  width: 20vh;
+  height: 6vh;
+  border: 1px solid #e1c888;
+  border-radius: 30px;
+  background-color: #e1c888;
+  box-shadow: 3px 3px 5px #b3b3b4;
+}
+
+.btn-secundario {
+  border: #213242 solid 1px;
+  margin: 1rem;
+  width: 22vw;
+  height: 2.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px #213242;
+  background-color: #213242;
+}
+
+.btn-terceario {
+  border: white solid 1px;
+  margin: 1rem;
+  width: 22vw;
+  height: 2.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px #213242;
+}
+
+.btn-padrao {
+  background-color: #213242;
+  border: none;
+  box-shadow: 3px 1px 8px white inset;
+  border-radius: 20px;
+  width: 50%;
+  height: 3rem;
+  margin: 1rem 1rem;
+}
+
+.btn-texto {
+  color: white;
+  font: "Quicksand";
+  text-align: center;
+  font-size: 1vw;
+}
+
+.margem-padrao {
+  margin: 1rem 1rem;
+}
+
+.margin-left {
+  margin: 0 0.5rem;
+}
+
+.margin-padrao {
+  padding: 0.5rem;
+}
+
+.imagem-padrao {
+  margin: 1.5rem;
+  width: 90%;
+}
+
+.borda-padrao {
+  margin: 3rem;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 1px 3px 5px #213242;
+}
+.borda-padrao:hover {
+  box-shadow: 1px 4px 10px #213242;
+}
+
+.borda-primaria {
+  margin: 5vw 30vw;
+  border-radius: 15px;
+  box-shadow: 1px 3px 5px #213242;
+}
+.borda-primaria:hover {
+  box-shadow: 1px 4px 10px #213242;
+}
+
+.box-padrao {
+  background-color: rgba(225, 200, 136, 0.7);
+  width: 80%;
+  padding: 3%;
+  margin-left: 1.8rem;
+  text-align: start;
+}
+
+.input-padrao {
+  border: white solid 1px;
+  margin: 1rem;
+  width: 22vw;
+  height: 2.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px #213242;
+}
+
+.input-basico {
+  border: white solid 1px;
+  margin: 0.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px #213242;
+  width: 70vw;
+  height: 2.5rem;
+}
+
+.h2-primario {
+  padding: 0 1.5rem;
+  text-align: start;
+  color: #213242;
+  font: "Quicksand";
+}
+
+.h2-secundario {
+  padding: 1rem;
+  text-align: start;
+  color: #cf9903;
+  font: "Quicksand";
+}
+
+.h3-primario {
+  padding: 0 1.5rem;
+  text-align: start;
+  color: #213242;
+  font: "Quicksand";
+}
+
+.h3-secundario {
+  padding: 1rem;
+  text-align: start;
+  color: #cf9903;
+  font: "Quicksand";
+  color: #cf9903;
+}
+
+.p-primario {
+  padding: 0 1.5rem;
+  text-align: start;
+  color: #213242;
+  font: "Quicksand";
+}
+
+.p-secundario {
+  padding: 3rem 1.5rem 0 1.5rem;
+  color: #213242;
+  font: "Quicksand";
+}
+
+/*----------------------------------
+* HEADER E FOOTER - TODAS AS PÁGINAS
+*-----------------------------------
+*/
+.global-bg-azul {
+  background-color: #213242;
+  background-size: 100%;
+  margin: 0;
+}
+
+.color--bege {
+  color: #e1c888 !important;
+}
+
+.header--container {
+  background-image: url(../../images/background/background-1.png);
+  background-size: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  color: #e1c888;
+  font: "Quicksand";
+  text-shadow: 1px 1px 1px rgba(1, 1, 8, 0.6);
+}
+
+.header--container2 {
+  width: 70%;
+}
+.header--container2-container {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.header--container2-item {
+  padding: 1rem;
+}
+.header--container2-link {
+  color: #e1c888;
+}
+
+.header--logo {
+  background: url(../../images/logo/logo--bege.png) no-repeat transparent;
+  background-size: 100%;
+  width: 100px;
+  height: 100px;
+  padding: 0 0 0 0;
+  margin: 20px;
+  font: "Quicksand";
+  letter-spacing: 0;
+}
+
+.nav-link {
+  color: #e1c888;
+}
+.nav-link:hover {
+  color: #cf9903;
+}
+
+/*---------------
+* RESERVAS
+*---------------
+*/
+.resumo-reserva-conteudo {
+  margin-top: 3vw;
+}
+
+.resumo-reserva {
+  height: 35rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.borda-resumo-reserva {
+  margin: 10vh 5vh;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 1px 3px 5px #213242;
+}
+.borda-resumo-reserva:hover {
+  box-shadow: 1px 4px 10px #213242;
+}
+
+.box-reservas {
+  background-color: rgba(225, 200, 136, 0.7);
+  width: 100%;
+  padding: 3%;
+  text-align: start;
+  margin-top: 2rem;
+}
+
+.btn-resumo-reservas {
+  background-color: #213242;
+  border: none;
+  box-shadow: 3px 1px 8px white inset;
+  border-radius: 20px;
+  width: 100%;
+  height: 3rem;
+}
+
+.h3-resumo-reservas {
+  padding: 0 1.5rem;
+  text-align: start;
+  color: #213242;
+  font: "Quicksand";
+  text-align: center;
+}
+
+/*---------------
+* ACOMODAÇÕES
+*---------------
+*/
+.acomodacoes {
+  min-width: 1170px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+}
+.acomodacoes--card {
+  width: 30%;
+  margin-right: 0.6rem;
+  margin-bottom: 1rem;
+  height: 50%;
+  border: 1px solid white;
+  border-radius: 30px;
+  box-shadow: 8px 8px 10px #213242;
+  height: 50vh;
+}
+.acomodacoes--card:hover {
+  box-shadow: 8px 8px 10px #3c5a74;
+}
+.acomodacoes--card-titulo {
+  position: top;
+}
+
+@media (max-width: 1170px) {
+  .acomodacoes,
+.acomodacoes--card {
+    flex-flow: column;
+    min-width: 90%;
+  }
+}
+/*--------
+*  CONTATO
+*---------
+*/
+/*--------
+*     HOME
+*---------
+*/
+.home--banner {
+  background-image: url(../../images/background/background-8.png);
+  background-size: 100%;
+  height: 30vw;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1170px) {
+  .display-grid {
+    display: inline-block;
+  }
+  .resumo-reserva {
+    display: inline-block;
+    width: 80%;
+    height: 35rem;
+  }
+  .btn-padrao {
+    width: 80%;
+  }
+  .btn-beje {
+    width: 20vh;
+    height: 6vh;
+    border: 1px solid #e1c888;
+    border-radius: 30px;
+    background-color: #e1c888;
+    box-shadow: 3px 3px 5px #b3b3b4;
+  }
+  .btn-texto {
+    font-size: larger;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

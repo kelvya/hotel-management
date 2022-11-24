@@ -1,102 +1,365 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../src/style.css" />
-        <title>Grand Royal - Home</title>
-    </head>
-    <body>
 
-        <div style="background-color:#213242; position: fixed; width: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Royal - Home</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo/logo--azul-escuro.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Quando&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiro+Devanagari+Hindi:ital@1&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Quando&family=Quicksand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiro+Devanagari+Hindi:ital@1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <script src="/src/js/geral.js" async></script>
+    <script src="/src/js/banner.js" async></script>
+</head>
+
+<body>
+
+    <!-- <div class="header-main">
             <object width="100%" height="160vh" data="../components/header.html"></object>
             <hr>
             <nav>
                 <object width="100%" height="60vh" data="../components/navbar_up.html"></object>
             </nav>
-        </div>   
-    
+        </div>    -->
 
-        <main style="padding-top: 30vh;">
-            <section>
-                <article>
-                   
-                    <h2>Home</h2>
+    <header class="header--container container-fluid text-end m-0 p-1">
+        <div class="container" id="logado">
+                <span class="col p-1" id="logado-usuario"></span>
+                <button class="btn btn-secondary text-bg-secondary col p-1 ">Sair</button>
+            </div>
 
-                    <hr />
-                    <br>
-
-                    <h3>Sobre o nosso hotel</h3>
-
-                    <div width="100%" style="justify-content: space-around;">
-                        <div width="50%">
-                            <img src="../images/hotel/imagem-hotel.jpg" alt="Logo" width="50%" />
-                        </div>
-                        <div width="25%">
-                            <span class="home-texto-longo" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus at ultrices mi tempus imperdiet nulla malesuada. Nulla aliquet porttitor lacus luctus accumsan. Etiam erat velit scelerisque in dictum non consectetur a erat. Sed elementum tempus egestas sed. Interdum consectetur libero id faucibus nisl tincidunt eget nullam. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae. Quisque egestas diam in arcu. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Sed vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Sed libero enim sed faucibus. Pharetra diam sit amet nisl suscipit.
-                        Sit amet nisl purus in mollis nunc. Fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque. Neque sodales ut etiam sit. Amet nisl purus in mollis. Mauris sit amet massa vitae tortor condimentum lacinia. Pretium fusce id velit ut. Quis varius quam quisque id diam vel quam elementum pulvinar. Suscipit tellus mauris a diam maecenas sed enim ut. Laoreet non curabitur gravida arcu ac. Libero nunc consequat interdum varius sit amet mattis. Proin sagittis nisl rhoncus mattis rhoncus. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Duis at consectetur lorem donec massa sapien faucibus et. Nisl nunc mi ipsum faucibus vitae aliquet. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Duis ut diam quam nulla porttitor massa. Magna eget est lorem ipsum.</span>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                    <br><br>
-
-
-                    <h3>Nossas Acomodações</h3>
-
-                    <ul class="acomodacoes-painel">
-
-                        <li class="home-comodacoes">
-                            <a class="home-imagem-link" href="../pages/acomodacoes.html" data-toggle="tab">
-                                <img src="../images/acomodacoes/Acomodacao1.png" alt="" width="360em" height="260em" style="border-radius: 5%;">
-                                <span>Acomodação 1</span>
-                            </a>
-                        </li>
-
-                        <li class="home-acomodacoes">
-                            <a class="home-imagem-link" href="../pages/acomodacoes.html" data-toggle="tab">
-                                <img src="../images/acomodacoes/Acomodacao2.png" alt="" width="360em" height="260em" style="border-radius: 5%;">
-                                <span>Acomodação 2</span>
-                            </a>
-                        </li>
-
-                        <li class="home-acomodacoes">
-                            <a class="home-imagem-link" href="../pages/acomodacoes.html" data-toggle="tab">
-                                <img src="../images/acomodacoes/Acomodacao3.png" alt="" width="360em" height="260em" style="border-radius: 5%;">
-                                <span>Acomodação 3</span>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <div class="home-nossos-servicos">
-                      <p>Conheça mais sobre nossos serviços</p>  
-                    </div>
-                    
-
-                    <h3>Gastronomia</h3>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aliquam ipsam voluptatem! Iste fuga quae voluptatibus, ipsa incidunt assumenda quo repudiandae aperiam nisi exercitationem quibusdam quos velit, voluptatem soluta id rem numquam provident corporis aliquid non sequi odio quasi tenetur. Est perferendis quis quod delectus, sequi repudiandae? Optio, quidem unde!</p>
-                    <br><br>
-                    <hr>
-                    <br><br>
-                    <li>
-                        <label for="newsletter">
-                            Se inscreva na nossa newsletter e receba diariamente notícias e dicas de lugares para se hospedar e promoções:
-                        </label>
-                        <p><input type="email" name="newsletter" id="newsletter"></p>
-                        <input type="submit" value="Enviar"></input>
+        <div class="d-flex align-items-center">
+            <a class="header--logo" href="/pages/home.html" title="Grand Hoyal Hotel"></a>
+            <div class="header--container2">
+                <ul class="header--container2-container">
+                    <li class="header--container2-item">
+                        <a href="#" class="header--container2-link text-bege">
+                            <i class="fa-brands fa-whatsapp fa-2x"></i>
+                        </a>
                     </li>
+                    <li class="header--container2-item">
+                        <a href="#" class="header--container2-link text-bege">
+                            <i class="fa-brands fa-instagram fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="header--container2-item">
+                        <a href="#" class="header--container2-link text-bege">
+                            <i class="fa-brands fa-facebook-f fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="header--container2-container alinhamento m-1 p-1">
+                    A sofisticação e o conforto ideal.<br />
+                    Vem ser Grand, vem ser Royal!
+                </p>
+            </div>
+        </div>
 
-                    <hr />
+        <!-- <button class="btn btn-secondary col p-1">
+                Cadastre-se
+            </button> -->
+    </header>
+    <nav class="navbar navbar-expand-sm global-bg-azul">
+        <a class="navbar-brand ps-3 color--bege" href="/pages/home.html">
+            Grand Hoyal Hotel</a>
+
+        <div tytle="navbarToggleExternalContent" class="collapse " id="navbarToggleExternalContent">
+            <div class=" p-4">
+                <ul class="navbar-nav ">
+                    <li class="nav-item ">
+                        <a class="nav-link color--bege" href="/pages/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color--bege" href="/pages/sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color--bege" href="/pages/acomodacoes.html">Acomodações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color--bege" href="/pages/reservas.html">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color--bege" href="/pages/contatos.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar navbar-dark ">
+            <div class="container-fluid">
+                <button class="navbar-toggler color--bege" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="true" aria-label="Toggle navigation">
+                    <i class="fa fa-bars " aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="colNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/acomodacoes.html">Acomodações</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/reservas.html">Reservas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/contatos.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <main>
+        <section class="section-pd">
+            <div class="home--banner" id="homeBanner"></div>
+            <article>
+
+                <div class="p-top">
+                    <h2 class="h2-primario">Sobre o nosso hotel</h2>
+                </div>                                    
+                <div class="">
+                    <p class="p-primario">
+                        Completamente novo e moderno, o Grand Hoyal Hotel está localizado na região central de XXXXX, próximo a XXXXX. <br/>
+                        É o destino ideal para descanso, turismo, lua de mel, sessões fotográficas e negócios, com o melhor da hotelaria. <br/>
+                         Aproveite nossa piscina ao ar livre e desfrute de um delicioso  café da manhã.
+                    </p>
+                </div>
+                    
+                <h3 class="h3-primario">Nossas acomodações</h3>
+                <div class="display-grid borda-padrao">
+                    <!-- INICIO CARROSSEL BOOTSTRAP -->
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="/images/acomodacoes/acomodacoes-standard-2.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="/images/acomodacoes/acomodacoes-luxo-2.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/acomodacoes/acomodacoes-presidencial-2.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!-- FIM CARROSSEL BOOTSTRAP -->
+                </div>
+                <div class="p-top">
+                    <p class="p-primario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex maxime dolorum sapiente qui quo velit fugiat iste ratione ullam distinctio, quisquam eaque porro quia asperiores omnis, tempora vero optio harum veniam assumenda quidem vel eveniet earum. Fuga sint esse, expedita, reiciendis quae dolor odio vitae, quod cum incidunt obcaecati dolore?</p>
+                </div>
+
+                <div class="p-top">
+                    <h3 class="h3-primario">Conheça mais sobre nossos serviços</h3>
+                </div>
+
+
+                <p class="p-primario">GASTRONOMIA</p>
+                <p class="p-primario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic doloremque magnam beatae minima, quas ratione porro qui in voluptatibus ex natus at nesciunt molestias provident, animi repellendus necessitatibus inventore consequatur cum corporis? Id quidem sed quia neque suscipit libero excepturi eligendi. Libero quasi aperiam alias ab numquam a ipsum non.</p>
+                <div class="display-grid borda-padrao">
+                    <!-- INICIO CARROSSEL BOOTSTRAP -->
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="/images/hotel/gastronomia-1.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="/images/hotel/gastronomia-2.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/hotel/gastronomia-3.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div> 
+                    <!-- FIM CARROSSEL BOOTSTRAP -->                   
+                </div>
                 
-                </article>
-            </section>
-            <aside>
-                <p>Espaço reservado para propagandas.</p>
-            </aside>
-        </main>
-        <object width="100%" height="20%" data="../components/footer.html"></object>
-    </body>
+                <div class="p-top">
+                    <div class="col">
+                        <label for="newsletter" class="row">
+                            <p class="p-primario">Se inscreva na nossa newsletter e receba diariamente notícias e dicas de lugares para se
+                            hospedar e promoções:</p>
+                        </label>
+                        <input class="input-padrao row p-primario" type="text" id="newsletter" placeholder="Digite seu email aqui">
+                        <input type="submit" value="Enviar" class="btn-terceario col"></input>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+        <aside class="esconder">
+            <p>Espaço reservado para propagandas.</p>
+        </aside>
+    </main>
+    <!-- <object class="footer-padrao" data="../components/footer.html"></object> -->
+
+    <footer class="container-fluid global-bg-azul m-0 p-1">
+        <div class="row">
+            <div class="row">
+                <div class="col-sm-2 ps-5 d-flex text-sm-center p-2">
+                    <img src="../images/logo/logo--bege.png" width="75px" alt="Logomarca - Grand Royal Hotel" />
+                </div>
+                <div class="col">
+                    <div class="col-sm-10 text-sm-center p-1">
+                        <nav class="global-bg-azul navbar navbar-expand-sm">
+                            <a class="navbar-brand color--bege ps-3" href="/pages/home.html"> Grand Hoyal Hotel</a>
+
+                            <div class="collapse" id="navbarToggleExternalContent">
+                                <div class=" p-4">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/pages/home.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/pages/sobre.html">Sobre</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/pages/acomodacoes.html">Acomodações</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/pages/reservas.html">Reservas</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/pages/contatos.html">Contato</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navbar">
+                                <div class="container-fluid">
+                                    <button class="navbar-toggler color--bege" type="button" data-mdb-toggle="collapse"
+                                        data-mdb-target="#navbarToggleExternalContent"
+                                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        <i class="fa fa-bars" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="collapse navbar-collapse" id="colNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link color--bege" href="/pages/home.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link color--bege" href="/pages/sobre.html">Sobre</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link color--bege" href="/pages/acomodacoes.html">Acomodações</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link color--bege" href="/pages/reservas.html">Reservas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link color--bege" href="/pages/contatos.html">Contato</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="row-sm-10 p-1 text-end">
+                        <span class="color--bege">Grand Hoyal Hotel&copy;2022 - Todos os direitos reservados.</span>
+                    </div>
+                </div>
+
+                <div class=" row">
+                    <div class="col-sm-6 p-5 color--bege">
+                        <div class="row">
+                            <i class=" col-sm-2 fa fa-phone fa-1x" aria-hidden="true"></i>
+                            <p class=" col-sm-10 color--bege">+55 (11) 9999-9999</p>
+                        </div>
+                        <div class="row">
+                            <i class=" col-sm-2 fa fa-envelope fa-1x" aria-hidden="true"></i>
+                            <p class=" col-sm-10 color--bege">contato@granghoyalhotel.com</p>
+                        </div>
+                        <div class="row">
+                            <i class=" col-sm-2 fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                            <p class=" col-sm-10 color--bege">Rua Algum Lugar, n° 0 - Centro <br /> São Paulo - Brasil
+                            </p>
+                        </div>
+                        <div class="col">
+                            <a><i class="fa-brands fa-whatsapp fa-3x"></i></a>
+                            <a><i class="fa-brands fa-instagram fa-3x"></i></a>
+                            <a><i class="fa-brands fa-facebook fa-3x"></i></a>
+                            <a><i class="fa-brands fa-linkedin-in fa-3x"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 row color--bege p-5">
+                        <a><i class="text-center col-sm-12 fa fa-map fa-5x" aria-hidden="true"></i></a>
+                        <p class="text-center color--bege">Veja no maps</p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+
 </html>

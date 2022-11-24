@@ -1,0 +1,163 @@
+@use "variaveis" as v;
+@import 'functions';
+
+@mixin box {
+  min-width: 1170px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 90%;
+  position: relative;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@mixin h2-primario {
+  padding: v.$px1;
+  text-align: start;
+  color: v.$cor-azul-escuro;
+  font: v.$fonte-quiscksand;
+ 
+}
+
+@mixin h2-secundario {
+  padding: v.$p1;
+  text-align: start;
+  color: v.$cor-dourado-escuro;
+  font: v.$fonte-quiscksand;
+}
+
+@mixin p-primario {
+  padding: v.$px1;
+  text-align: start;
+  color: v.$cor-azul-escuro;
+  font: v.$fonte-quiscksand; 
+}
+
+@mixin p-secundario {
+  padding: 3rem 1.5rem 0 1.5rem;
+  color: v.$cor-azul-escuro;
+  font: v.$fonte-quiscksand; 
+}
+
+
+@mixin h3-primario {
+  padding: v.$px1;
+  text-align: start;
+  color: v.$cor-azul-escuro;
+  font: v.$fonte-quiscksand;
+}
+
+@mixin h3-secundario {
+  padding: v.$p1;
+  text-align: start;
+  color: v.$cor-dourado-escuro;
+  font: v.$fonte-quiscksand;
+  color: v.$cor-dourado-escuro;
+}
+
+@mixin input-padrao {
+  border: white solid 1px;
+  margin: 1rem;
+  width: 22vw;
+  height: 2.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px v.$cor-azul-escuro;  
+}
+
+@mixin input-basico {
+  border: white solid 1px;
+  margin: 0.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px v.$cor-azul-escuro;
+}
+
+@mixin card-padrao {
+  width: 30%;
+  margin-right: 0.6rem;
+  margin-bottom: v.$m1;
+  height: 50%;
+  border: 1px solid white;
+  border-radius: 30px;
+  box-shadow: 8px 8px 10px v.$cor-azul-escuro;
+  
+}
+
+@mixin borda-padrao {
+  border-radius: 15px;
+  box-shadow: 1px 3px 5px v.$cor-azul-escuro;
+  &:hover{
+    box-shadow: 1px 4px 10px v.$cor-azul-escuro;
+  }
+}
+
+@mixin btn-primario {
+  width: 20vh;
+  height: 6vh;
+  border: 1px solid v.$cor-bege;
+  border-radius: 30px;
+  background-color: v.$cor-bege;
+  box-shadow: 3px 3px 5px #b3b3b4;
+  
+}
+
+// @mixin header--logo {
+//     background: url(/images/logo/logo--bege.png) no-repeat transparent;
+//     background-size: 100%;
+//     width: 100px;
+//     height: 100px;
+//     padding: 0 0 0 0;
+//     font: 'Quicksand';
+//     letter-spacing: 0;
+// }
+
+// @mixin header--global-bg-azul{
+//     background-image: v.$bg--img-background1;
+// }
+
+// @mixin header--global-border-azul {
+//     border: 1px solid #213242;
+//     border-radius: 2px;
+// }
+
+// @mixin header--global-fonte-azul {
+//     color: #213242 !important;
+// }
+
+$imgsAcomodacoes: (
+  "Quarto 1 Presidencial": "acomodacoes-presidencial-1.png",
+  "Quarto 2 Presidencial": "acomodacoes-presidencial-2.png",
+  "Quarto 3 Presidencial": "acomodacoes-presidencial-3.png",
+  "Quarto 1 Luxo": "acomodacoes-luxo-1.png",
+  "Quarto 2 Luxo": "acomodacoes-luxo-2.png",
+  "Quarto 3 Luxo": "acomodacoes-luxo-3.png",
+  "Quarto 1 Standard": "acomodacoes-standard-1.png",
+  "Quarto 2 Standard": "acomodacoes-standard-2.png",
+  "Quarto 3 Standard": "acomodacoes-standard-3.png",
+);
+
+$n: 0;
+@each $titulo, $url in $imgsAcomodacoes {
+  $n: $n + 1;
+  #card#{$n} {
+    background-image: url(/images/acomodacoes/#{$url});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    & h2::before {
+      content: "#{$titulo}";
+      display: block;
+      background-color: rgba(33, 50, 66, 0.4);
+      color: v.$cor-bege;
+      font: v.$fonte-quiscksand;
+      text-align: center;
+      padding-top: 0;
+      margin-top: 5vh;
+    }
+  }
+}
