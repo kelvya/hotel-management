@@ -276,7 +276,7 @@ $("#maisServicos").click(function () {
         localStorage.setItem(`inpServicosQtd${index+1}`, valorInput.value)
         resultadoServico = 0
         arrayValorServicos[index] = servicosAdicionais[index].preco * valorInput.value
-        valorTServicos = arrayValorServicos.reduce((somaParcial, a) => somaParcial + a, 0);
+        valorTServicos = arrayValorServicos.reduce((somaParcial, valorAtual) => somaParcial + valorAtual, 0);
         spanValorTotal.innerHTML = `R$${valorTServicos.toFixed(2)}`
         localStorage.setItem("valorTServicos", valorTServicos)
       })
