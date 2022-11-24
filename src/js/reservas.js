@@ -240,9 +240,9 @@ const servicosAdicionais = [
   },
 ]
 
-let precoAtualizado, criaInputNumber, criaSpan, inputValores, inputServicos
+let precoServico, criaInputNumber, criaSpan, inpServicosQtd, inputServicos, arrayValorServicos = [], valorTServicos, resultadoServico
 const spanValorTotal = document.querySelector("#valorTotal");
-for(let i = 0; i < servicosAdicionais.length; i++){
+for(let i = 1; i <= servicosAdicionais.length; i++){
     criaInputNumber = document.createElement("input")
     criaSpan = document.createElement("span")
     criaInputNumber.setAttribute("type", "number")
@@ -251,39 +251,40 @@ for(let i = 0; i < servicosAdicionais.length; i++){
     criaInputNumber.setAttribute("class", "d-block")
     criaInputNumber.setAttribute("id", "inputServicos")
     criaInputNumber.setAttribute("name", "valores")
-    criaSpan.setAttribute("class", "precoAtualizado")
+    criaSpan.setAttribute("class", "precoServico")
     document.getElementById("modal-servicos").appendChild(criaSpan);
     document.getElementById("modal-servicos").appendChild(criaInputNumber);
-    if(i == servicosAdicionais.length -1){
-        precoAtualizado = document.querySelectorAll(".precoAtualizado")
-        inputValores = document.getElementsByName('valores')
+    if(i == servicosAdicionais.length){
+        precoServico = document.querySelectorAll(".precoServico")
+        inpServicosQtd = document.getElementsByName('valores')
         inputServicos = document.querySelectorAll("#inputServicos")
     } 
 }
 
 $("#maisServicos").click(function () {
     $("#modalMaisServicos").modal("show");    
-    inputValores.forEach(function(valorInput, index){
+    inpServicosQtd.forEach(function(valorInput, index){
       $(`#inputServicos:nth-of-type(${index+1})`).attr("max", qtdAtual)
-      if(valorInput.value > qtdAtual) valorInput.value = 1
-      let total = 0, resultado
+      if(valorInput.value > qtdAtual){
+        valorInput.value = 0
+        arrayValorServicos[index] = servicosAdicionais[index].preco * valorInput.value
+        valorTServicos = arrayValorServicos.reduce((somaParcial, a) => somaParcial + a, 0);
+        spanValorTotal.innerHTML = `R$${valorTServicos.toFixed(2)}`
+      } 
+      precoServico[index].innerHTML = `${servicosAdicionais[index].nome} - R$${(servicosAdicionais[index].preco).toFixed(2)}`
       valorInput.addEventListener("change", function(){
-        localStorage.setItem(`inputValores${index+1}`, valorInput.value)
-        resultado = 0
-        const servicoPrecoTotal = servicosAdicionais[index].preco * valorInput.value
-        precoAtualizado[index].innerHTML = `${servicosAdicionais[index].nome} - R$${(servicoPrecoTotal).toFixed(2)}`
-        precoAtualizado.forEach((n, index) =>{
-          resultado += parseInt(precoAtualizado[index].innerHTML.substring((precoAtualizado[index].innerHTML.indexOf('$')+1), precoAtualizado[index].innerHTML.length))
-          total = resultado
-        })
-        spanValorTotal.innerHTML = `R$${total.toFixed(2)}`
+        localStorage.setItem(`inpServicosQtd${index+1}`, valorInput.value)
+        resultadoServico = 0
+        arrayValorServicos[index] = servicosAdicionais[index].preco * valorInput.value
+        valorTServicos = arrayValorServicos.reduce((somaParcial, a) => somaParcial + a, 0);
+        spanValorTotal.innerHTML = `R$${valorTServicos.toFixed(2)}`
+        localStorage.setItem("valorTServicos", valorTServicos)
       })
+      arrayValorServicos[index] = servicosAdicionais[index].preco * valorInput.value
   })
 })
 
-window.onload = inputValores.forEach(function(valorInput, index){
-  !!localStorage.getItem(`inputValores${index+1}`) ? valorInput.value = localStorage.getItem(`inputValores${index+1}`) : null
-  !!localStorage.getItem(`inputValores${index+1}`) ? 
-  precoAtualizado[index].innerHTML = `${servicosAdicionais[index].nome} - R$${(servicosAdicionais[index].preco * localStorage.getItem(`inputValores${index+1}`)).toFixed(2)}` 
-  : precoAtualizado[index].innerHTML = `${servicosAdicionais[index].nome} - R$${(servicosAdicionais[index].preco * document.getElementById("inputServicos").min).toFixed(2)}`
+window.onload = inpServicosQtd.forEach(function(valorInput, index){
+  !!localStorage.getItem(`inpServicosQtd${index+1}`) ? valorInput.value = localStorage.getItem(`inpServicosQtd${index+1}`) : null
+  !!localStorage.getItem("valorTServicos") ? spanValorTotal.innerHTML = `R$${parseInt(localStorage.getItem("valorTServicos")).toFixed(2)}` : null
 })
