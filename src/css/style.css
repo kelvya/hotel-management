@@ -297,6 +297,16 @@
   box-shadow: 1px 3px 5px #213242;
 }
 
+.input-basico {
+  border: white solid 1px;
+  margin: 0.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px #213242;
+  width: 70vw;
+  height: 2.5rem;
+}
+
 .h2-primario {
   padding: 0 1.5rem;
   text-align: start;
@@ -480,6 +490,10 @@
     min-width: 90%;
   }
 }
+/*--------
+*  CONTATO
+*---------
+*/
 /*--------
 *     HOME
 *---------

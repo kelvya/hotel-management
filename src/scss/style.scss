@@ -130,6 +130,12 @@
   @include mx.input-padrao;
 }
 
+.input-basico{
+  @include mx.input-basico;
+  width: 70vw;
+  height: 2.5rem;
+}
+
 .h2-primario {
   @include mx.h2-primario;
 }
@@ -298,6 +304,16 @@
     min-width: 90%; 
   }
 }
+
+/*--------
+*  CONTATO
+*---------
+*/
+
+
+
+
+
 
 /*--------
 *     HOME

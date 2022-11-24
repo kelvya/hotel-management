@@ -68,6 +68,14 @@
   box-shadow: 1px 3px 5px v.$cor-azul-escuro;  
 }
 
+@mixin input-basico {
+  border: white solid 1px;
+  margin: 0.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px v.$cor-azul-escuro;
+}
+
 @mixin card-padrao {
   width: 30%;
   margin-right: 0.6rem;

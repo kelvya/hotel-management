@@ -148,21 +148,21 @@
         </ul>
       </div>
     </nav>
-    <main class="contato-responsivo">
-      <section class="contato-estiloForm section-pd">
+    <main class="contato-responsivo ">
+      <section class="contato-estiloForm section-pd p-top">
         <article>
-          <h2>Entre em contato conosco</h2>
+          <h2 class="h2-primario">Entre em contato conosco</h2>
 
-          <form action="">
+          <form class="h3-primario " action="">
             <fieldset class="fieldLogin fieldsetLogin">
-              <legend class="contato-legenda">
+              <legend class="contato-legenda ">
                 &nbsp Preencha todos os dados &nbsp
               </legend>
 
-              <ul>
+              <ul class="list-style">
                 <li class="contato-li">
                   <label for="nome">Nome:</label><br />
-                  <input
+                  <input class="input-basico"
                     type="text"
                     name="nome"
                     id="nome"
@@ -172,21 +172,29 @@
                 </li>
               </ul>
 
-              <ul>
+              <ul class="list-style">
                 <li class="contato-li">
                   <label for="email">E-mail:</label><br />
-                  <input type="text" name="email" id="email" size="30" />
+                  <input class="input-basico" 
+                  type="text" 
+                  name="email" 
+                  id="email" 
+                  size="30" />
                 </li>
               </ul>
 
-              <ul>
+              <ul class="list-style">
                 <li class="contato-li">
                   <label for="telefone">Telefone:</label><br />
-                  <input type="text" name="telefone" id="telefone" size="30" />
+                  <input class="input-basico" 
+                  type="text" 
+                  name="telefone" 
+                  id="telefone" 
+                  size="30" />
                 </li>
               </ul>
 
-              <ul>
+              <ul class="list-style">
                 <li class="contato-li">
                   <label for="assuntos"
                     >Escolha o assunto que deseja falar:</label
@@ -202,26 +210,26 @@
                 </li>
               </ul>
 
-              <ul>
+              <ul class="list-style">
                 <li class="contato-li">
                   <label for="nome">Digite sua mensagem:</label><br />
                   <textarea
-                    name="textArea"
+                    name="textArea form-control"
                     id="textArea"
-                    class="contato-textArea"
-                    cols="60"
+                    class="contato-textArea "
+                    cols="40"
                     rows="10"
                   ></textarea>
                 </li>
-              </ul>
+              </ul class="list-style">
               <ul class="contato-div-button">
-                <button class="contato-button" type="submit">Enviar</button>
+                <button class="contato-button btn-terceario" type="submit">Enviar</button>
               </ul>
             </fieldset>
           </form>
         </article>
       </section>
-      <aside></aside>
+      <aside class="hide"></aside>
     </main>
     <!-- <object class="footer-padrao" data="../components/footer.html"></object> -->
 
