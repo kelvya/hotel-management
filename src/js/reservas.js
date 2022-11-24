@@ -52,21 +52,21 @@ if (localStorage.getItem("quarto")) {
     case "classic":
       document.querySelector("#bookingApt").innerText = "Classic";
       document.querySelector("#bookingValor_modal").innerText = `R$ ${(
-        quartos[1]["valor"] * qtdAtual
+        (quartos[1]["valor"] * qtdAtual) + parseInt(localStorage.getItem("valorTServicos"))
       ).toFixed(2)}`;
       document.querySelector("#classic").checked = true;
       break;
     case "premium":
       document.querySelector("#bookingApt").innerText = "Premium";
       document.querySelector("#bookingValor_modal").innerText = `R$ ${(
-        quartos[2]["valor"] * qtdAtual
+        (quartos[2]["valor"] * qtdAtual) + parseInt(localStorage.getItem("valorTServicos"))
       ).toFixed(2)}`;
       document.querySelector("#premium").checked = true;
       break;
     default:
       document.querySelector("#bookingApt").innerText = "Executive";
       document.querySelector("#bookingValor_modal").innerText = `R$ ${(
-        quartos[0]["valor"] * qtdAtual
+        (quartos[0]["valor"] * qtdAtual) + parseInt(localStorage.getItem("valorTServicos"))
       ).toFixed(2)}`;
       document.querySelector("#executive").checked = true;
       break;
@@ -119,17 +119,17 @@ qtdPessoas.onchange = function () {
   switch (document.querySelector("#bookingApt").innerText) {
     case "Classic":
       document.querySelector("#bookingValor_modal").innerText = `R$ ${(
-        quartos[1]["valor"] * qtdAtual
+        (quartos[1]["valor"] * qtdAtual) + parseInt(localStorage.getItem("valorTServicos"))
       ).toFixed(2)}`;
       break;
     case "Premium":
       document.querySelector("#bookingValor_modal").innerText = `R$ ${(
-        quartos[2]["valor"] * qtdAtual
+        (quartos[2]["valor"] * qtdAtual + parseInt(localStorage.getItem("valorTServicos")))
       ).toFixed(2)}`;
       break;
     default:
       document.querySelector("#bookingValor_modal").innerText = `R$ ${(
-        quartos[0]["valor"] * qtdAtual
+        (quartos[0]["valor"] * qtdAtual) + parseInt(localStorage.getItem("valorTServicos"))
       ).toFixed(2)}`;
       break;
   }
@@ -143,21 +143,21 @@ $("input[name='roomChoice']").click(function () {
         localStorage.setItem("quarto", quartos[1]["nome"]);
         document.querySelector("#bookingApt").innerText = `Classic`;
         document.querySelector("#bookingValor_modal").innerText = `R$ ${(
-          quartos[1]["valor"] * qtdAtual
+          (quartos[1]["valor"] * qtdAtual) + parseInt(localStorage.getItem("valorTServicos"))
         ).toFixed(2)}`;
         break;
       case "premium":
         localStorage.setItem("quarto", quartos[2]["nome"]);
         document.querySelector("#bookingApt").innerText = `Premium`;
         document.querySelector("#bookingValor_modal").innerText = `R$ ${(
-          quartos[2]["valor"] * qtdAtual
+          (quartos[2]["valor"] * qtdAtual) + parseInt(localStorage.getItem("valorTServicos"))
         ).toFixed(2)}`;
         break;
       default:
         localStorage.setItem("quarto", quartos[0]["nome"]);
         document.querySelector("#bookingApt").innerText = `Executive`;
         document.querySelector("#bookingValor_modal").innerText = `R$ ${(
-          quartos[0]["valor"] * qtdAtual
+          (quartos[0]["valor"] * qtdAtual) + parseInt(localStorage.getItem("valorTServicos"))
         ).toFixed(2)}`;
         break;
     }
@@ -183,6 +183,9 @@ $("#continuar").click(function () {
       localStorage.getItem("checkout");
     document.querySelector("#bookingQtd_modal").innerText =
       localStorage.getItem("qtdPessoas");
+    document.querySelector("#bookingAdd_modal").innerText = 
+        `R$ ${parseInt(localStorage.getItem("valorTServicos")).toFixed(2)}`;
+        
 
     switch (localStorage.getItem("quarto")) {
       case "classic":
@@ -194,7 +197,7 @@ $("#continuar").click(function () {
         document.querySelector("#bookingImg_modal").src =
           "/images/acomodacoes/acomodacoes-luxo-1.png";
         document.querySelector("#bookingValor_modal").innerText = `R$ ${(
-          quartos[1]["valor"] * qtdAtual
+          (quartos[1]["valor"] * qtdAtual) + parseInt(localStorage.getItem("valorTServicos"))
         ).toFixed(2)}`;
         break;
       case "premium":
@@ -206,7 +209,7 @@ $("#continuar").click(function () {
         document.querySelector("#bookingImg_modal").src =
           "/images/acomodacoes/acomodacoes-standard-1.png";
         document.querySelector("#bookingValor_modal").innerText = `R$ ${(
-          quartos[2]["valor"] * qtdAtual
+          (quartos[2]["valor"] * qtdAtual) + parseInt(localStorage.getItem("valorTServicos"))
         ).toFixed(2)}`;
         break;
       default:
@@ -218,7 +221,7 @@ $("#continuar").click(function () {
         document.querySelector("#bookingImg_modal").src =
           "/images/acomodacoes/acomodacoes-presidencial-1.png";
         document.querySelector("#bookingValor_modal").innerText = `R$ ${(
-          quartos[0]["valor"] * qtdAtual
+          (quartos[0]["valor"] * qtdAtual) + parseInt(localStorage.getItem("valorTServicos"))
         ).toFixed(2)}`;
         break;
     }
@@ -296,7 +299,8 @@ for(let i = 1; i <= servicosAdicionais.length; i++){
     } 
 }
 
-$("#maisServicos").click(function () {
+$("#maisServicos").click(function (e) {
+    e.preventDefault()
     $("#modalMaisServicos").modal("show");    
     inpServicosQtd.forEach(function(valorInput, index){
       $(`#inputServicos:nth-of-type(${index+1})`).attr("max", qtdAtual)
