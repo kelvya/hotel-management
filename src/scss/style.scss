@@ -307,71 +307,10 @@
 .home--banner {
   background-image: mx.bg-background(v.$bg--img-background4);
   background-size: 100%;
-  height: 30rem;
+  height: 30vw;
   background-repeat: no-repeat;
 }
 
-.home--sobre {
-  @include mx.box;
-
-  &-flex{
-    @include mx.flex-center;
-  }
-
-  &-fit-img {
-    width: 30vw;
-    margin: v.$mx1;
-    padding-left: v.$p1;
-  }
-  &-txt{
-    padding: v.$px1;
-  }
-  &-texto-longo{
-    font-size: 1.6rem;
-  }
-}
-
-.home--gastronomia {
-  display: inline-block;
-
-  &-texto{
-    margin-right: 1.5rem;
-    float: left;
-    font-size: 1.3rem;
-
-}
-
-  &-img{
-    margin-left: 200px;
-    float: right;
-    width: 600px;
-    height: 500px;
-    
-    
-  }
-}
-
-@media (max-width: 1170px){
-  .home--sobre{
-    min-width: 768px;
-    width: 95%;
-    &-flex{
-      flex-flow: column;
-    }
-    &-img{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-    &-fit-img{
-      width: 50%;
-    }
-    &-txt{
-      padding: 0 0.5rem;
-      padding-top: v.$p1;
-    }
-  }
-}
 
 @media (max-width: 1170px){
   .display-grid{
