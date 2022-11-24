@@ -104,6 +104,18 @@ qtdPessoas.onchange = function () {
   qtdAtual = localStorage.getItem("qtdPessoas");
   document.querySelector("#bookingQtd").innerText = `${qtdAtual}`;
 
+  //zera servicos caso a qtdPessoas seja inferior a quantidade de determinado serviço e atualiza o preço total de serviços
+  inpServicosQtd.forEach(function(valorInput, index){
+    if(valorInput.value > qtdPessoas.value){
+      valorInput.value = 0
+      localStorage.setItem(`inpServicosQtd${index+1}`, valorInput.value)
+      arrayValorServicos[index] = servicosAdicionais[index].preco * valorInput.value
+      valorTServicos = arrayValorServicos.reduce((somaParcial, a) => somaParcial + a, 0);
+      spanValorTotal.innerHTML = `R$${valorTServicos.toFixed(2)}`
+      localStorage.setItem("valorTServicos", valorTServicos)
+    } 
+  })
+  
   switch (document.querySelector("#bookingApt").innerText) {
     case "Classic":
       document.querySelector("#bookingValor_modal").innerText = `R$ ${(
@@ -210,6 +222,29 @@ $("#continuar").click(function () {
         ).toFixed(2)}`;
         break;
     }
+    //Deleta todos os spans da div #resumoServicosAdicionais enquanto tiver filhos, para evitar duplicação/acumulação de texto
+    const divServicosAdicionais = document.getElementById("resumoServicosAdicionais");
+      while (divServicosAdicionais.firstChild) {
+        divServicosAdicionais.removeChild(divServicosAdicionais.lastChild);
+    }
+    //cria os spans com os textos incluindo os serviços adicionais escolhidos no modal de mais serviços
+    inpServicosQtd.forEach(function(valorInput, index){
+      if(valorInput.value != 0){
+        criaSpan = document.createElement("span")
+        criaSpan.setAttribute("class", "detalhesServicosAdicionais")
+        criaSpan.setAttribute("class", "d-block")
+        document.getElementById("resumoServicosAdicionais").appendChild(criaSpan)
+        criaSpan.innerHTML = `${servicosAdicionais[index].nome} x${valorInput.value}`
+      }
+    })
+
+    //verifica se a div #resumoServicosAdicionais não possui filhos, se verdadeiro cria um texto pro usuário considerar escolher um
+    if(document.getElementById('resumoServicosAdicionais').childElementCount == 0){
+      criaSpan = document.createElement("span")
+      criaSpan.setAttribute("class", "semServico")
+      document.getElementById("resumoServicosAdicionais").appendChild(criaSpan)
+      criaSpan.innerHTML = `Nenhum serviço escolhido, favor considere`
+    }
   } else {
     alert("Por favor, preencha todos os campos!");
   }
@@ -265,12 +300,6 @@ $("#maisServicos").click(function () {
     $("#modalMaisServicos").modal("show");    
     inpServicosQtd.forEach(function(valorInput, index){
       $(`#inputServicos:nth-of-type(${index+1})`).attr("max", qtdAtual)
-      if(valorInput.value > qtdAtual){
-        valorInput.value = 0
-        arrayValorServicos[index] = servicosAdicionais[index].preco * valorInput.value
-        valorTServicos = arrayValorServicos.reduce((somaParcial, a) => somaParcial + a, 0);
-        spanValorTotal.innerHTML = `R$${valorTServicos.toFixed(2)}`
-      } 
       precoServico[index].innerHTML = `${servicosAdicionais[index].nome} - R$${(servicosAdicionais[index].preco).toFixed(2)}`
       valorInput.addEventListener("change", function(){
         localStorage.setItem(`inpServicosQtd${index+1}`, valorInput.value)
