@@ -143,36 +143,16 @@
   margin-top: 20rem;
 }
 
-.border0 {
-  border: 5px solid red;
-}
-
+/*----------------------------------
+* CLASSES COMUNS EM TODAS AS PÁGINAS
+*-----------------------------------
+*/
 .list-style {
   list-style: none;
 }
 
-.header--container {
-  background-image: url(../../images/background/background-1.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #e1c888;
-  text-shadow: 1px 1px 1px rgba(1, 1, 8, 0.6);
-}
-
-.header--container2 {
-  width: 70%;
-}
-.header--container2-container {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-}
-.header--container2-item {
-  padding: 1rem;
-}
-.header--container2-link {
-  color: #e1c888;
+.esconder {
+  display: none;
 }
 
 .alinhamento {
@@ -180,8 +160,14 @@
   text-align: start;
 }
 
-.esconder {
-  display: none;
+.display-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.flex-wrap {
+  display: block;
+  flex-wrap: wrap;
 }
 
 .centralizar {
@@ -193,13 +179,15 @@
   padding: 1rem 0 0 0;
 }
 
-.imagem-padrao {
-  margin: 1.5rem;
-  width: 90%;
+.link-padrao {
+  padding: 0 1.5rem;
+  text-align: start;
+  color: #213242;
+  font: "Quicksand";
+  text-decoration: none;
 }
-
-.margem-padrao {
-  margin: 1rem 1rem;
+.link-padrao:hover {
+  color: #cf9903;
 }
 
 .link-pequeno {
@@ -217,6 +205,27 @@
   box-shadow: 3px 3px 5px #b3b3b4;
 }
 
+.btn-secundario {
+  border: #213242 solid 1px;
+  margin: 1rem;
+  width: 22vw;
+  height: 2.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px #213242;
+  background-color: #213242;
+}
+
+.btn-terceario {
+  border: white solid 1px;
+  margin: 1rem;
+  width: 22vw;
+  height: 2.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px #213242;
+}
+
 .btn-padrao {
   background-color: #213242;
   border: none;
@@ -232,6 +241,23 @@
   font: "Quicksand";
   text-align: center;
   font-size: 1vw;
+}
+
+.margem-padrao {
+  margin: 1rem 1rem;
+}
+
+.margin-left {
+  margin: 0 0.5rem;
+}
+
+.margin-padrao {
+  padding: 0.5rem;
+}
+
+.imagem-padrao {
+  margin: 1.5rem;
+  width: 90%;
 }
 
 .borda-padrao {
@@ -261,16 +287,6 @@
   text-align: start;
 }
 
-.display-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-
-.flex-wrap {
-  display: block;
-  flex-wrap: wrap;
-}
-
 .input-padrao {
   border: white solid 1px;
   margin: 1rem;
@@ -281,23 +297,82 @@
   box-shadow: 1px 3px 5px #213242;
 }
 
-.margin-padrao {
-  padding: 0.5rem;
-}
-
-.margin-left {
-  margin: 0 0.5rem;
-}
-
-.link-padrao {
+.h2-primario {
   padding: 0 1.5rem;
   text-align: start;
   color: #213242;
   font: "Quicksand";
-  text-decoration: none;
 }
-.link-padrao:hover {
+
+.h2-secundario {
+  padding: 1rem;
+  text-align: start;
   color: #cf9903;
+  font: "Quicksand";
+}
+
+.h3-primario {
+  padding: 0 1.5rem;
+  text-align: start;
+  color: #213242;
+  font: "Quicksand";
+}
+
+.h3-secundario {
+  padding: 1rem;
+  text-align: start;
+  color: #cf9903;
+  font: "Quicksand";
+  color: #cf9903;
+}
+
+.p-primario {
+  padding: 0 1.5rem;
+  text-align: start;
+  color: #213242;
+  font: "Quicksand";
+}
+
+.p-secundario {
+  padding: 3rem 1.5rem 0 1.5rem;
+  color: #213242;
+  font: "Quicksand";
+}
+
+/*----------------------------------
+* HEADER E FOOTER - TODAS AS PÁGINAS
+*-----------------------------------
+*/
+.global-bg-azul {
+  background-color: #213242;
+}
+
+.color--bege {
+  color: #e1c888 !important;
+}
+
+.header--container {
+  background-image: url(../../images/background/background-1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #e1c888;
+  text-shadow: 1px 1px 1px rgba(1, 1, 8, 0.6);
+}
+
+.header--container2 {
+  width: 70%;
+}
+.header--container2-container {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.header--container2-item {
+  padding: 1rem;
+}
+.header--container2-link {
+  color: #e1c888;
 }
 
 .header--logo {
@@ -309,29 +384,6 @@
   margin: 20px;
   font: "Quicksand";
   letter-spacing: 0;
-}
-
-.home--large-img {
-  padding-left: 0.5rem;
-}
-
-.home--large-img span {
-  font-size: 2rem;
-}
-
-.home--fit-img {
-  width: 400px;
-  height: 300px;
-  border: 1px solid #213242;
-  border-radius: 30px;
-}
-
-.global-bg-azul {
-  background-color: #213242;
-}
-
-.color--bege {
-  color: #e1c888 !important;
 }
 
 .nav-link {
@@ -395,48 +447,6 @@
 * ACOMODAÇÕES
 *---------------
 */
-.h2-primario {
-  padding: 0 1.5rem;
-  text-align: start;
-  color: #213242;
-  font: "Quicksand";
-}
-
-.p-primario {
-  padding: 0 1.5rem;
-  text-align: start;
-  color: #213242;
-  font: "Quicksand";
-}
-
-.p-secundario {
-  padding: 3rem 1.5rem 0 1.5rem;
-  color: #213242;
-  font: "Quicksand";
-}
-
-.h2-secundario {
-  padding: 1rem;
-  text-align: start;
-  color: #cf9903;
-  font: "Quicksand";
-}
-
-.h3-primario {
-  padding: 0 1.5rem;
-  text-align: start;
-  color: #213242;
-  font: "Quicksand";
-}
-
-.h3-secundario {
-  padding: 1rem;
-  text-align: start;
-  color: #cf9903;
-  font: "Quicksand";
-  color: #cf9903;
-}
-
 .acomodacoes {
   min-width: 1170px;
   margin: 0 auto;
@@ -470,7 +480,10 @@
     min-width: 90%;
   }
 }
-/*HOME*/
+/*--------
+*     HOME
+*---------
+*/
 .home--banner {
   background-image: url(../../images/background/background-8.png);
   background-size: 100%;

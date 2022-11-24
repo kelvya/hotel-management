@@ -1,13 +1,180 @@
 @use "variaveis" as v;
 @use "mixins" as mx;
 
-.border0{
-  border: 5px solid red;
-}
+/*----------------------------------
+* CLASSES COMUNS EM TODAS AS PÁGINAS
+*-----------------------------------
+*/
 
 .list-style{
   list-style: none;
 }
+
+.esconder{
+  display: none;
+}
+
+.alinhamento {
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.display-grid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.flex-wrap{
+  display: block;
+  flex-wrap: wrap;
+}
+
+.centralizar{
+  text-align: center;
+  align-items: center;
+}
+
+.p-top{
+  padding: 1rem 0 0 0;
+}
+
+.link-padrao{
+  @include mx.p-primario;
+  &:hover{
+    color: v.$cor-dourado-escuro;
+  }
+  text-decoration: none;
+}
+
+.link-pequeno{
+  font: v.$fonte-quiscksand;
+  color: v.$cor-azul-escuro;
+  text-decoration: none;
+}
+
+.btn-primario{
+  @include mx.btn-primario;
+}
+
+.btn-secundario{
+  border: #213242 solid 1px;
+  margin: 1rem;
+  width: 22vw;
+  height: 2.5rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px v.$cor-azul-escuro;
+  background-color: v.$cor-azul-escuro
+}
+
+.btn-terceario{
+  @include mx.input-padrao;
+}
+
+.btn-padrao{
+  background-color: v.$cor-azul-escuro;
+  border: none;
+  box-shadow: 3px 1px 8px white inset;
+  border-radius: 20px;
+  width: 50%;
+  height: 3rem;
+  margin: 1rem 1rem;
+  
+}
+
+.btn-texto{
+  color: white;
+  font: v.$fonte-quiscksand;
+  text-align: center;
+  font-size: 1vw;
+}
+
+.margem-padrao{
+  margin: 1rem 1rem;
+}
+
+.margin-left{
+  margin: v.$mx1;
+}
+
+.margin-padrao{
+  padding: 0.5rem;
+}
+
+.imagem-padrao{
+  margin: 1.5rem;
+  width: 90%;
+}
+
+.borda-padrao{
+  margin: 3rem; 
+  padding: v.$p1;
+  @include mx.borda-padrao;
+}
+
+.borda-primaria{
+  margin: 5vw 30vw;
+  @include mx.borda-padrao;
+
+}
+
+.box-padrao{
+  background-color: rgba(225, 200, 136, 0.7);
+  width: 80%;
+  padding: 3%;
+  margin-left: 1.8rem;
+  text-align: start;
+}
+
+.input-padrao{
+  @include mx.input-padrao;
+}
+
+.h2-primario {
+  @include mx.h2-primario;
+}
+
+.h2-secundario {
+  @include mx.h2-secundario;
+}
+
+.h3-primario {
+  @include mx.h3-primario;
+}
+
+.h3-secundario {
+  @include mx.h3-secundario;
+}
+
+.p-primario {
+  @include mx.p-primario;
+}
+
+.p-secundario {
+  @include mx.p-secundario;
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------------
+* HEADER E FOOTER - TODAS AS PÁGINAS
+*-----------------------------------
+*/
+
+.global-bg-azul {
+  background-color: v.$cor-azul-escuro;
+}
+
+.color--bege {
+  color: v.$cor-bege !important;
+}
+
 .header--container {
   background-image: mx.bg-background(v.$bg--img-background1);
   background-size: 100%;
@@ -35,113 +202,6 @@
   }
 }
 
-.alinhamento {
-  justify-content: flex-start;
-  text-align: start;
-}
-
-.esconder{
-  display: none;
-}
-
-.centralizar{
-  text-align: center;
-  align-items: center;
-}
-
-.p-top{
-  padding: 1rem 0 0 0;
-}
-
-.imagem-padrao{
-  margin: 1.5rem;
-  width: 90%;
-}
-
-.margem-padrao{
-  margin: 1rem 1rem;
-}
-
-.link-pequeno{
-  font: v.$fonte-quiscksand;
-  color: v.$cor-azul-escuro;
-  text-decoration: none;
-}
-
-.btn-primario{
-  @include mx.btn-primario;
-}
-
-.btn-padrao{
-  background-color: v.$cor-azul-escuro;
-  border: none;
-  box-shadow: 3px 1px 8px white inset;
-  border-radius: 20px;
-  width: 50%;
-  height: 3rem;
-  margin: 1rem 1rem;
-  
-}
-
-.btn-texto{
-  color: white;
-  font: v.$fonte-quiscksand;
-  text-align: center;
-  font-size: 1vw;
-}
-
-.borda-padrao{
-  margin: 3rem; 
-  padding: v.$p1;
-  @include mx.borda-padrao;
-}
-
-.borda-primaria{
-  margin: 5vw 30vw;
-  @include mx.borda-padrao;
-
-}
-
-.box-padrao{
-  background-color: rgba(225, 200, 136, 0.7);
-  width: 80%;
-  padding: 3%;
-  margin-left: 1.8rem;
-  text-align: start;
-}
-
-.display-grid{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-
-.flex-wrap{
-  display: block;
-  flex-wrap: wrap;
-}
-
-.input-padrao{
-  @include mx.input-padrao;
-}
-
-.margin-padrao{
-  padding: 0.5rem;
-}
-
-.margin-left{
-  margin: v.$mx1;
-}
-
-.link-padrao{
-  @include mx.p-primario;
-  &:hover{
-    color: v.$cor-dourado-escuro;
-  }
-  text-decoration: none;
-}
-
-
-
 .header--logo {
   background: v.$img--logo--bege no-repeat transparent;
   background-size: 100%;
@@ -153,29 +213,6 @@
   letter-spacing: 0;
 }
 
-.home--large-img{
-  padding-left: 0.5rem;
-}
-
-.home--large-img span{
-  font-size: 2rem;
-}
-
-.home--fit-img{
-  width: 400px;
-  height: 300px;
-  border: 1px solid v.$cor-azul-escuro;
-  border-radius: 30px;
-}
-
-.global-bg-azul {
-  background-color: v.$cor-azul-escuro;
-}
-
-.color--bege {
-  color: v.$cor-bege !important;
-}
-
 .nav-link {
   color: v.$cor-bege;
 
@@ -183,6 +220,8 @@
     color: v.$cor-dourado-escuro;
   }
 }
+
+
 
 /*---------------
 * RESERVAS
@@ -235,30 +274,6 @@
 *---------------
 */
 
-.h2-primario {
-  @include mx.h2-primario;
-}
-
-.p-primario {
-  @include mx.p-primario;
-}
-
-.p-secundario {
-  @include mx.p-secundario;
-}
-
-.h2-secundario {
-  @include mx.h2-secundario;
-}
-
-.h3-primario {
-  @include mx.h3-primario;
-}
-
-.h3-secundario {
-  @include mx.h3-secundario;
-}
-
 .acomodacoes {
   @include mx.box;
   @include mx.flex-center;
@@ -284,7 +299,11 @@
   }
 }
 
-/*HOME*/
+/*--------
+*     HOME
+*---------
+*/
+
 .home--banner {
   background-image: mx.bg-background(v.$bg--img-background4);
   background-size: 100%;
