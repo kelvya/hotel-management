@@ -77,7 +77,7 @@
   border: none;
   box-shadow: 3px 1px 8px white inset;
   border-radius: 20px;
-  width: 30%;
+  width: 50%;
   height: 3rem;
   margin: 1rem 1rem;
   
@@ -91,7 +91,7 @@
 }
 
 .borda-padrao{
-  margin: 3rem;
+  margin: 3rem; 
   padding: v.$p1;
   @include mx.borda-padrao;
 }
@@ -104,7 +104,7 @@
 
 .box-padrao{
   background-color: rgba(225, 200, 136, 0.7);
-  width: 52%;
+  width: 80%;
   padding: 3%;
   margin-left: 1.8rem;
   text-align: start;
@@ -189,12 +189,45 @@
 *---------------
 */
 
+.resumo-reserva-conteudo{
+  // border: solid red 2px;
+  margin-top: 3vw;
+}
+
 .resumo-reserva{
   height: 35rem;
-  padding: 15vh 5vh 15vh 5vh;
+  // padding: 15vh 5vh 15vh 5vh;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+}
+
+.borda-resumo-reserva{
+  margin: 3rem 6rem; 
+  padding: v.$p1;
+  @include mx.borda-padrao;
+}
+
+.box-reservas{
+  background-color: rgba(225, 200, 136, 0.7);
+  width: 100%;
+  padding: 3%;
+  text-align: start;
+  margin-top: 2rem;
+}
+
+.btn-resumo-reservas{
+  background-color: v.$cor-azul-escuro;
+  border: none;
+  box-shadow: 3px 1px 8px white inset;
+  border-radius: 20px;
+  width: 100%;
+  height: 3rem;
+}
+
+.h3-resumo-reservas{
+  @include mx.h3-primario;
+  text-align: center
 }
 
 /*---------------
